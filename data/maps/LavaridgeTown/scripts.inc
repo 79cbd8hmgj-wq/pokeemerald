@@ -247,7 +247,67 @@ LavaridgeTown_EventScript_EggWoman::
 	end
 
 LavaridgeTown_EventScript_ReceivedEgg::
+	goto_if_unset FLAG_RECEIVED_TYROGUE_EGG_LAVARIDGE, LavaridgeTown_EventScript_OfferTyrogueEgg
+	goto_if_unset FLAG_RECEIVED_SMOOCHUM_EGG_LAVARIDGE, LavaridgeTown_EventScript_OfferSmoochumEgg
+	goto_if_unset FLAG_RECEIVED_ELEKID_EGG_LAVARIDGE, LavaridgeTown_EventScript_OfferElekidEgg
+	goto_if_unset FLAG_RECEIVED_MAGBY_EGG_LAVARIDGE, LavaridgeTown_EventScript_OfferMagbyEgg
 	msgbox LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare, MSGBOX_DEFAULT
+	release
+	end
+
+LavaridgeTown_EventScript_OfferTyrogueEgg::
+	msgbox LavaridgeTown_Text_FoundAnotherEgg, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg
+	msgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TYROGUE_EGG_LAVARIDGE
+	playfanfare MUS_OBTAIN_ITEM
+	message LavaridgeTown_Text_ReceivedTheEgg
+	waitfanfare
+	giveegg SPECIES_TYROGUE
+	release
+	end
+
+LavaridgeTown_EventScript_OfferSmoochumEgg::
+	msgbox LavaridgeTown_Text_FoundAnotherEgg, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg
+	msgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_SMOOCHUM_EGG_LAVARIDGE
+	playfanfare MUS_OBTAIN_ITEM
+	message LavaridgeTown_Text_ReceivedTheEgg
+	waitfanfare
+	giveegg SPECIES_SMOOCHUM
+	release
+	end
+
+LavaridgeTown_EventScript_OfferElekidEgg::
+	msgbox LavaridgeTown_Text_FoundAnotherEgg, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg
+	msgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_ELEKID_EGG_LAVARIDGE
+	playfanfare MUS_OBTAIN_ITEM
+	message LavaridgeTown_Text_ReceivedTheEgg
+	waitfanfare
+	giveegg SPECIES_ELEKID
+	release
+	end
+
+LavaridgeTown_EventScript_OfferMagbyEgg::
+	msgbox LavaridgeTown_Text_FoundAnotherEgg, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, LavaridgeTown_EventScript_NoRoomForEgg
+	msgbox LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_MAGBY_EGG_LAVARIDGE
+	playfanfare MUS_OBTAIN_ITEM
+	message LavaridgeTown_Text_ReceivedTheEgg
+	waitfanfare
+	giveegg SPECIES_MAGBY
 	release
 	end
 
@@ -345,6 +405,12 @@ LavaridgeTown_Text_AsYouWishThen:
 	.string "As you wish, then…\p"
 	.string "If you have a change of heart about\n"
 	.string "hatching this EGG, I will be here.$"
+
+
+LavaridgeTown_Text_FoundAnotherEgg:
+	.string "Oh! I found another unusual EGG\n"
+	.string "near the hot springs.\p"
+	.string "Would you like to raise this one, too?$"
 
 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare:
 	.string "Every so often, an EGG will be found at\n"

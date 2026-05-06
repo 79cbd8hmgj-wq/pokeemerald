@@ -635,6 +635,33 @@ Route111_Text_WinstrateFamilyDestroyedMe:
 	.string "but four matches in a row is tough\l"
 	.string "going… They destroyed me.$"
 
+
+Route111_EventScript_Sudowoodo::
+	lock
+	faceplayer
+	msgbox Route111_Text_OddTreeAttacked, MSGBOX_DEFAULT
+	closemessage
+	waitse
+	playmoncry SPECIES_SUDOWOODO, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_SUDOWOODO, 25
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route111_EventScript_DefeatedSudowoodo
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route111_EventScript_DefeatedSudowoodo
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route111_EventScript_DefeatedSudowoodo
+	setflag FLAG_DEFEATED_SUDOWOODO_ROUTE_111
+	release
+	end
+
+Route111_EventScript_DefeatedSudowoodo::
+	setflag FLAG_DEFEATED_SUDOWOODO_ROUTE_111
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
 Route111_Text_RouteSignMauville:
 	.string "ROUTE 111\n"
 	.string "{DOWN_ARROW} MAUVILLE CITY$"
@@ -714,4 +741,8 @@ Route111_Text_TrainerHillSign:
 	.string "{RIGHT_ARROW} TRAINER HILL ENTRANCE\p"
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
+
+Route111_Text_OddTreeAttacked:
+	.string "The odd tree doesn't like being\n"
+	.string "disturbed!$"
 

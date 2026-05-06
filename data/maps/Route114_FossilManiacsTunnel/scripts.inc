@@ -5,6 +5,7 @@ Route114_FossilManiacsTunnel_MapScripts::
 
 Route114_FossilManiacsTunnel_OnTransition:
 	call_if_set FLAG_SYS_GAME_CLEAR, Route114_FossilManiacsTunnel_EventScript_MoveFossilManiac
+	call_if_eq VAR_MIRAGE_TOWER_STATE, 3, Route114_FossilManiacsTunnel_EventScript_MoveFossilManiac
 	end
 
 Route114_FossilManiacsTunnel_EventScript_MoveFossilManiac::
@@ -13,7 +14,11 @@ Route114_FossilManiacsTunnel_EventScript_MoveFossilManiac::
 	return
 
 Route114_FossilManiacsTunnel_OnLoad:
-	call_if_unset FLAG_SYS_GAME_CLEAR, Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass
+	goto_if_set FLAG_SYS_GAME_CLEAR, Route114_FossilManiacsTunnel_EventScript_EndOnLoad
+	call_if_ne VAR_MIRAGE_TOWER_STATE, 3, Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass
+	end
+
+Route114_FossilManiacsTunnel_EventScript_EndOnLoad::
 	end
 
 Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass::

@@ -129,6 +129,33 @@ Route115_EventScript_Marlene::
 	msgbox Route115_Text_MarlenePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+
+Route115_EventScript_Snorlax::
+	lock
+	faceplayer
+	msgbox Route115_Text_SnorlaxSleeping, MSGBOX_DEFAULT
+	closemessage
+	waitse
+	playmoncry SPECIES_SNORLAX, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_SNORLAX, 35
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route115_EventScript_DefeatedSnorlax
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route115_EventScript_DefeatedSnorlax
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route115_EventScript_DefeatedSnorlax
+	setflag FLAG_DEFEATED_SNORLAX_ROUTE_115
+	release
+	end
+
+Route115_EventScript_DefeatedSnorlax::
+	setflag FLAG_DEFEATED_SNORLAX_ROUTE_115
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
 Route115_Text_NeverKnowWhenCavePokemonWillAppear:
 	.string "Exploring a cave isn't like walking\n"
 	.string "on a road.\p"
@@ -142,4 +169,8 @@ Route115_Text_RouteSignRustboro:
 Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 	.string "FALLARBOR TOWN THROUGH HERE$"
+
+Route115_Text_SnorlaxSleeping:
+	.string "A huge POKéMON is sleeping soundly.\p"
+	.string "It woke up in a grumpy rage!$"
 

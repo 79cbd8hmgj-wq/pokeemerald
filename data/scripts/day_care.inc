@@ -266,6 +266,67 @@ EventScript_EggHatch::
 	releaseall
 	end
 
+
+Route117_PokemonDayCare_EventScript_EeveeBreeder::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_EEVEE_DAYCARE, Route117_PokemonDayCare_EventScript_EeveeBreederAfterGift
+	msgbox Route117_PokemonDayCare_Text_EeveeBreederOffer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route117_PokemonDayCare_EventScript_EeveeBreederDecline
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE
+	givemon SPECIES_EEVEE, 25
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route117_PokemonDayCare_EventScript_EeveeToParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Route117_PokemonDayCare_EventScript_EeveeToPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+Route117_PokemonDayCare_EventScript_EeveeToParty::
+	call Route117_PokemonDayCare_EventScript_ReceivedEeveeFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route117_PokemonDayCare_EventScript_ReceivedEevee
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto Route117_PokemonDayCare_EventScript_ReceivedEevee
+	end
+
+Route117_PokemonDayCare_EventScript_EeveeToPC::
+	call Route117_PokemonDayCare_EventScript_ReceivedEeveeFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route117_PokemonDayCare_EventScript_EeveeTransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto Route117_PokemonDayCare_EventScript_EeveeTransferredToPC
+	end
+
+Route117_PokemonDayCare_EventScript_EeveeTransferredToPC::
+	call Common_EventScript_TransferredToPC
+	goto Route117_PokemonDayCare_EventScript_ReceivedEevee
+	end
+
+Route117_PokemonDayCare_EventScript_ReceivedEeveeFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_EEVEE
+	playfanfare MUS_OBTAIN_ITEM
+	message Route117_PokemonDayCare_Text_ReceivedEevee
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_EEVEE
+	return
+
+Route117_PokemonDayCare_EventScript_ReceivedEevee::
+	setflag FLAG_RECEIVED_EEVEE_DAYCARE
+	msgbox Route117_PokemonDayCare_Text_EeveeBreederAfterGift, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_PokemonDayCare_EventScript_EeveeBreederAfterGift::
+	msgbox Route117_PokemonDayCare_Text_EeveeBreederAfterGift, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_PokemonDayCare_EventScript_EeveeBreederDecline::
+	msgbox Route117_PokemonDayCare_Text_EeveeBreederDecline, MSGBOX_DEFAULT
+	release
+	end
+
 Route117_Text_SeeWifeIfYoudLikeMeToRaiseMon:
 	.string "I'm the DAY-CARE MAN.\p"
 	.string "I help take care of the precious\n"
@@ -408,3 +469,20 @@ Route117_PokemonDayCare_Text_YoullBeLeftWithJustOne:
 	.string "me, you'll be left with just one.\p"
 	.string "You will be better off if you catch\n"
 	.string "some more, I dare say.$"
+
+Route117_PokemonDayCare_Text_EeveeBreederOffer:
+	.string "This EEVEE was raised here, but it\n"
+	.string "needs to travel with a TRAINER.\p"
+	.string "Would you take it with you?$"
+
+Route117_PokemonDayCare_Text_ReceivedEevee:
+	.string "{PLAYER} received {STR_VAR_2} from\n"
+	.string "the DAY-CARE MAN.$"
+
+Route117_PokemonDayCare_Text_EeveeBreederAfterGift:
+	.string "An EEVEE can grow in many different\n"
+	.string "ways with the right care.$"
+
+Route117_PokemonDayCare_Text_EeveeBreederDecline:
+	.string "I see. If you change your mind,\n"
+	.string "please come back.$"

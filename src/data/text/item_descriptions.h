@@ -28,19 +28,19 @@ static const u8 sSafariBallDesc[] = _(
     "SAFARI ZONE.");
 
 static const u8 sNetBallDesc[] = _(
-    "A BALL that works\n"
-    "well on WATER- and\n"
-    "BUG-type POKéMON.");
+    "A BALL for catching\n"
+    "lower-level POKéMON\n"
+    "when yours is high.");
 
 static const u8 sDiveBallDesc[] = _(
     "A BALL that works\n"
     "better on POKéMON\n"
-    "on the ocean floor.");
+    "hooked by a rod.");
 
 static const u8 sNestBallDesc[] = _(
-    "A BALL that works\n"
-    "better on weaker\n"
-    "POKéMON.");
+    "A BALL that heals\n"
+    "caught POKéMON and\n"
+    "catches better.");
 
 static const u8 sRepeatBallDesc[] = _(
     "A BALL that works\n"
@@ -58,9 +58,9 @@ static const u8 sLuxuryBallDesc[] = _(
     "more friendly.");
 
 static const u8 sPremierBallDesc[] = _(
-    "A rare BALL made\n"
-    "in commemoration\n"
-    "of some event.");
+    "A BALL that works\n"
+    "best at the start\n"
+    "of a battle.");
 
 // Medicine
 static const u8 sPotionDesc[] = _(

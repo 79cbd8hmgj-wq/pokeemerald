@@ -1,0 +1,472 @@
+POKEMON EMERALD MOVE REWORK SPEC V2
+===================================
+
+Purpose
+-------
+This file turns the move audit into an implementation-ready first-pass spec.
+It focuses on weak, low-usage, low-reward, and poorly supported moves from the
+Generation 3 move pool and gives each one a clearer gameplay role.
+
+Design Rules
+------------
+1. Every attacking move should serve a purpose:
+   - reliable STAB
+   - utility damage
+   - setup payoff
+   - early-game bridge move
+   - high-risk burst
+   - archetype support
+2. Weak move types should get consistency before raw damage spikes.
+3. Niche status moves should either become broadly usable or remain niche on purpose.
+4. Avoid power creep on already-good signature and top-tier moves.
+5. Preserve Pokemon identity wherever possible; use retyping sparingly.
+
+Source Basis
+------------
+This spec is based on the uploaded move catalog covering the 103 Generation 3
+moves introduced across Ruby, Sapphire, FireRed, LeafGreen, and Emerald.
+
+------------------------------------------------------------------
+SECTION 1 - MOVES TO KEEP AS-IS
+------------------------------------------------------------------
+
+These moves already have a clean role, strong identity, or healthy balance and
+should not be changed in the first implementation wave.
+
+Aerial Ace
+Aromatherapy
+Blast Burn
+Blaze Kick
+Block
+Bounce
+Brick Break
+Bulk Up
+Calm Mind
+Charge
+Cosmic Power
+Covet
+Crush Claw
+Dive
+Doom Desire
+Dragon Claw
+Dragon Dance
+Endeavor
+Eruption
+Extrasensory
+Facade
+Fake Out
+Fake Tears
+Feather Dance
+Focus Punch
+Follow Me
+Frenzy Plant
+Hail
+Heat Wave
+Helping Hand
+Howl
+Hydro Cannon
+Hyper Voice
+Ingrain
+Iron Defense
+Knock Off
+Leaf Blade
+Luster Purge
+Magic Coat
+Memento
+Metal Sound
+Meteor Mash
+Mist Ball
+Nature Power
+Odor Sleuth
+Overheat
+Psycho Boost
+Recycle
+Refresh
+Revenge
+Rock Tomb
+Role Play
+Secret Power
+Shadow Punch
+Sheer Cold
+Shock Wave
+Signal Beam
+Silver Wind
+Skill Swap
+Sky Uppercut
+Slack Off
+Stockpile
+Superpower
+Swallow
+Tail Glow
+Taunt
+Teeter Dance
+Tickle
+Trick
+Uproar
+Volt Tackle
+Water Pulse
+Weather Ball
+Will-O-Wisp
+Wish
+Yawn
+
+Notes:
+- These can still be revisited later if learnset changes or wider balance shifts
+  create new issues.
+- Some are strong, but they are serving a valid role and should not be touched
+  until weaker parts of the movepool are fixed.
+
+------------------------------------------------------------------
+SECTION 2 - EXACT BUFF SPECS
+------------------------------------------------------------------
+
+1. ASTONISH
+Current: Ghost / Physical / 30 BP / 100 Acc / 15 PP / may flinch
+New:     Ghost / Physical / 50 BP / 100 Acc / 20 PP / 20% flinch chance
+Goal: Turn Astonish into a usable early-game Ghost STAB without replacing
+mid-game Ghost attacks.
+Why: Ghost has very shallow move support in this Gen 3 move set, and 30 BP is
+far too weak to matter.
+
+2. ARM THRUST
+Current: Fighting / Physical / 15 BP / 100 Acc / 20 PP / hits 2-5 times
+New:     Fighting / Physical / 20 BP / 100 Acc / 20 PP / hits 2-5 times
+Goal: Give Fighting multi-hit users a move that does meaningful chip and breaks
+substitutes or sturdy-style gameplay more reliably.
+Why: 15 BP leaves the move too weak on average.
+
+3. BULLET SEED
+Current: Grass / Physical / 25 BP / 100 Acc / 30 PP / hits 2-5 times
+New:     Grass / Physical / 20 BP / 100 Acc / 30 PP / hits 3-5 times
+Goal: Make it more consistent rather than just stronger on maximum rolls.
+Why: Multi-hit Grass should support physical Grass users, but 2-hit low rolls
+feel too bad.
+Implementation note: If guaranteed 3-5 hits is awkward in-engine, fallback to
+25 BP with improved distribution only.
+
+4. GRASS WHISTLE
+Current: Grass / Status / -- / 55 Acc / 15 PP / sleep
+New:     Grass / Status / -- / 70 Acc / 15 PP / sleep
+Goal: Keep it inaccurate enough to feel risky but not unusable.
+Why: 55 accuracy pushes it below practical use outside gimmicks.
+
+5. NEEDLE ARM
+Current: Grass / Physical / 60 BP / 100 Acc / 15 PP / may flinch
+New:     Grass / Physical / 70 BP / 100 Acc / 15 PP / 20% flinch chance
+Goal: Create a respectable mid-tier physical Grass move for aggressive users.
+Why: It currently feels too close to filler.
+
+6. MUD SHOT
+Current: Ground / Special / 55 BP / 95 Acc / 15 PP / lowers Speed
+New:     Ground / Special / 65 BP / 95 Acc / 15 PP / lowers Speed by 1 stage
+Goal: Give special Ground users a legitimate utility STAB.
+Why: Ground is under-supported and Mud Shot is too weak as a bridge move.
+
+7. SAND TOMB
+Current: Ground / Physical / 35 BP / 85 Acc / 15 PP / traps 4-5 turns
+New:     Ground / Physical / 50 BP / 90 Acc / 15 PP / traps 4-5 turns
+Goal: Make trapping sets actually threaten damage.
+Why: The original version is too inaccurate and too weak at once.
+
+8. AIR CUTTER
+Current: Flying / Special / 60 BP / 95 Acc / 25 PP / high crit ratio
+New:     Flying / Special / 75 BP / 95 Acc / 20 PP / high crit ratio
+Goal: Give special Flying attackers a real mid-tier attack.
+Why: Special Flying is unusually shallow and Air Cutter is underpowered.
+
+9. ICE BALL
+Current: Ice / Physical / 30 BP / 90 Acc / 20 PP / doubles for 5 turns
+New:     Ice / Physical / 40 BP / 90 Acc / 15 PP / doubles for 5 turns
+Goal: Make rollout-style Ice use more threatening without making it universal.
+Why: It is too weak to justify its lock-in drawback.
+
+10. ICICLE SPEAR
+Current: Ice / Physical / 25 BP / 100 Acc / 30 PP / hits 2-5 times
+New:      Ice / Physical / 20 BP / 100 Acc / 30 PP / hits 3-5 times
+Goal: Same philosophy as Bullet Seed: consistency over random disappointment.
+Why: Ice needs better physical tools, but not reckless raw power.
+Implementation note: Same fallback as Bullet Seed if hit-range edits are hard.
+
+11. POISON FANG
+Current: Poison / Physical / 50 BP / 100 Acc / 15 PP / may badly poison
+New:     Poison / Physical / 65 BP / 100 Acc / 15 PP / 30% badly poison chance
+Goal: Make this the reliable offensive Poison pressure move.
+Why: Poison is starved for attacks and 50 BP is not enough.
+
+12. POISON TAIL
+Current: Poison / Physical / 50 BP / 100 Acc / 25 PP / high crit, may poison
+New:     Poison / Physical / 60 BP / 100 Acc / 20 PP / high crit, 20% poison chance
+Goal: Make Poison Tail the more offense-oriented counterpart to Poison Fang.
+Why: It needs a clearer role split from Poison Fang.
+
+13. ROCK BLAST
+Current: Rock / Physical / 25 BP / 90 Acc / 10 PP / hits 2-5 times
+New:     Rock / Physical / 20 BP / 90 Acc / 10 PP / hits 3-5 times
+Goal: Give Rock a more dependable multi-hit option.
+Why: Rock is under-supported and low-roll Rock Blast feels terrible.
+Implementation note: Same fallback model as Bullet Seed if hit scripting is limited.
+
+14. MAGICAL LEAF
+Current: Grass / Special / 60 BP / never misses / 20 PP
+New:     Grass / Special / 70 BP / never misses / 20 PP
+Goal: Give special Grass users a smoother reliable option.
+Why: It should stand out as a consistency move, not just weak filler.
+
+15. WATER PULSE
+Current: Water / Special / 60 BP / 100 Acc / 20 PP / may confuse
+New:     Water / Special / 70 BP / 100 Acc / 20 PP / 20% confusion chance
+Goal: Improve early-to-mid Water special offense.
+Why: Too many Water users lean on Surf later; this helps bridge progression.
+
+------------------------------------------------------------------
+SECTION 3 - EXACT REPURPOSE SPECS
+------------------------------------------------------------------
+
+These moves should not just be numerically buffed. Their actual role is too
+narrow, too awkward, or too low-value for most players.
+
+1. ASSIST
+Current role: random ally move
+New concept: User calls a random move from the party, but cannot call two-turn,
+OHKO, self-KO, or field-only moves.
+Optional bonus: +1 priority
+Goal: Keep the fun chaos identity while removing dead-roll frustration.
+Why: Randomness is fine; useless randomness is not.
+
+2. CAMOUFLAGE
+Current role: changes type based on location
+New: Normal / Status / 20 PP
+Effect: Changes the user to a terrain-linked defensive type and grants +1 Sp. Def.
+Goal: Turn it into a flexible defensive adaptation tool.
+Why: Pure type change with inconsistent map logic is too awkward for regular play.
+
+3. FLATTER
+Current role: confuses target and raises target's Sp. Atk
+New: Dark / Status / 15 PP / 100 Acc
+Effect: Confuses target and lowers target's Sp. Def by 2 stages.
+Goal: Create an offensive disruption/setup move for Dark and special attackers.
+Why: Raising the foe's Sp. Atk is usually more harmful than helpful.
+
+4. GRUDGE
+Current role: if user faints, foe's last move loses all PP
+New: Ghost / Status / 10 PP
+Effect: If the user faints before its next turn, the attacker loses 5 PP from the
+move used and suffers -1 Attack and -1 Sp. Atk.
+Goal: Preserve sacrificial ghost-tech identity but make it broadly useful.
+Why: Full-PP drain is binary and often irrelevant in regular play.
+
+5. IMPRISON
+Current role: foe cannot use moves the user knows
+New: Psychic / Status / 10 PP
+Effect: For 5 turns, opposing Pokemon cannot use healing, protection, or stat-boosting moves.
+Goal: Create an anti-setup, anti-stall control move.
+Why: The original effect is too matchup-specific.
+
+6. MUD SPORT
+Current role: weakens Electric-type moves
+New: Ground / Status / 15 PP
+Effect: For 5 turns, grounded Pokemon recover 1/16 max HP each turn and Electric moves lose 25% power.
+Goal: Turn it into a meaningful Ground-control field move.
+Why: The original effect is too narrow to justify a moveslot.
+
+7. SNATCH
+Current role: steals next status move effect
+New: Dark / Status / 10 PP / +1 priority
+Effect: Steals the opponent's next healing or stat-boosting move this turn. If none is used, user gains +1 Speed.
+Goal: Make prediction-based Dark utility less all-or-nothing.
+Why: Pure miss-or-win design is too inconsistent.
+
+8. TORMENT
+Current role: target cannot use same move twice in a row
+New: Dark / Status / 15 PP / 100 Acc
+Effect: Target cannot use the same move twice in a row for 4 turns and loses 1 PP from its last used move immediately.
+Goal: Improve anti-spam disruption.
+Why: Existing Torment is interesting but too low-pressure.
+
+9. MUD SPORT / WATER SPORT PAIRING PRINCIPLE
+These two should be parallel field-control moves rather than nearly dead buttons.
+
+10. WATER SPORT
+Current role: weakens Fire-type moves
+New: Water / Status / 15 PP
+Effect: For 5 turns, all Pokemon heal 1/16 HP at end of turn if rain is active;
+Fire moves lose 25% power regardless, and Water moves gain 10% accuracy.
+Goal: Create a broad water-support field move.
+Why: Original effect is far too niche.
+
+11. SPIT UP
+Current role: spends Stockpile to attack
+New: Normal / Special / variable / 100 Acc / 10 PP
+Effect: Base power now scales more aggressively with Stockpile and does not remove all defensive bonuses from Stockpile until after damage resolves.
+Goal: Make Stockpile sets worth considering.
+Why: The stockpile package is too low-payoff unless heavily supported.
+
+------------------------------------------------------------------
+SECTION 4 - RETYPE CANDIDATE
+------------------------------------------------------------------
+
+Use retyping carefully. Only one move is recommended for the first wave.
+
+1. SMELLING SALTS
+Current: Normal / Physical / 70 BP / doubles on paralyzed targets, then cures paralysis
+Recommended New Type: Fighting
+Keep effect: Power doubles if target is paralyzed, then cures paralysis
+Goal: Give Fighting an offbeat utility move and help certain under-supported
+Fighting or physical support archetypes.
+Why: As Normal, it lacks strong identity and often feels random.
+Risk: Could become unusually strong on specific users if distribution is too wide.
+Control this through learnsets.
+
+Fallback option:
+- Keep it Normal but raise BP to 80.
+- Retype only if you want broader Fighting move variety.
+
+------------------------------------------------------------------
+SECTION 5 - MOVES TO LEAVE ALONE FOR NOW DESPITE BEING NICHE
+------------------------------------------------------------------
+
+These are still niche, but not worth first-wave implementation time.
+
+Blaze-tier / cannon-tier recharge moves:
+- Blast Burn
+- Frenzy Plant
+- Hydro Cannon
+
+Signature/status identity pieces:
+- Doom Desire
+- Memento
+- Tail Glow
+- Trick
+- Skill Swap
+- Role Play
+- Magic Coat
+
+Doubles/support niche that is okay to preserve:
+- Follow Me
+- Helping Hand
+
+Reason:
+- These are either flavorful, unique, or not central to the current balance problems.
+
+------------------------------------------------------------------
+SECTION 6 - TYPE SUPPORT SUMMARY
+------------------------------------------------------------------
+
+Types benefiting most from this spec:
+
+Poison
+- Poison Fang buff
+- Poison Tail buff
+Result: Poison gets usable physical pressure.
+
+Rock
+- Rock Blast consistency buff
+Result: Rock gets better chip and anti-sub tools.
+
+Ghost
+- Astonish buff
+- Grudge repurpose
+Result: Ghost gets an actual early attack plus a better utility trap.
+
+Ground
+- Mud Shot buff
+- Sand Tomb buff
+- Mud Sport repurpose
+Result: Ground becomes much more than just Earthquake later.
+
+Flying
+- Air Cutter buff
+Result: Special Flying users gain a needed bridge move.
+
+Grass
+- Bullet Seed consistency buff
+- Grass Whistle accuracy buff
+- Needle Arm buff
+- Magical Leaf buff
+Result: Grass gains better early and mid-game options on both sides.
+
+Ice
+- Ice Ball buff
+- Icicle Spear consistency buff
+Result: Ice gets better physical move support.
+
+Water
+- Water Pulse buff
+- Water Sport repurpose
+Result: Water support and progression improve.
+
+Dark
+- Flatter repurpose
+- Snatch repurpose
+- Torment repurpose
+Result: Dark becomes more disruptive and interactive.
+
+------------------------------------------------------------------
+SECTION 7 - IMPLEMENTATION ORDER
+------------------------------------------------------------------
+
+Wave 1 - safest and highest value
+- Astonish
+- Mud Shot
+- Sand Tomb
+- Air Cutter
+- Poison Fang
+- Poison Tail
+- Needle Arm
+- Grass Whistle
+- Water Pulse
+- Magical Leaf
+
+Wave 2 - multi-hit consistency edits
+- Arm Thrust
+- Bullet Seed
+- Rock Blast
+- Icicle Spear
+- Ice Ball
+
+Wave 3 - repurpose moves
+- Flatter
+- Grudge
+- Imprison
+- Mud Sport
+- Water Sport
+- Snatch
+- Torment
+- Camouflage
+- Assist
+- Spit Up
+
+Wave 4 - optional retype and wider learnset pass
+- Smelling Salts -> Fighting
+- distribution review for all changed moves
+
+------------------------------------------------------------------
+SECTION 8 - LEARNSET WARNING
+------------------------------------------------------------------
+
+Do not distribute improved moves blindly.
+
+Most dangerous overbuff risks come from:
+- Poison types gaining both stronger STAB and improved status spread at once
+- Fast users receiving stronger never-miss or speed-control moves
+- Bulky utility Pokemon receiving too many improved disruption tools together
+- Fighting users abusing a retyped Smelling Salts too efficiently
+
+Recommended rule:
+- First implement move data.
+- Then review distribution one family at a time.
+
+------------------------------------------------------------------
+SECTION 9 - NEXT BEST STEP
+------------------------------------------------------------------
+
+After this file, the next best document is:
+
+POKEMON EMERALD MOVE DISTRIBUTION PLAN V1
+
+That file should answer:
+- which Pokemon learn each changed move
+- which Pokemon should lose access
+- which early-game Pokemon need bridge coverage most
+- which types still lack enough usable offense after this pass
+

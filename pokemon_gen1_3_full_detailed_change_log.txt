@@ -1,0 +1,1884 @@
+POKEMON GEN 1-3 FULL DETAILED CHANGE LOG
+Compared files:
+- Original: pokemon_gen1_3_release_polished.txt
+- Current:  pokemon_gen1_3_release_polished_updated_types_v11.txt
+
+This log records every detected difference between the original file and the current edited file.
+
+==============================================================================
+SUMMARY
+==============================================================================
+Total species compared: 386
+Species with at least one change: 68
+
+Changed section counts:
+- Type: 37
+- Base Stats: 47
+- Level-Up: 16
+- Egg Moves: 4
+- Pre-Evolution Moves: 7
+- TM Moves: 15
+- Move Tutor Moves: 2
+
+==============================================================================
+DETAILED ENTRY-BY-ENTRY CHANGES
+==============================================================================
+
+#009 BLASTOISE
+------------------------------------------------------------------------------
+TYPE
+OLD: Water
+NEW: Water / Ground
+
+BASE STATS
+OLD: HP 79 / Atk 83 / Def 100 / SpA 85 / SpD 105 / Spe 78 / BST 530
+NEW: HP 79 / Atk 84 / Def 110 / SpA 90 / SpD 102 / Spe 55 / BST 520
+DELTA: Atk 83 -> 84 (+1); Def 100 -> 110 (+10); SpA 85 -> 90 (+5); SpD 105 -> 102 (-3); Spe 78 -> 55 (-23); BST 530 -> 520 (-10)
+
+
+#012 BUTTERFREE
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 45 / Def 50 / SpA 80 / SpD 80 / Spe 70 / BST 385
+NEW: HP 60 / Atk 50 / Def 60 / SpA 95 / SpD 90 / Spe 75 / BST 430
+DELTA: Atk 45 -> 50 (+5); Def 50 -> 60 (+10); SpA 80 -> 95 (+15); SpD 80 -> 90 (+10); Spe 70 -> 75 (+5); BST 385 -> 430 (+45)
+
+
+#015 BEEDRILL
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 65 / Atk 80 / Def 40 / SpA 45 / SpD 80 / Spe 75 / BST 385
+NEW: HP 65 / Atk 95 / Def 50 / SpA 45 / SpD 85 / Spe 90 / BST 430
+DELTA: Atk 80 -> 95 (+15); Def 40 -> 50 (+10); SpD 80 -> 85 (+5); Spe 75 -> 90 (+15); BST 385 -> 430 (+45)
+
+
+#019 RATTATA
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal
+NEW: Normal / Ground
+
+
+#020 RATICATE
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal
+NEW: Normal / Ground
+
+
+#022 FEAROW
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 65 / Atk 90 / Def 65 / SpA 61 / SpD 61 / Spe 100 / BST 442
+NEW: HP 70 / Atk 95 / Def 70 / SpA 60 / SpD 65 / Spe 100 / BST 460
+DELTA: HP 65 -> 70 (+5); Atk 90 -> 95 (+5); Def 65 -> 70 (+5); SpA 61 -> 60 (-1); SpD 61 -> 65 (+4); BST 442 -> 460 (+18)
+
+
+#023 EKANS
+------------------------------------------------------------------------------
+TYPE
+OLD: Poison
+NEW: Poison / Dark
+
+
+#024 ARBOK
+------------------------------------------------------------------------------
+TYPE
+OLD: Poison
+NEW: Poison / Dark
+
+BASE STATS
+OLD: HP 60 / Atk 95 / Def 69 / SpA 65 / SpD 79 / Spe 80 / BST 448
+NEW: HP 70 / Atk 100 / Def 78 / SpA 65 / SpD 82 / Spe 65 / BST 460
+DELTA: HP 60 -> 70 (+10); Atk 95 -> 100 (+5); Def 69 -> 78 (+9); SpD 79 -> 82 (+3); Spe 80 -> 65 (-15); BST 448 -> 460 (+12)
+
+
+#026 RAICHU
+------------------------------------------------------------------------------
+TYPE
+OLD: Electric
+NEW: Electric / Steel
+
+BASE STATS
+OLD: HP 60 / Atk 90 / Def 55 / SpA 90 / SpD 80 / Spe 110 / BST 485
+NEW: HP 60 / Atk 65 / Def 80 / SpA 105 / SpD 80 / Spe 80 / BST 470
+DELTA: Atk 90 -> 65 (-25); Def 55 -> 80 (+25); SpA 90 -> 105 (+15); Spe 110 -> 80 (-30); BST 485 -> 470 (-15)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Quick Attack
+- FireRed/LeafGreen: Quick Attack, Tail Whip, ThunderShock, Thunderbolt
+- Emerald: Quick Attack, Tail Whip, ThunderShock, Thunderbolt
+
+NEW:
+- Ruby/Sapphire: Quick Attack, Tail Whip, ThunderShock, Thunder Wave, Spark, Agility, Slam, Iron Tail, Thunderbolt, Thunder
+- FireRed/LeafGreen: Quick Attack, Tail Whip, ThunderShock, Thunder Wave, Spark, Agility, Slam, Iron Tail, Thunderbolt, Thunder
+- Emerald: Quick Attack, Tail Whip, ThunderShock, Thunder Wave, Spark, Agility, Slam, Iron Tail, Thunderbolt, Thunder
+
+PRE-EVOLUTION MOVES
+OLD:
+- Agility
+- Charm
+- Double Team
+- Growl
+- Light Screen
+- Slam
+- Sweet Kiss
+- Thunder
+- Thunder Wave
+
+NEW:
+- Agility
+- Charm
+- Double Team
+- Growl
+- Light Screen
+- Slam
+- Sweet Kiss
+- Thunder
+- Thunder Wave
+- Volt Tackle
+
+
+#027 SANDSHREW
+------------------------------------------------------------------------------
+TYPE
+OLD: Ground
+NEW: Ground / Steel
+
+
+#028 SANDSLASH
+------------------------------------------------------------------------------
+TYPE
+OLD: Ground
+NEW: Ground / Steel
+
+
+#031 NIDOQUEEN
+------------------------------------------------------------------------------
+TYPE
+OLD: Poison / Ground
+NEW: Rock / Ground
+
+
+#039 JIGGLYPUFF
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal
+NEW: Psychic
+
+BASE STATS
+OLD: HP 115 / Atk 45 / Def 20 / SpA 45 / SpD 25 / Spe 20 / BST 270
+NEW: HP 115 / Atk 20 / Def 30 / SpA 85 / SpD 55 / Spe 15 / BST 320
+DELTA: Atk 45 -> 20 (-25); Def 20 -> 30 (+10); SpA 45 -> 85 (+40); SpD 25 -> 55 (+30); Spe 20 -> 15 (-5); BST 270 -> 320 (+50)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Sing, Defense Curl, Pound, Disable, Rollout, DoubleSlap, Rest, Body Slam, Mimic, Hyper Voice, Double-Edge
+- FireRed/LeafGreen: Sing, Defense Curl, Pound, Disable, Rollout, DoubleSlap, Rest, Body Slam, Mimic, Hyper Voice, Double-Edge
+- Emerald: Sing, Defense Curl, Pound, Disable, Rollout, DoubleSlap, Rest, Body Slam, Mimic, Hyper Voice, Double-Edge
+
+NEW:
+- Ruby/Sapphire: Sing, Defense Curl, Pound, Confusion, Disable, DoubleSlap, Psybeam, Safeguard, Rest, Psychic, Hyper Voice, Dream Eater
+- FireRed/LeafGreen: Sing, Defense Curl, Pound, Confusion, Disable, DoubleSlap, Psybeam, Safeguard, Rest, Psychic, Hyper Voice, Dream Eater
+- Emerald: Sing, Defense Curl, Pound, Confusion, Disable, DoubleSlap, Psybeam, Safeguard, Rest, Psychic, Hyper Voice, Dream Eater
+
+EGG MOVES
+OLD:
+- Fake Tears
+- Faint Attack
+- Perish Song
+- Present
+- Wish
+
+NEW:
+- Fake Tears
+- Perish Song
+- Present
+- Wish
+- Dream Eater
+
+TM MOVES
+OLD:
+- Focus Punch
+- Water Pulse
+- Calm Mind
+- Toxic
+- Hidden Power
+- Sunny Day
+- Ice Beam
+- Blizzard
+- Protect
+- Rain Dance
+- Safeguard
+- Frustration
+- SolarBeam
+- Thunderbolt
+- Thunder
+- Return
+- Dig
+- Psychic
+- Shadow Ball
+- Brick Break
+- Double Team
+- Shock Wave
+- Flamethrower
+- Fire Blast
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Snatch
+
+NEW:
+- Calm Mind
+- Toxic
+- Hidden Power
+- Sunny Day
+- Ice Beam
+- Blizzard
+- Protect
+- Rain Dance
+- Safeguard
+- Frustration
+- Thunderbolt
+- Thunder
+- Return
+- Psychic
+- Shadow Ball
+- Double Team
+- Shock Wave
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Snatch
+
+
+#040 WIGGLYTUFF
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal
+NEW: Psychic / Fighting
+
+BASE STATS
+OLD: HP 140 / Atk 70 / Def 45 / SpA 75 / SpD 50 / Spe 45 / BST 425
+NEW: HP 140 / Atk 100 / Def 70 / SpA 65 / SpD 85 / Spe 35 / BST 495
+DELTA: Atk 70 -> 100 (+30); Def 45 -> 70 (+25); SpA 75 -> 65 (-10); SpD 50 -> 85 (+35); Spe 45 -> 35 (-10); BST 425 -> 495 (+70)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Sing, Disable, Defense Curl, DoubleSlap
+- FireRed/LeafGreen: Sing, Disable, Defense Curl, DoubleSlap
+- Emerald: Sing, Disable, Defense Curl, DoubleSlap
+
+NEW:
+- Ruby/Sapphire: Sing, Confusion, Disable, DoubleSlap, Bulk Up, Psybeam, Body Slam, Brick Break, Hyper Voice, Psychic
+- FireRed/LeafGreen: Sing, Confusion, Disable, DoubleSlap, Bulk Up, Psybeam, Body Slam, Brick Break, Hyper Voice, Psychic
+- Emerald: Sing, Confusion, Disable, DoubleSlap, Bulk Up, Psybeam, Body Slam, Brick Break, Hyper Voice, Psychic
+
+EGG MOVES
+OLD:
+- Fake Tears
+- Faint Attack
+- Perish Song
+- Present
+- Wish
+
+NEW:
+- Fake Tears
+- Perish Song
+- Present
+- Wish
+- Dream Eater
+
+PRE-EVOLUTION MOVES
+OLD:
+- Body Slam
+- Charm
+- Double-Edge
+- Hyper Voice
+- Mimic
+- Pound
+- Rest
+- Rollout
+- Sweet Kiss
+
+NEW:
+- Body Slam
+- Charm
+- Double-Edge
+- Dream Eater
+- Hyper Voice
+- Mimic
+- Pound
+- Psybeam
+- Psychic
+- Rest
+- Safeguard
+- Sweet Kiss
+
+TM MOVES
+OLD:
+- Focus Punch
+- Water Pulse
+- Calm Mind
+- Toxic
+- Hidden Power
+- Sunny Day
+- Ice Beam
+- Blizzard
+- Hyper Beam
+- Protect
+- Rain Dance
+- Safeguard
+- Frustration
+- SolarBeam
+- Thunderbolt
+- Thunder
+- Return
+- Dig
+- Psychic
+- Shadow Ball
+- Brick Break
+- Double Team
+- Shock Wave
+- Flamethrower
+- Fire Blast
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Snatch
+
+NEW:
+- Focus Punch
+- Bulk Up
+- Calm Mind
+- Toxic
+- Hidden Power
+- Sunny Day
+- Ice Beam
+- Blizzard
+- Hyper Beam
+- Protect
+- Rain Dance
+- Safeguard
+- Frustration
+- Thunderbolt
+- Thunder
+- Return
+- Brick Break
+- Psychic
+- Shadow Ball
+- Double Team
+- Shock Wave
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Snatch
+
+
+#046 PARAS
+------------------------------------------------------------------------------
+TYPE
+OLD: Bug / Grass
+NEW: Bug / Ghost
+
+BASE STATS
+OLD: HP 35 / Atk 70 / Def 55 / SpA 45 / SpD 55 / Spe 25 / BST 285
+NEW: HP 55 / Atk 80 / Def 70 / SpA 40 / SpD 75 / Spe 15 / BST 335
+DELTA: HP 35 -> 55 (+20); Atk 70 -> 80 (+10); Def 55 -> 70 (+15); SpA 45 -> 40 (-5); SpD 55 -> 75 (+20); Spe 25 -> 15 (-10); BST 285 -> 335 (+50)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Scratch, Stun Spore, PoisonPowder, Leech Life, Spore, Slash, Growth, Giga Drain, Aromatherapy
+- FireRed/LeafGreen: Scratch, Stun Spore, PoisonPowder, Leech Life, Spore, Slash, Growth, Giga Drain, Aromatherapy
+- Emerald: Scratch, Stun Spore, PoisonPowder, Leech Life, Spore, Slash, Growth, Giga Drain, Aromatherapy
+
+NEW:
+- Ruby/Sapphire: Scratch, Stun Spore, Leech Life, Astonish, Spore, Night Shade, Pursuit, Slash, Shadow Ball, Giga Drain, Aromatherapy
+- FireRed/LeafGreen: Scratch, Stun Spore, Leech Life, Astonish, Spore, Night Shade, Pursuit, Slash, Shadow Ball, Giga Drain, Aromatherapy
+- Emerald: Scratch, Stun Spore, Leech Life, Astonish, Spore, Night Shade, Pursuit, Slash, Shadow Ball, Giga Drain, Aromatherapy
+
+TM MOVES
+OLD:
+- Toxic
+- Bullet Seed
+- Hidden Power
+- Sunny Day
+- Protect
+- Giga Drain
+- Frustration
+- SolarBeam
+- Return
+- Dig
+- Double Team
+- Sludge Bomb
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+NEW:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Giga Drain
+- Frustration
+- Return
+- Dig
+- Shadow Ball
+- Double Team
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+
+#047 PARASECT
+------------------------------------------------------------------------------
+TYPE
+OLD: Bug / Grass
+NEW: Bug / Ghost
+
+BASE STATS
+OLD: HP 60 / Atk 95 / Def 80 / SpA 60 / SpD 80 / Spe 30 / BST 405
+NEW: HP 75 / Atk 110 / Def 95 / SpA 50 / SpD 95 / Spe 25 / BST 450
+DELTA: HP 60 -> 75 (+15); Atk 95 -> 110 (+15); Def 80 -> 95 (+15); SpA 60 -> 50 (-10); SpD 80 -> 95 (+15); Spe 30 -> 25 (-5); BST 405 -> 450 (+45)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Scratch, Stun Spore, PoisonPowder, Leech Life, Spore, Slash, Growth, Giga Drain, Aromatherapy
+- FireRed/LeafGreen: Scratch, Stun Spore, PoisonPowder, Leech Life, Spore, Slash, Growth, Giga Drain, Aromatherapy
+- Emerald: Scratch, Stun Spore, PoisonPowder, Leech Life, Spore, Slash, Growth, Giga Drain, Aromatherapy
+
+NEW:
+- Ruby/Sapphire: Scratch, Stun Spore, Leech Life, Astonish, Spore, Night Shade, Pursuit, Slash, Shadow Ball, Giga Drain, Aromatherapy
+- FireRed/LeafGreen: Scratch, Stun Spore, Leech Life, Astonish, Spore, Night Shade, Pursuit, Slash, Shadow Ball, Giga Drain, Aromatherapy
+- Emerald: Scratch, Stun Spore, Leech Life, Astonish, Spore, Night Shade, Pursuit, Slash, Shadow Ball, Giga Drain, Aromatherapy
+
+TM MOVES
+OLD:
+- Toxic
+- Bullet Seed
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Giga Drain
+- Frustration
+- SolarBeam
+- Return
+- Dig
+- Double Team
+- Sludge Bomb
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+NEW:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Giga Drain
+- Frustration
+- Return
+- Dig
+- Shadow Ball
+- Double Team
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+
+#049 VENOMOTH
+------------------------------------------------------------------------------
+TYPE
+OLD: Bug / Poison
+NEW: Bug / Psychic
+
+
+#054 PSYDUCK
+------------------------------------------------------------------------------
+TYPE
+OLD: Water
+NEW: Water / Psychic
+
+
+#055 GOLDUCK
+------------------------------------------------------------------------------
+TYPE
+OLD: Water
+NEW: Water / Psychic
+
+
+#068 MACHAMP
+------------------------------------------------------------------------------
+TYPE
+OLD: Fighting
+NEW: Fighting / Rock
+
+
+#083 FARFETCH'D
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal / Flying
+NEW: Fighting / Flying
+
+BASE STATS
+OLD: HP 52 / Atk 65 / Def 55 / SpA 58 / SpD 62 / Spe 60 / BST 352
+NEW: HP 62 / Atk 95 / Def 70 / SpA 58 / SpD 75 / Spe 70 / BST 430
+DELTA: HP 52 -> 62 (+10); Atk 65 -> 95 (+30); Def 55 -> 70 (+15); SpD 62 -> 75 (+13); Spe 60 -> 70 (+10); BST 352 -> 430 (+78)
+
+
+#084 DODUO
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal / Flying
+NEW: Electric / Flying
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Peck, Growl, Pursuit, Fury Attack, Tri Attack, Rage, Drill Peck, Agility
+- FireRed/LeafGreen: Peck, Growl, Pursuit, Fury Attack, Tri Attack, Rage, Drill Peck, Agility
+- Emerald: Peck, Growl, Pursuit, Fury Attack, Tri Attack, Rage, Drill Peck, Agility
+
+NEW:
+- Ruby/Sapphire: Peck, Growl, ThunderShock, Quick Attack, Fury Attack, Pursuit, Spark, Tri Attack, Drill Peck, Agility
+- FireRed/LeafGreen: Peck, Growl, ThunderShock, Quick Attack, Fury Attack, Pursuit, Spark, Tri Attack, Drill Peck, Agility
+- Emerald: Peck, Growl, ThunderShock, Quick Attack, Fury Attack, Pursuit, Spark, Tri Attack, Drill Peck, Agility
+
+TM MOVES
+OLD:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Frustration
+- Return
+- Double Team
+- Aerial Ace
+- Torment
+- Facade
+- Rest
+- Attract
+- Thief
+- Steel Wing
+
+NEW:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Frustration
+- Thunderbolt
+- Thunder
+- Return
+- Double Team
+- Aerial Ace
+- Shock Wave
+- Torment
+- Facade
+- Rest
+- Attract
+- Thief
+- Steel Wing
+
+
+#085 DODRIO
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal / Flying
+NEW: Electric / Flying
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Peck, Growl, Pursuit, Fury Attack, Tri Attack, Rage, Drill Peck, Agility
+- FireRed/LeafGreen: Peck, Growl, Pursuit, Fury Attack, Tri Attack, Rage, Drill Peck, Agility
+- Emerald: Peck, Growl, Pursuit, Fury Attack, Tri Attack, Rage, Drill Peck, Agility
+
+NEW:
+- Ruby/Sapphire: Peck, Growl, ThunderShock, Quick Attack, Fury Attack, Pursuit, Spark, Tri Attack, Drill Peck, Agility
+- FireRed/LeafGreen: Peck, Growl, ThunderShock, Quick Attack, Fury Attack, Pursuit, Spark, Tri Attack, Drill Peck, Agility
+- Emerald: Peck, Growl, ThunderShock, Quick Attack, Fury Attack, Pursuit, Spark, Tri Attack, Drill Peck, Agility
+
+PRE-EVOLUTION MOVES
+OLD:
+- Peck
+- Growl
+
+NEW:
+- Peck
+- Growl
+- ThunderShock
+- Quick Attack
+
+TM MOVES
+OLD:
+- Toxic
+- Hidden Power
+- Hyper Beam
+- Sunny Day
+- Protect
+- Frustration
+- Return
+- Double Team
+- Aerial Ace
+- Torment
+- Facade
+- Rest
+- Attract
+- Thief
+- Steel Wing
+
+NEW:
+- Toxic
+- Hidden Power
+- Hyper Beam
+- Sunny Day
+- Protect
+- Frustration
+- Thunderbolt
+- Thunder
+- Return
+- Double Team
+- Aerial Ace
+- Shock Wave
+- Torment
+- Facade
+- Rest
+- Attract
+- Thief
+- Steel Wing
+
+
+#108 LICKITUNG
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 90 / Atk 55 / Def 75 / SpA 60 / SpD 75 / Spe 30 / BST 385
+NEW: HP 100 / Atk 65 / Def 85 / SpA 65 / SpD 85 / Spe 40 / BST 440
+DELTA: HP 90 -> 100 (+10); Atk 55 -> 65 (+10); Def 75 -> 85 (+10); SpA 60 -> 65 (+5); SpD 75 -> 85 (+10); Spe 30 -> 40 (+10); BST 385 -> 440 (+55)
+
+
+#119 SEAKING
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 80 / Atk 92 / Def 65 / SpA 65 / SpD 80 / Spe 68 / BST 450
+NEW: HP 85 / Atk 98 / Def 75 / SpA 65 / SpD 79 / Spe 58 / BST 460
+DELTA: HP 80 -> 85 (+5); Atk 92 -> 98 (+6); Def 65 -> 75 (+10); SpD 80 -> 79 (-1); Spe 68 -> 58 (-10); BST 450 -> 460 (+10)
+
+
+#126 MAGMAR
+------------------------------------------------------------------------------
+TYPE
+OLD: Fire
+NEW: Fire / Electric
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Ember, Leer, Smog, Fire Punch, Smokescreen, Sunny Day, Flamethrower, Confuse Ray, Fire Blast
+- FireRed/LeafGreen: Ember, Leer, Smog, Fire Punch, Smokescreen, Sunny Day, Flamethrower, Confuse Ray, Fire Blast
+- Emerald: Ember, Leer, Smog, Fire Punch, Smokescreen, Sunny Day, Flamethrower, Confuse Ray, Fire Blast
+
+NEW:
+- Ruby/Sapphire: Ember, Leer, ThunderShock, Fire Punch, Smokescreen, Spark, Sunny Day, Flamethrower, ThunderPunch, Confuse Ray, Fire Blast
+- FireRed/LeafGreen: Ember, Leer, ThunderShock, Fire Punch, Smokescreen, Spark, Sunny Day, Flamethrower, ThunderPunch, Confuse Ray, Fire Blast
+- Emerald: Ember, Leer, ThunderShock, Fire Punch, Smokescreen, Spark, Sunny Day, Flamethrower, ThunderPunch, Confuse Ray, Fire Blast
+
+TM MOVES
+OLD:
+- Focus Punch
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Frustration
+- Iron Tail
+- Return
+- Psychic
+- Brick Break
+- Double Team
+- Flamethrower
+- Fire Blast
+- Rock Tomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Overheat
+
+NEW:
+- Focus Punch
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Rain Dance
+- Frustration
+- Thunderbolt
+- Thunder
+- Iron Tail
+- Return
+- Psychic
+- Brick Break
+- Double Team
+- Shock Wave
+- Flamethrower
+- Fire Blast
+- Rock Tomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Overheat
+
+MOVE TUTOR MOVES
+OLD:
+- FireRed/LeafGreen: Body Slam, Counter, Mega Kick, Mega Punch, Mimic, Seismic Toss, Substitute
+- Emerald: Counter, DynamicPunch, Endure, Fire Punch, Mega Kick, Mega Punch, Mimic, Seismic Toss, Sleep Talk, Snore, Substitute, Swagger
+
+NEW:
+- FireRed/LeafGreen: Body Slam, Counter, Mega Kick, Mega Punch, Mimic, Seismic Toss, Substitute
+- Emerald: Counter, DynamicPunch, Endure, Fire Punch, ThunderPunch, Mega Kick, Mega Punch, Mimic, Seismic Toss, Sleep Talk, Snore, Substitute, Swagger
+
+
+#127 PINSIR
+------------------------------------------------------------------------------
+TYPE
+OLD: Bug
+NEW: Bug / Fighting
+
+
+#163 HOOTHOOT
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal / Flying
+NEW: Fire / Psychic
+
+BASE STATS
+OLD: HP 60 / Atk 30 / Def 30 / SpA 36 / SpD 56 / Spe 50 / BST 262
+NEW: HP 70 / Atk 25 / Def 40 / SpA 70 / SpD 70 / Spe 50 / BST 325
+DELTA: HP 60 -> 70 (+10); Atk 30 -> 25 (-5); Def 30 -> 40 (+10); SpA 36 -> 70 (+34); SpD 56 -> 70 (+14); BST 262 -> 325 (+63)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Growl, Tackle, Foresight, Peck, Hypnosis, Reflect, Take Down, Confusion, Dream Eater
+- FireRed/LeafGreen: Growl, Tackle, Foresight, Peck, Hypnosis, Reflect, Take Down, Confusion, Dream Eater
+- Emerald: Growl, Tackle, Foresight, Peck, Hypnosis, Reflect, Take Down, Confusion, Dream Eater
+
+NEW:
+- Ruby/Sapphire: Growl, Peck, Hypnosis, Ember, Reflect, Confusion, Safeguard, Psybeam, Flamethrower, Dream Eater, Psychic
+- FireRed/LeafGreen: Growl, Peck, Hypnosis, Ember, Reflect, Confusion, Safeguard, Psybeam, Flamethrower, Dream Eater, Psychic
+- Emerald: Growl, Peck, Hypnosis, Ember, Reflect, Confusion, Safeguard, Psybeam, Flamethrower, Dream Eater, Psychic
+
+TM MOVES
+OLD:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Rain Dance
+- Frustration
+- Return
+- Shadow Ball
+- Double Team
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Steel Wing
+
+NEW:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Rain Dance
+- Frustration
+- Reflect
+- Flamethrower
+- Fire Blast
+- Return
+- Psychic
+- Shadow Ball
+- Double Team
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Steel Wing
+- Overheat
+
+
+#164 NOCTOWL
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal / Flying
+NEW: Fire / Psychic
+
+BASE STATS
+OLD: HP 100 / Atk 50 / Def 50 / SpA 76 / SpD 96 / Spe 70 / BST 442
+NEW: HP 90 / Atk 30 / Def 60 / SpA 112 / SpD 100 / Spe 80 / BST 472
+DELTA: HP 100 -> 90 (-10); Atk 50 -> 30 (-20); Def 50 -> 60 (+10); SpA 76 -> 112 (+36); SpD 96 -> 100 (+4); Spe 70 -> 80 (+10); BST 442 -> 472 (+30)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Growl, Tackle, Foresight, Peck, Hypnosis, Reflect, Take Down, Confusion, Dream Eater
+- FireRed/LeafGreen: Growl, Tackle, Foresight, Peck, Hypnosis, Reflect, Take Down, Confusion, Dream Eater
+- Emerald: Growl, Tackle, Foresight, Peck, Hypnosis, Reflect, Take Down, Confusion, Dream Eater
+
+NEW:
+- Ruby/Sapphire: Growl, Peck, Hypnosis, Ember, Confusion, Reflect, Will-O-Wisp, Psybeam, Safeguard, Flamethrower, Dream Eater, Psychic
+- FireRed/LeafGreen: Growl, Peck, Hypnosis, Ember, Confusion, Reflect, Will-O-Wisp, Psybeam, Safeguard, Flamethrower, Dream Eater, Psychic
+- Emerald: Growl, Peck, Hypnosis, Ember, Confusion, Reflect, Will-O-Wisp, Psybeam, Safeguard, Flamethrower, Dream Eater, Psychic
+
+PRE-EVOLUTION MOVES
+OLD:
+- Growl
+- Tackle
+- Foresight
+- Peck
+- Hypnosis
+- Reflect
+- Take Down
+- Confusion
+- Dream Eater
+
+NEW:
+- Growl
+- Peck
+- Hypnosis
+- Ember
+- Reflect
+- Confusion
+- Safeguard
+- Psybeam
+- Flamethrower
+- Dream Eater
+- Psychic
+
+TM MOVES
+OLD:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Rain Dance
+- Frustration
+- Return
+- Shadow Ball
+- Double Team
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Steel Wing
+
+NEW:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Rain Dance
+- Frustration
+- Reflect
+- Flamethrower
+- Fire Blast
+- Return
+- Psychic
+- Shadow Ball
+- Double Team
+- Aerial Ace
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Steel Wing
+- Overheat
+
+
+#166 LEDIAN
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 55 / Atk 35 / Def 50 / SpA 55 / SpD 110 / Spe 85 / BST 390
+NEW: HP 65 / Atk 55 / Def 60 / SpA 65 / SpD 115 / Spe 90 / BST 450
+DELTA: HP 55 -> 65 (+10); Atk 35 -> 55 (+20); Def 50 -> 60 (+10); SpA 55 -> 65 (+10); SpD 110 -> 115 (+5); Spe 85 -> 90 (+5); BST 390 -> 450 (+60)
+
+
+#167 SPINARAK
+------------------------------------------------------------------------------
+TYPE
+OLD: Bug / Poison
+NEW: Bug / Water
+
+BASE STATS
+OLD: HP 40 / Atk 60 / Def 40 / SpA 40 / SpD 40 / Spe 30 / BST 250
+NEW: HP 50 / Atk 80 / Def 60 / SpA 40 / SpD 55 / Spe 40 / BST 325
+DELTA: HP 40 -> 50 (+10); Atk 60 -> 80 (+20); Def 40 -> 60 (+20); SpD 40 -> 55 (+15); Spe 30 -> 40 (+10); BST 250 -> 325 (+75)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Poison Sting, String Shot, Scary Face, Constrict, Night Shade, Leech Life, Fury Swipes, Spider Web, Agility, Psychic
+- FireRed/LeafGreen: Poison Sting, String Shot, Scary Face, Constrict, Night Shade, Leech Life, Fury Swipes, Spider Web, Agility, Psychic
+- Emerald: Poison Sting, String Shot, Scary Face, Constrict, Night Shade, Leech Life, Fury Swipes, Spider Web, Agility, Psychic
+
+NEW:
+- Ruby/Sapphire: String Shot, Bubble, Constrict, Scary Face, Water Sport, Leech Life, Spider Web, Pursuit, BubbleBeam, Rain Dance, Signal Beam, Hydro Pump
+- FireRed/LeafGreen: String Shot, Bubble, Constrict, Scary Face, Water Sport, Leech Life, Spider Web, Pursuit, BubbleBeam, Rain Dance, Signal Beam, Hydro Pump
+- Emerald: String Shot, Bubble, Constrict, Scary Face, Water Sport, Leech Life, Spider Web, Pursuit, BubbleBeam, Rain Dance, Signal Beam, Hydro Pump
+
+EGG MOVES
+OLD:
+- Baton Pass
+- Disable
+- Psybeam
+- Pursuit
+- Signal Beam
+- SonicBoom
+
+NEW:
+- Baton Pass
+- Disable
+- Pursuit
+- Signal Beam
+- SonicBoom
+- Hydro Pump
+
+TM MOVES
+OLD:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Frustration
+- SolarBeam
+- Return
+- Dig
+- Psychic
+- Double Team
+- Sludge Bomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+NEW:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Rain Dance
+- Frustration
+- Return
+- Dig
+- Double Team
+- Water Pulse
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+
+#168 ARIADOS
+------------------------------------------------------------------------------
+TYPE
+OLD: Bug / Poison
+NEW: Bug / Water
+
+BASE STATS
+OLD: HP 70 / Atk 90 / Def 70 / SpA 60 / SpD 60 / Spe 40 / BST 390
+NEW: HP 80 / Atk 110 / Def 90 / SpA 40 / SpD 85 / Spe 40 / BST 445
+DELTA: HP 70 -> 80 (+10); Atk 90 -> 110 (+20); Def 70 -> 90 (+20); SpA 60 -> 40 (-20); SpD 60 -> 85 (+25); BST 390 -> 445 (+55)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Poison Sting, String Shot, Scary Face, Constrict, Night Shade, Leech Life, Fury Swipes, Spider Web, Agility, Psychic
+- FireRed/LeafGreen: Poison Sting, String Shot, Scary Face, Constrict, Night Shade, Leech Life, Fury Swipes, Spider Web, Agility, Psychic
+- Emerald: Poison Sting, String Shot, Scary Face, Constrict, Night Shade, Leech Life, Fury Swipes, Spider Web, Agility, Psychic
+
+NEW:
+- Ruby/Sapphire: String Shot, Bubble, Constrict, Scary Face, Water Sport, Leech Life, Spider Web, Pursuit, BubbleBeam, Rain Dance, Signal Beam, Hydro Pump
+- FireRed/LeafGreen: String Shot, Bubble, Constrict, Scary Face, Water Sport, Leech Life, Spider Web, Pursuit, BubbleBeam, Rain Dance, Signal Beam, Hydro Pump
+- Emerald: String Shot, Bubble, Constrict, Scary Face, Water Sport, Leech Life, Spider Web, Pursuit, BubbleBeam, Rain Dance, Signal Beam, Hydro Pump
+
+EGG MOVES
+OLD:
+- Baton Pass
+- Disable
+- Psybeam
+- Pursuit
+- Signal Beam
+- SonicBoom
+
+NEW:
+- Baton Pass
+- Disable
+- Pursuit
+- Signal Beam
+- SonicBoom
+- Hydro Pump
+
+PRE-EVOLUTION MOVES
+OLD:
+- Poison Sting
+- String Shot
+- Scary Face
+- Constrict
+- Night Shade
+- Leech Life
+- Fury Swipes
+- Spider Web
+- Agility
+- Psychic
+
+NEW:
+- String Shot
+- Bubble
+- Scary Face
+- Constrict
+- Water Sport
+- Leech Life
+- Spider Web
+- Pursuit
+- BubbleBeam
+- Agility
+- Signal Beam
+
+TM MOVES
+OLD:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Frustration
+- SolarBeam
+- Return
+- Dig
+- Psychic
+- Double Team
+- Sludge Bomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+NEW:
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Rain Dance
+- Frustration
+- Return
+- Dig
+- Double Team
+- Water Pulse
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Thief
+
+
+#174 IGGLYBUFF
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal
+NEW: Normal / Psychic
+
+
+#185 SUDOWOODO
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 70 / Atk 100 / Def 115 / SpA 30 / SpD 65 / Spe 30 / BST 410
+NEW: HP 75 / Atk 110 / Def 120 / SpA 30 / SpD 75 / Spe 45 / BST 455
+DELTA: HP 70 -> 75 (+5); Atk 100 -> 110 (+10); Def 115 -> 120 (+5); SpD 65 -> 75 (+10); Spe 30 -> 45 (+15); BST 410 -> 455 (+45)
+
+
+#190 AIPOM
+------------------------------------------------------------------------------
+TYPE
+OLD: Normal
+NEW: Normal / Fighting
+
+
+#191 SUNKERN
+------------------------------------------------------------------------------
+TYPE
+OLD: Grass
+NEW: Grass / Fire
+
+BASE STATS
+OLD: HP 30 / Atk 30 / Def 30 / SpA 30 / SpD 30 / Spe 30 / BST 180
+NEW: HP 45 / Atk 25 / Def 35 / SpA 80 / SpD 45 / Spe 30 / BST 260
+DELTA: HP 30 -> 45 (+15); Atk 30 -> 25 (-5); Def 30 -> 35 (+5); SpA 30 -> 80 (+50); SpD 30 -> 45 (+15); BST 180 -> 260 (+80)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Absorb, Growth, Mega Drain, Sunny Day, Synthesis, Giga Drain, SolarBeam
+- FireRed/LeafGreen: Absorb, Growth, Mega Drain, Sunny Day, Synthesis, Giga Drain, SolarBeam
+- Emerald: Absorb, Growth, Mega Drain, Sunny Day, Synthesis, Giga Drain, SolarBeam
+
+NEW:
+- Ruby/Sapphire: Absorb, Growth, Ember, Sunny Day, Leech Seed, Mega Drain, Synthesis, Flame Wheel, Giga Drain, SolarBeam
+- FireRed/LeafGreen: Absorb, Growth, Ember, Sunny Day, Leech Seed, Mega Drain, Synthesis, Flame Wheel, Giga Drain, SolarBeam
+- Emerald: Absorb, Growth, Ember, Sunny Day, Leech Seed, Mega Drain, Synthesis, Flame Wheel, Giga Drain, SolarBeam
+
+TM MOVES
+OLD:
+- Toxic
+- Bullet Seed
+- Hidden Power
+- Sunny Day
+- Protect
+- Frustration
+- SolarBeam
+- Return
+- Double Team
+- Facade
+- Secret Power
+- Rest
+- Attract
+
+NEW:
+- Toxic
+- Bullet Seed
+- Hidden Power
+- Sunny Day
+- Protect
+- Giga Drain
+- Frustration
+- SolarBeam
+- Flamethrower
+- Fire Blast
+- Return
+- Double Team
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Overheat
+
+
+#192 SUNFLORA
+------------------------------------------------------------------------------
+TYPE
+OLD: Grass
+NEW: Grass / Fire
+
+BASE STATS
+OLD: HP 75 / Atk 75 / Def 55 / SpA 105 / SpD 85 / Spe 30 / BST 425
+NEW: HP 75 / Atk 55 / Def 65 / SpA 125 / SpD 95 / Spe 50 / BST 465
+DELTA: Atk 75 -> 55 (-20); Def 55 -> 65 (+10); SpA 105 -> 125 (+20); SpD 85 -> 95 (+10); Spe 30 -> 50 (+20); BST 425 -> 465 (+40)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Pound, Growl, Razor Leaf, Sunny Day, Petal Dance, Synthesis, SolarBeam
+- FireRed/LeafGreen: Pound, Growl, Razor Leaf, Sunny Day, Petal Dance, Synthesis, SolarBeam
+- Emerald: Pound, Growl, Razor Leaf, Sunny Day, Petal Dance, Synthesis, SolarBeam
+
+NEW:
+- Ruby/Sapphire: Absorb, Growth, Ember, Sunny Day, Leech Seed, Razor Leaf, Synthesis, Petal Dance, Flamethrower, Giga Drain, SolarBeam
+- FireRed/LeafGreen: Absorb, Growth, Ember, Sunny Day, Leech Seed, Razor Leaf, Synthesis, Petal Dance, Flamethrower, Giga Drain, SolarBeam
+- Emerald: Absorb, Growth, Ember, Sunny Day, Leech Seed, Razor Leaf, Synthesis, Petal Dance, Flamethrower, Giga Drain, SolarBeam
+
+PRE-EVOLUTION MOVES
+OLD:
+- Absorb
+- Growth
+- Mega Drain
+- Sunny Day
+- Synthesis
+- Giga Drain
+- SolarBeam
+
+NEW:
+- Absorb
+- Growth
+- Ember
+- Sunny Day
+- Leech Seed
+- Mega Drain
+- Synthesis
+- Flame Wheel
+- Giga Drain
+- SolarBeam
+
+TM MOVES
+OLD:
+- Toxic
+- Bullet Seed
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Frustration
+- SolarBeam
+- Return
+- Double Team
+- Facade
+- Secret Power
+- Rest
+- Attract
+
+NEW:
+- Toxic
+- Bullet Seed
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Giga Drain
+- Frustration
+- SolarBeam
+- Flamethrower
+- Fire Blast
+- Return
+- Double Team
+- Facade
+- Secret Power
+- Rest
+- Attract
+- Overheat
+
+
+#193 YANMA
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 65 / Atk 65 / Def 45 / SpA 75 / SpD 45 / Spe 95 / BST 390
+NEW: HP 70 / Atk 70 / Def 50 / SpA 85 / SpD 50 / Spe 115 / BST 440
+DELTA: HP 65 -> 70 (+5); Atk 65 -> 70 (+5); Def 45 -> 50 (+5); SpA 75 -> 85 (+10); SpD 45 -> 50 (+5); Spe 95 -> 115 (+20); BST 390 -> 440 (+50)
+
+
+#194 WOOPER
+------------------------------------------------------------------------------
+TYPE
+OLD: Water / Ground
+NEW: Water / Poison
+
+
+#195 QUAGSIRE
+------------------------------------------------------------------------------
+TYPE
+OLD: Water / Ground
+NEW: Water / Poison
+
+
+#198 MURKROW
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 85 / Def 42 / SpA 85 / SpD 42 / Spe 91 / BST 405
+NEW: HP 60 / Atk 95 / Def 42 / SpA 95 / SpD 42 / Spe 106 / BST 440
+DELTA: Atk 85 -> 95 (+10); SpA 85 -> 95 (+10); Spe 91 -> 106 (+15); BST 405 -> 440 (+35)
+
+
+#200 MISDREAVUS
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 60 / Def 60 / SpA 85 / SpD 85 / Spe 85 / BST 435
+NEW: HP 60 / Atk 60 / Def 70 / SpA 95 / SpD 95 / Spe 75 / BST 455
+DELTA: Def 60 -> 70 (+10); SpA 85 -> 95 (+10); SpD 85 -> 95 (+10); Spe 85 -> 75 (-10); BST 435 -> 455 (+20)
+
+
+#201 UNOWN
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 48 / Atk 72 / Def 48 / SpA 72 / SpD 48 / Spe 48 / BST 336
+NEW: HP 58 / Atk 90 / Def 58 / SpA 90 / SpD 58 / Spe 66 / BST 420
+DELTA: HP 48 -> 58 (+10); Atk 72 -> 90 (+18); Def 48 -> 58 (+10); SpA 72 -> 90 (+18); SpD 48 -> 58 (+10); Spe 48 -> 66 (+18); BST 336 -> 420 (+84)
+
+
+#203 GIRAFARIG
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 70 / Atk 80 / Def 65 / SpA 90 / SpD 65 / Spe 85 / BST 455
+NEW: HP 75 / Atk 80 / Def 70 / SpA 95 / SpD 70 / Spe 65 / BST 455
+DELTA: HP 70 -> 75 (+5); Def 65 -> 70 (+5); SpA 90 -> 95 (+5); SpD 65 -> 70 (+5); Spe 85 -> 65 (-20)
+
+
+#206 DUNSPARCE
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 100 / Atk 70 / Def 70 / SpA 65 / SpD 65 / Spe 45 / BST 415
+NEW: HP 110 / Atk 85 / Def 80 / SpA 65 / SpD 75 / Spe 40 / BST 455
+DELTA: HP 100 -> 110 (+10); Atk 70 -> 85 (+15); Def 70 -> 80 (+10); SpD 65 -> 75 (+10); Spe 45 -> 40 (-5); BST 415 -> 455 (+40)
+
+
+#211 QWILFISH
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 65 / Atk 95 / Def 75 / SpA 55 / SpD 55 / Spe 85 / BST 430
+NEW: HP 65 / Atk 100 / Def 85 / SpA 55 / SpD 60 / Spe 90 / BST 455
+DELTA: Atk 95 -> 100 (+5); Def 75 -> 85 (+10); SpD 55 -> 60 (+5); Spe 85 -> 90 (+5); BST 430 -> 455 (+25)
+
+
+#219 MAGCARGO
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 50 / Atk 50 / Def 120 / SpA 80 / SpD 80 / Spe 30 / BST 410
+NEW: HP 60 / Atk 55 / Def 125 / SpA 95 / SpD 90 / Spe 35 / BST 460
+DELTA: HP 50 -> 60 (+10); Atk 50 -> 55 (+5); Def 120 -> 125 (+5); SpA 80 -> 95 (+15); SpD 80 -> 90 (+10); Spe 30 -> 35 (+5); BST 410 -> 460 (+50)
+
+
+#222 CORSOLA
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 55 / Atk 55 / Def 85 / SpA 65 / SpD 85 / Spe 35 / BST 380
+NEW: HP 65 / Atk 55 / Def 105 / SpA 75 / SpD 105 / Spe 35 / BST 440
+DELTA: HP 55 -> 65 (+10); Def 85 -> 105 (+20); SpA 65 -> 75 (+10); SpD 85 -> 105 (+20); BST 380 -> 440 (+60)
+
+
+#225 DELIBIRD
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 45 / Atk 55 / Def 45 / SpA 65 / SpD 45 / Spe 75 / BST 330
+NEW: HP 55 / Atk 65 / Def 55 / SpA 100 / SpD 70 / Spe 95 / BST 440
+DELTA: HP 45 -> 55 (+10); Atk 55 -> 65 (+10); Def 45 -> 55 (+10); SpA 65 -> 100 (+35); SpD 45 -> 70 (+25); Spe 75 -> 95 (+20); BST 330 -> 440 (+110)
+
+
+#231 PHANPY
+------------------------------------------------------------------------------
+TYPE
+OLD: Ground
+NEW: Ground / Steel
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Tackle, Growl, Defense Curl, Flail, Take Down, Rollout, Endure, Double-Edge
+- FireRed/LeafGreen: Tackle, Growl, Defense Curl, Flail, Take Down, Rollout, Endure, Double-Edge
+- Emerald: Tackle, Growl, Defense Curl, Flail, Take Down, Rollout, Endure, Double-Edge
+
+NEW:
+- Ruby/Sapphire: Tackle, Growl, Defense Curl, Mud-Slap, Take Down, Rollout, Iron Tail, Endure, Double-Edge
+- FireRed/LeafGreen: Tackle, Growl, Defense Curl, Mud-Slap, Take Down, Rollout, Iron Tail, Endure, Double-Edge
+- Emerald: Tackle, Growl, Defense Curl, Mud-Slap, Take Down, Rollout, Iron Tail, Endure, Double-Edge
+
+TM MOVES
+OLD:
+- Roar
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Frustration
+- Earthquake
+- Return
+- Double Team
+- Sandstorm
+- Rock Tomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+
+NEW:
+- Roar
+- Toxic
+- Hidden Power
+- Sunny Day
+- Protect
+- Frustration
+- Iron Tail
+- Earthquake
+- Return
+- Double Team
+- Sandstorm
+- Rock Tomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+
+
+#232 DONPHAN
+------------------------------------------------------------------------------
+TYPE
+OLD: Ground
+NEW: Ground / Steel
+
+BASE STATS
+OLD: HP 90 / Atk 120 / Def 120 / SpA 60 / SpD 60 / Spe 50 / BST 500
+NEW: HP 90 / Atk 120 / Def 120 / SpA 45 / SpD 65 / Spe 40 / BST 480
+DELTA: SpA 60 -> 45 (-15); SpD 60 -> 65 (+5); Spe 50 -> 40 (-10); BST 500 -> 480 (-20)
+
+LEVEL-UP
+OLD:
+- Ruby/Sapphire: Horn Attack, Growl, Defense Curl, Flail, Fury Attack, Rollout, Rapid Spin, Earthquake, Double-Edge
+- FireRed/LeafGreen: Horn Attack, Growl, Defense Curl, Flail, Fury Attack, Rollout, Rapid Spin, Earthquake, Double-Edge
+- Emerald: Horn Attack, Growl, Defense Curl, Flail, Fury Attack, Rollout, Rapid Spin, Earthquake, Double-Edge
+
+NEW:
+- Ruby/Sapphire: Horn Attack, Growl, Defense Curl, Mud-Slap, Fury Attack, Rollout, Rapid Spin, Iron Tail, Earthquake, Double-Edge
+- FireRed/LeafGreen: Horn Attack, Growl, Defense Curl, Mud-Slap, Fury Attack, Rollout, Rapid Spin, Iron Tail, Earthquake, Double-Edge
+- Emerald: Horn Attack, Growl, Defense Curl, Mud-Slap, Fury Attack, Rollout, Rapid Spin, Iron Tail, Earthquake, Double-Edge
+
+PRE-EVOLUTION MOVES
+OLD:
+- Tackle
+- Growl
+- Defense Curl
+- Flail
+- Take Down
+- Rollout
+- Endure
+- Double-Edge
+
+NEW:
+- Tackle
+- Growl
+- Defense Curl
+- Mud-Slap
+- Take Down
+- Rollout
+- Iron Tail
+- Endure
+- Double-Edge
+
+TM MOVES
+OLD:
+- Roar
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Frustration
+- Earthquake
+- Return
+- Brick Break
+- Double Team
+- Sandstorm
+- Rock Tomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+
+NEW:
+- Roar
+- Toxic
+- Hidden Power
+- Sunny Day
+- Hyper Beam
+- Protect
+- Frustration
+- Iron Tail
+- Earthquake
+- Return
+- Brick Break
+- Double Team
+- Sandstorm
+- Rock Tomb
+- Facade
+- Secret Power
+- Rest
+- Attract
+
+
+#234 STANTLER
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 73 / Atk 95 / Def 62 / SpA 85 / SpD 65 / Spe 85 / BST 465
+NEW: HP 73 / Atk 95 / Def 72 / SpA 88 / SpD 70 / Spe 62 / BST 460
+DELTA: Def 62 -> 72 (+10); SpA 85 -> 88 (+3); SpD 65 -> 70 (+5); Spe 85 -> 62 (-23); BST 465 -> 460 (-5)
+
+
+#254 SCEPTILE
+------------------------------------------------------------------------------
+TYPE
+OLD: Grass
+NEW: Grass / Dragon
+
+BASE STATS
+OLD: HP 70 / Atk 85 / Def 65 / SpA 105 / SpD 85 / Spe 120 / BST 530
+NEW: HP 70 / Atk 95 / Def 75 / SpA 105 / SpD 85 / Spe 90 / BST 520
+DELTA: Atk 85 -> 95 (+10); Def 65 -> 75 (+10); Spe 120 -> 90 (-30); BST 530 -> 520 (-10)
+
+
+#267 BEAUTIFLY
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 70 / Def 50 / SpA 100 / SpD 50 / Spe 65 / BST 395
+NEW: HP 60 / Atk 70 / Def 60 / SpA 110 / SpD 60 / Spe 80 / BST 440
+DELTA: Def 50 -> 60 (+10); SpA 100 -> 110 (+10); SpD 50 -> 60 (+10); Spe 65 -> 80 (+15); BST 395 -> 440 (+45)
+
+
+#269 DUSTOX
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 50 / Def 70 / SpA 50 / SpD 90 / Spe 65 / BST 385
+NEW: HP 60 / Atk 60 / Def 85 / SpA 60 / SpD 115 / Spe 60 / BST 440
+DELTA: Atk 50 -> 60 (+10); Def 70 -> 85 (+15); SpA 50 -> 60 (+10); SpD 90 -> 115 (+25); Spe 65 -> 60 (-5); BST 385 -> 440 (+55)
+
+
+#284 MASQUERAIN
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 70 / Atk 60 / Def 62 / SpA 80 / SpD 82 / Spe 60 / BST 414
+NEW: HP 70 / Atk 60 / Def 72 / SpA 100 / SpD 92 / Spe 66 / BST 460
+DELTA: Def 62 -> 72 (+10); SpA 80 -> 100 (+20); SpD 82 -> 92 (+10); Spe 60 -> 66 (+6); BST 414 -> 460 (+46)
+
+
+#301 DELCATTY
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 70 / Atk 65 / Def 65 / SpA 55 / SpD 55 / Spe 70 / BST 380
+NEW: HP 80 / Atk 75 / Def 70 / SpA 65 / SpD 65 / Spe 75 / BST 430
+DELTA: HP 70 -> 80 (+10); Atk 65 -> 75 (+10); Def 65 -> 70 (+5); SpA 55 -> 65 (+10); SpD 55 -> 65 (+10); Spe 70 -> 75 (+5); BST 380 -> 430 (+50)
+
+
+#311 PLUSLE
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 50 / Def 40 / SpA 85 / SpD 75 / Spe 95 / BST 405
+NEW: HP 60 / Atk 50 / Def 45 / SpA 95 / SpD 80 / Spe 105 / BST 435
+DELTA: Def 40 -> 45 (+5); SpA 85 -> 95 (+10); SpD 75 -> 80 (+5); Spe 95 -> 105 (+10); BST 405 -> 435 (+30)
+
+
+#312 MINUN
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 40 / Def 50 / SpA 75 / SpD 85 / Spe 95 / BST 405
+NEW: HP 60 / Atk 45 / Def 50 / SpA 85 / SpD 90 / Spe 105 / BST 435
+DELTA: Atk 40 -> 45 (+5); SpA 75 -> 85 (+10); SpD 85 -> 90 (+5); Spe 95 -> 105 (+10); BST 405 -> 435 (+30)
+
+
+#313 VOLBEAT
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 65 / Atk 73 / Def 55 / SpA 47 / SpD 75 / Spe 85 / BST 400
+NEW: HP 65 / Atk 85 / Def 60 / SpA 47 / SpD 88 / Spe 95 / BST 440
+DELTA: Atk 73 -> 85 (+12); Def 55 -> 60 (+5); SpD 75 -> 88 (+13); Spe 85 -> 95 (+10); BST 400 -> 440 (+40)
+
+
+#314 ILLUMISE
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 65 / Atk 47 / Def 55 / SpA 73 / SpD 75 / Spe 85 / BST 400
+NEW: HP 65 / Atk 55 / Def 60 / SpA 85 / SpD 80 / Spe 95 / BST 440
+DELTA: Atk 47 -> 55 (+8); Def 55 -> 60 (+5); SpA 73 -> 85 (+12); SpD 75 -> 80 (+5); Spe 85 -> 95 (+10); BST 400 -> 440 (+40)
+
+
+#327 SPINDA
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 60 / Def 60 / SpA 60 / SpD 60 / Spe 60 / BST 360
+NEW: HP 70 / Atk 75 / Def 70 / SpA 75 / SpD 70 / Spe 60 / BST 420
+DELTA: HP 60 -> 70 (+10); Atk 60 -> 75 (+15); Def 60 -> 70 (+10); SpA 60 -> 75 (+15); SpD 60 -> 70 (+10); BST 360 -> 420 (+60)
+
+
+#350 MILOTIC
+------------------------------------------------------------------------------
+TYPE
+OLD: Water
+NEW: Water / Dragon
+
+BASE STATS
+OLD: HP 95 / Atk 60 / Def 79 / SpA 100 / SpD 125 / Spe 81 / BST 540
+NEW: HP 95 / Atk 55 / Def 82 / SpA 105 / SpD 123 / Spe 60 / BST 520
+DELTA: Atk 60 -> 55 (-5); Def 79 -> 82 (+3); SpA 100 -> 105 (+5); SpD 125 -> 123 (-2); Spe 81 -> 60 (-21); BST 540 -> 520 (-20)
+
+
+#352 KECLEON
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 60 / Atk 90 / Def 70 / SpA 60 / SpD 120 / Spe 40 / BST 440
+NEW: HP 65 / Atk 95 / Def 75 / SpA 60 / SpD 125 / Spe 40 / BST 460
+DELTA: HP 60 -> 65 (+5); Atk 90 -> 95 (+5); Def 70 -> 75 (+5); SpD 120 -> 125 (+5); BST 440 -> 460 (+20)
+
+
+#358 CHIMECHO
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 65 / Atk 50 / Def 70 / SpA 95 / SpD 80 / Spe 65 / BST 425
+NEW: HP 75 / Atk 50 / Def 75 / SpA 100 / SpD 90 / Spe 65 / BST 455
+DELTA: HP 65 -> 75 (+10); Def 70 -> 75 (+5); SpA 95 -> 100 (+5); SpD 80 -> 90 (+10); BST 425 -> 455 (+30)
+
+
+#362 GLALIE
+------------------------------------------------------------------------------
+TYPE
+OLD: Ice
+NEW: Ice / Steel
+
+
+#370 LUVDISC
+------------------------------------------------------------------------------
+BASE STATS
+OLD: HP 43 / Atk 30 / Def 55 / SpA 40 / SpD 65 / Spe 97 / BST 330
+NEW: HP 63 / Atk 30 / Def 65 / SpA 105 / SpD 85 / Spe 92 / BST 440
+DELTA: HP 43 -> 63 (+20); Def 55 -> 65 (+10); SpA 40 -> 105 (+65); SpD 65 -> 85 (+20); Spe 97 -> 92 (-5); BST 330 -> 440 (+110)
+
+
+#386 DEOXYS
+------------------------------------------------------------------------------
+MOVE TUTOR MOVES
+OLD:
+- Emerald: Dream Eater, DynamicPunch, Endure, Fire Punch, Ice Punch, Icy Wind, Mega Kick, Mega Punch, Mimic, Seismic Toss, Skill Swap, Sleep Talk, Snore, Substitute, Swagger, ThunderPunch
+
+NEW:
+- Emerald: Dream Eater, DynamicPunch, Endure, Fire Punch, Ice Punch, Icy Wind, Mega Kick, Mega Punch, Mimic, Seismic Toss, Skill Swap, Sleep Talk, Snore, Substitute, Swagger, ThunderPunch
+
+==============================================================================
+PROJECT TYPE UPDATE NOTES
+==============================================================================
+
+These entries were updated to reflect the current retype decisions for this project.
+
+RETYPES APPLIED IN THIS FILE
+- #009 Blastoise — Water / Ground
+- #026 Raichu — Electric / Steel
+- #031 Nidoqueen — Rock / Ground
+- #039 Jigglypuff — Psychic
+- #040 Wigglytuff — Psychic / Fighting
+- #049 Venomoth — Bug / Psychic
+- #054 Psyduck — Water / Psychic
+- #055 Golduck — Water / Psychic
+- #068 Machamp — Fighting / Rock
+- #083 Farfetch'd — Fighting / Flying
+- #126 Magmar — Fire / Electric
+- #127 Pinsir — Bug / Fighting
+- #174 Igglybuff — Normal / Psychic
+- #190 Aipom — Normal / Fighting
+- #254 Sceptile — Grass / Dragon
+- #350 Milotic — Water / Dragon
+- #362 Glalie — Ice / Steel
+
+ENVIRONMENTAL VARIANT TYPES APPLIED IN THIS FILE
+- #019 Rattata — Normal / Ground
+- #020 Raticate — Normal / Ground
+- #023 Ekans — Poison / Dark
+- #024 Arbok — Poison / Dark
+- #027 Sandshrew — Ground / Steel
+- #028 Sandslash — Ground / Steel
+- #046 Paras — Bug / Ghost
+- #047 Parasect — Bug / Ghost
+- #084 Doduo — Electric / Flying
+- #085 Dodrio — Electric / Flying
+- #163 Hoothoot — Fire / Psychic
+- #164 Noctowl — Fire / Psychic
+- #167 Spinarak — Bug / Water
+- #168 Ariados — Bug / Water
+- #191 Sunkern — Grass / Fire
+- #192 Sunflora — Grass / Fire
+- #194 Wooper — Water / Poison
+- #195 Quagsire — Water / Poison
+- #231 Phanpy — Ground / Steel
+- #232 Donphan — Ground / Steel
+
+END OF PROJECT TYPE UPDATE NOTES
+
+==============================================================================
+STAT REBALANCE NOTES (APPLIED)
+- Jigglypuff rebalanced into a bulky early Psychic support with better special presence.
+- Wigglytuff rebalanced into a bulky mixed Psychic/Fighting attacker.
+- Paras and Parasect gained bulk and Attack to better support their Bug/Ghost disruption role.
+- Hoothoot and Noctowl gained Special Attack, bulk, and speed to fit Fire/Psychic utility roles.
+- Spinarak and Ariados gained better Attack, durability, and speed for Bug/Water ambush roles.
+- Sunkern remains intentionally weak, but now has enough Special Attack to function in early game.
+- Sunflora gained Speed and bulk to better support its Grass/Fire special breaker identity.
+
+
+==============================================================================
+FINAL TARGETED POLISH PASS (V6)
+==============================================================================
+
+Focused role-definition and level-up polish applied to the last major cleanup targets:
+- Jigglypuff
+- Wigglytuff
+- Paras
+- Parasect
+- Noctowl
+- Spinarak
+- Ariados
+
+Main changes:
+- Jigglypuff now reaches Dream Eater naturally so its sleep-disruption role is less TM-dependent.
+- Wigglytuff now has a clearer Psychic/Fighting progression through Bulk Up and Brick Break in level-up.
+- Paras and Parasect now show their Bug/Ghost identity earlier with Astonish and later with Giga Drain support.
+- Noctowl now gets Will-O-Wisp by level-up to better support its Fire/Psychic control role.
+- Spinarak and Ariados now have a more complete ambush-trapper water progression with Rain Dance and Hydro Pump.
+
+This pass is intended as final learnset-role cleanup before any additional broad balance work.
+
+
+==============================================================================
+AGGRESSIVE BST REBALANCE PASS (V7)
+==============================================================================
+
+This pass expands beyond the earlier narrow watchlist and applies broader BST support
+to underpowered final-stage or stand-alone Pokemon that still lagged behind the new
+power baseline. The goal is not to make all of them top-tier, but to stop them from
+feeling numerically abandoned.
+
+Adjusted Pokemon:
+- Butterfree -> BST 430
+- Beedrill -> BST 430
+- Fearow -> BST 470
+- Arbok -> BST 470
+- Farfetch'd -> BST 430
+- Lickitung -> BST 440
+- Seaking -> BST 470
+- Ledian -> BST 450
+- Sudowoodo -> BST 455
+- Yanma -> BST 440
+- Murkrow -> BST 440
+- Misdreavus -> BST 455
+- Unown -> BST 400
+- Girafarig -> BST 475
+- Dunsparce -> BST 455
+- Qwilfish -> BST 455
+- Magcargo -> BST 460
+- Corsola -> BST 440
+- Delibird -> BST 420
+- Stantler -> BST 480
+- Beautifly -> BST 440
+- Dustox -> BST 440
+- Masquerain -> BST 460
+- Delcatty -> BST 430
+- Plusle -> BST 435
+- Minun -> BST 435
+- Volbeat -> BST 440
+- Illumise -> BST 440
+- Spinda -> BST 420
+- Kecleon -> BST 460
+- Chimecho -> BST 455
+- Luvdisc -> BST 420
+
+This pass intentionally uses total BST edits rather than only redistributions, per the
+current balance direction of the project.
+
+
+==============================================================================
+V8 TWO-WAY BST TUNING NOTES
+==============================================================================
+Applied a two-direction BST control pass after the V7 dual audit.
+
+Trimmed likely high-end outliers
+- Blastoise: 530 -> 525
+- Raichu: 485 -> 475
+- Donphan: 500 -> 490
+- Sceptile: 530 -> 525
+- Milotic: 540 -> 530
+- Stantler: 480 -> 470
+- Girafarig: 475 -> 465
+
+Raised remaining low-end outliers
+- Sunkern: 230 -> 250
+- Hoothoot: 292 -> 315
+- Spinarak: 295 -> 315
+- Paras: 305 -> 325
+- Delibird: 420 -> 430
+- Luvdisc: 420 -> 430
+- Unown: 400 -> 420
+
+Intent
+- Pull back a few conversions that were drifting too far above their role/value tier.
+- Give the weakest early or gimmick lines enough raw stats to avoid dead-on-arrival play.
+- Keep final legendaries and pseudo-legendaries untouched in this pass.
+
+
+==============================================================================
+V9 TWO-WAY BST TUNING PASS
+==============================================================================
+Applied another two-way BST pass to catch both weak lines that still needed help and species whose totals were drifting too high.
+
+Trimmed BST:
+- Blastoise -> 520
+- Raichu -> 470
+- Fearow -> 460
+- Arbok -> 460
+- Seaking -> 460
+- Girafarig -> 455
+- Donphan -> 480
+- Stantler -> 460
+- Sceptile -> 520
+- Milotic -> 520
+
+Raised BST:
+- Paras -> 335
+- Hoothoot -> 325
+- Spinarak -> 325
+- Sunkern -> 260
+- Delibird -> 440
+- Luvdisc -> 440
+
+Held steady after review:
+- Unown -> 420
+
+This pass specifically checked for BST that was too high as well as too low.
+
+
+==============================================================================
+V10 REDISTRIBUTION PASS NOTES
+==============================================================================
+
+This pass focused on redistributing existing BST more intelligently instead of primarily raising or lowering totals.
+
+Redistribution targets
+- Blastoise: shifted toward slower mixed bulk/tank identity for Water / Ground
+- Raichu: reduced pure speed skew and added sturdier Electric / Steel profile
+- Donphan: pushed harder into physical wall / bruiser stats
+- Sceptile: redistributed into a more balanced fast mixed Dragon-style attacker
+- Milotic: reduced excess speed and improved bulky special dragon identity
+- Paras / Parasect: reinforced slow disruptive Bug / Ghost stat lines with more special bulk
+- Hoothoot / Noctowl: better matched Fire / Psychic special attacker / utility roles
+- Spinarak / Ariados: smoothed awkward stat lines into clearer ambush bruiser roles
+- Sunkern: kept weak but gave it a cleaner special growth profile
+- Jigglypuff / Wigglytuff: reduced awkward stat waste and pushed clearer Psychic and Psychic / Fighting roles
+- Delibird: moved away from over-reliance on Speed into a more functional offensive utility spread
+- Luvdisc: lowered excessive speed concentration and improved special utility profile
+
+This pass intentionally emphasized role definition over raw BST movement.
+
+
+==============================================================================
+V11 REDISTRIBUTION PASS NOTES
+==============================================================================
+
+This pass kept BST totals the same and focused only on cleaner role identity.
+
+Updated redistribution targets:
+- Blastoise: shifted toward slower mixed tank / shell-cannon bulk
+- Raichu: reduced dead physical investment, cleaner Electric / Steel special role
+- Jigglypuff: leaned harder into bulky Psychic disruption
+- Wigglytuff: cleaned into a more physical Psychic / Fighting bruiser-support
+- Noctowl: reduced dead Attack, stronger Fire / Psychic special utility profile
+- Ariados: committed harder to physical ambush pressure, cut wasted SpA
+- Sunflora: committed harder to sun-burst special offense
+- Delibird: cleaned into faster special utility/offense
+- Milotic: reduced dead Attack, reinforced bulky special wall identity
+- Luvdisc: reduced dead Attack, cleaner fast special support profile
+
+Design rule for this pass:
+- Keep BST stable
+- Reduce stat waste
+- Sharpen role definition
+- Avoid broad inflation

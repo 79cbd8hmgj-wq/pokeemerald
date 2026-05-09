@@ -1,0 +1,244 @@
+POKE BALL REBALANCE PLAN - POKEMON EMERALD MOD
+===============================================
+
+CORE DESIGN GOAL
+----------------
+Make Poke Balls matter more so catching decisions depend on timing, preparation,
+encounter type, and utility instead of just buying Ultra Balls later and ignoring
+everything else.
+
+FINAL ACTIVE BALL SET
+---------------------
+Core progression:
+- Poke Ball
+- Great Ball
+- Ultra Ball
+- Master Ball
+
+Specialist balls:
+- Quick Ball
+- Timer Ball
+- Repeat Ball
+- Level Ball
+- Lure Ball
+- Heal Ball
+
+Dropped from the planned system:
+- Net Ball
+- Snare Ball / repurposed Luxury Ball concept
+- Heavy Ball
+- Cherish Ball
+- Dive Ball
+- Nest Ball
+
+FINAL IDENTITIES AND EFFECTS
+----------------------------
+
+1) Poke Ball
+- Role: Baseline capture item
+- Effect: 1.0x catch rate
+
+2) Great Ball
+- Role: Standard early upgrade
+- Effect: 1.5x catch rate
+
+3) Ultra Ball
+- Role: Premium default ball
+- Effect: 2.0x catch rate
+
+4) Master Ball
+- Role: Ultimate rare catch item
+- Effect: Guaranteed catch
+
+5) Quick Ball
+- Role: Fast catch specialist
+- Effect: 4.0x catch rate on turn 1, 1.0x after
+- Purpose: Rewards immediate decision-making and gives players a reason to carry
+  a specialized ball even early in the game
+
+6) Timer Ball
+- Role: Long-battle specialist
+- Effect: Starts at 1.0x and scales upward each turn, capping at 4.0x
+- Suggested implementation: Increase gradually every turn and hit the cap around
+  turn 10 to 12
+- Purpose: Rewards long, controlled capture attempts and gives a clear contrast
+  with Quick Ball
+
+7) Repeat Ball
+- Role: Collection / farming specialist
+- Effect: 3.5x if the species has already been caught before, 1.0x otherwise
+- Purpose: Makes dex cleanup, ability hunting, and repeat catches meaningfully
+  easier
+
+8) Level Ball
+- Role: Strength advantage specialist
+- Effect options:
+  Preferred mid-strength version:
+  - 2.0x if your Pokemon's level is higher than the target's
+  - 3.5x if your Pokemon's level is at least double the target's
+  - 5.0x if your Pokemon's level is at least quadruple the target's
+- Purpose: Rewards returning later with a stronger team and makes backtracking
+  catches smoother without making them free
+
+9) Lure Ball
+- Role: Fishing specialist
+- Effect: 4.0x on Pokemon encountered by fishing, 1.0x otherwise
+- Purpose: Creates a clean encounter-method niche instead of relying on type-based
+  bonuses
+
+10) Heal Ball
+- Role: Utility capture ball
+- Effect: 1.5x catch rate and the caught Pokemon is fully healed on capture
+- Purpose: Makes it useful immediately instead of just flavor; good for captures
+  you plan to use right away
+
+WHY THIS BALL SYSTEM WORKS
+--------------------------
+This setup keeps the system clean and focused. The player decision tree becomes:
+
+- Is it turn 1? Use Quick Ball
+- Is the fight dragging on? Use Timer Ball
+- Have I already caught this species? Use Repeat Ball
+- Am I much higher level? Use Level Ball
+- Was it hooked by fishing? Use Lure Ball
+- Do I want to use it immediately after capture? Use Heal Ball
+- None of the above? Use Great Ball or Ultra Ball
+
+This creates meaningful item identity without too many overlapping gimmicks.
+
+RECOMMENDED SLOT REPLACEMENT MAP
+--------------------------------
+If replacing weaker or less useful original ball slots:
+
+- Premier Ball slot -> Quick Ball
+- Safari Ball slot -> Level Ball
+- Dive Ball slot -> Lure Ball
+- Nest Ball slot -> Heal Ball
+
+Luxury Ball:
+- No longer needed as a major ball identity in this plan
+- Can remain low priority flavor, be removed from importance, or be used as a
+  spare implementation slot if needed
+
+EARLY GAME AVAILABILITY PLAN
+----------------------------
+The user wants Poke Balls, especially Great, Quick, Timer, and Heal Balls,
+available very early game.
+
+Recommended early-game philosophy:
+- The player should begin interacting with the new catch system almost immediately
+- Specialized balls should appear early enough to shape behavior, but in limited
+  quantities so they do not break progression
+- Ultra Balls should still arrive later as the dependable premium option
+
+EARLY GAME SHOP / DISTRIBUTION RECOMMENDATION
+---------------------------------------------
+
+Very early game (first town / first mart upgrade):
+- Poke Ball: standard stock, unlimited
+- Great Ball: available very early, but more expensive than normal
+- Quick Ball: available very early in small quantities or with limited stock
+- Heal Ball: available very early, either in shop stock or from NPC gifts
+- Timer Ball: available very early, but ideally slightly later than Quick Ball
+  if you want a softer ramp
+
+Suggested structure:
+1. First accessible Mart:
+   - Poke Ball
+   - Great Ball
+   - Heal Ball
+
+2. Early route / early side reward / second Mart expansion:
+   - Quick Ball
+   - Timer Ball
+
+3. Midgame:
+   - Repeat Ball
+   - Lure Ball
+   - wider shop access to Quick / Timer / Heal
+
+4. Later:
+   - Ultra Ball becomes common and unlimited
+
+WHY EARLY GREAT / QUICK / TIMER / HEAL WORKS
+--------------------------------------------
+Great Ball early:
+- Makes the player feel stronger without waiting too long
+- Helps avoid early catch frustration
+
+Quick Ball early:
+- Immediately teaches the player that some catches reward fast action
+
+Timer Ball early:
+- Encourages a second capture strategy from the start
+
+Heal Ball early:
+- Gives practical utility and feels distinct from pure catch-rate balls
+
+This is good because the player learns early that carrying a mix of balls matters.
+
+BALANCE WARNING FOR EARLY ACCESS
+--------------------------------
+If Great, Quick, Timer, and Heal Balls are all available very early, balance should
+be controlled through one or more of these levers:
+
+- Price
+- Limited stock
+- NPC gifts in small quantity
+- Shop expansion by badge count
+- Slightly rarer field pickups
+
+Recommended approach:
+- Great Ball: early unlimited or near-unlimited
+- Heal Ball: early unlimited or near-unlimited
+- Quick Ball: early but initially limited
+- Timer Ball: early but initially limited
+- Ultra Ball: noticeably later to preserve progression
+
+PRICING DIRECTION
+-----------------
+Suggested pricing logic, not final mandatory values:
+
+- Poke Ball: cheap baseline
+- Great Ball: affordable early premium
+- Heal Ball: around Great Ball price or slightly below
+- Quick Ball: more expensive than Great Ball
+- Timer Ball: more expensive than Great Ball
+- Repeat Ball: mid-to-high price
+- Level Ball: mid-to-high price
+- Lure Ball: situational, moderate price
+- Ultra Ball: high but dependable premium price
+
+General principle:
+Specialist balls should be stronger in the right situation, but not so cheap that
+they completely replace Great Ball or Ultra Ball as defaults.
+
+FINAL RECOMMENDATION
+--------------------
+Use this final capture ecosystem:
+
+Core:
+- Poke Ball
+- Great Ball
+- Ultra Ball
+- Master Ball
+
+Specialists:
+- Quick Ball
+- Timer Ball
+- Repeat Ball
+- Level Ball
+- Lure Ball
+- Heal Ball
+
+Early game priority:
+Make Poke Ball, Great Ball, Heal Ball, Quick Ball, and Timer Ball available very
+early so the player starts engaging with the new capture system immediately.
+
+Best early rollout:
+- Early unlimited: Poke Ball, Great Ball, Heal Ball
+- Early limited: Quick Ball, Timer Ball
+- Midgame unlock: Repeat Ball, Level Ball, Lure Ball
+- Later common stock: Ultra Ball
+
+END OF FILE

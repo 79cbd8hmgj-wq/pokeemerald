@@ -1,0 +1,624 @@
+EMERALD_BREEDING_TASK_MATRIX_v1
+Compact build matrix for current breeding rework plan
+Master authority: pokemon_gen1_3_release_polished_updated_types_v11.txt
+
+==================================================
+PURPOSE
+==================================================
+
+This file converts the audited breeding plan into a compact implementation matrix.
+It is meant to help with actual build order, scripting scope, and balance testing.
+
+Included statuses:
+- KEEP
+- REWRITE
+- LIGHTEN
+
+Excluded from main matrix:
+- CUT species
+
+Core design rules:
+- v11 identity always leads
+- breeding should refine role, not replace it
+- no flat BST rewards for bred Pokemon
+- hatch rewards should be curated, readable, and limited
+
+==================================================
+FIELD DEFINITIONS
+==================================================
+
+Status
+- KEEP = current breeding concept still fits v11 well
+- REWRITE = species needs a rebuilt breeding plan around current v11 identity
+- LIGHTEN = breeding support kept, but reduced because v11 already did major work
+
+Breeding Role
+- short statement of what breeding is trying to accomplish
+
+Trigger Type
+- the kind of breeding condition used to activate a reward
+
+Reward Type
+- what the offspring actually gets
+
+Risk
+- Low / Medium / High
+
+Implementation Difficulty
+- Easy / Medium / Hard
+
+Phase Order
+- Phase 1 = first implementation batch
+- Phase 2 = second implementation batch
+- Phase 3 = later stable additions
+- Phase 4 = low-intensity finishing additions
+
+==================================================
+TASK MATRIX
+==================================================
+
+1. DELCATTY
+Status:
+- KEEP
+Breeding Role:
+- support-role completion
+Trigger Type:
+- support + support parent move condition
+Reward Type:
+- curated level 1 support move
+Risk:
+- Low
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+2. MAWILE
+Status:
+- KEEP
+Breeding Role:
+- ambush/control specialization
+Trigger Type:
+- Steel move + Dark/bite-style move chain
+Reward Type:
+- curated hatch ambush or control move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+3. BANETTE
+Status:
+- KEEP
+Breeding Role:
+- disruption or ambush refinement
+Trigger Type:
+- Ghost/disruption move pairing
+Reward Type:
+- curated control move at level 1
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+4. CASTFORM
+Status:
+- KEEP
+Breeding Role:
+- weather specialization
+Trigger Type:
+- weather move combinations
+Reward Type:
+- one climate-package hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Hard
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+5. LUVDISC
+Status:
+- KEEP
+Breeding Role:
+- premium support project payoff
+Trigger Type:
+- water-support + charm/healing chain
+Reward Type:
+- curated support move or future branch flag
+Risk:
+- Medium
+Implementation Difficulty:
+- Hard
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+6. GIRAFARIG
+Status:
+- KEEP
+Breeding Role:
+- split support/aggression identity
+Trigger Type:
+- support-chain or Dark/disruption-chain
+Reward Type:
+- one of two curated hatch packages
+Risk:
+- Medium
+Implementation Difficulty:
+- Hard
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+7. PLUSLE
+Status:
+- KEEP
+Breeding Role:
+- proactive duo-support identity
+Trigger Type:
+- pair synergy or support-chain trigger
+Reward Type:
+- aggressive support hatch move
+Risk:
+- Low
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+8. MINUN
+Status:
+- KEEP
+Breeding Role:
+- defensive duo-support identity
+Trigger Type:
+- pair synergy or support-chain trigger
+Reward Type:
+- defensive support hatch move
+Risk:
+- Low
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+9. KECLEON
+Status:
+- KEEP
+Breeding Role:
+- reactive utility specialization
+Trigger Type:
+- deception/utility move condition
+Reward Type:
+- curated anti-special or trickster move
+Risk:
+- Medium
+Implementation Difficulty:
+- Hard
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+10. SWALOT
+Status:
+- KEEP
+Breeding Role:
+- toxic wall refinement
+Trigger Type:
+- endurance + disruption move chain
+Reward Type:
+- nuisance/attrition hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 1
+
+--------------------------------------------------
+
+11. SUNFLORA
+Status:
+- REWRITE
+Breeding Role:
+- crafted sun specialist
+Trigger Type:
+- Sunny Day + sustain/setup condition
+Reward Type:
+- curated solar-role hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 2
+
+--------------------------------------------------
+
+12. FARFETCH'D
+Status:
+- REWRITE
+Breeding Role:
+- disciplined technical striker
+Trigger Type:
+- Flying move + Fighting/precision condition
+Reward Type:
+- curated duelist move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 2
+
+--------------------------------------------------
+
+13. ARIADOS
+Status:
+- REWRITE
+Breeding Role:
+- rain ambush hunter
+Trigger Type:
+- Rain Dance + trap/predator condition
+Reward Type:
+- curated hunter-package move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 2
+
+--------------------------------------------------
+
+14. PINSIR
+Status:
+- REWRITE
+Breeding Role:
+- offensive identity sharpening
+Trigger Type:
+- pressure move + speed/setup finisher chain
+Reward Type:
+- curated breaker or cleaner move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 2
+
+--------------------------------------------------
+
+15. MIGHTYENA
+Status:
+- KEEP
+Breeding Role:
+- hunter/cleaner refinement
+Trigger Type:
+- pack-hunter move pairing
+Reward Type:
+- ambush or pursuit package move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+16. TROPIUS
+Status:
+- KEEP
+Breeding Role:
+- sustain pivot specialization
+Trigger Type:
+- plant/flying sustain chain
+Reward Type:
+- curated sustain package move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+17. CORSOLA
+Status:
+- KEEP
+Breeding Role:
+- anti-setup wall specialization
+Trigger Type:
+- reef-defense/control move chain
+Reward Type:
+- recover or control hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+18. ABSOL
+Status:
+- KEEP
+Breeding Role:
+- trap/punish refinement
+Trigger Type:
+- hunter-chain move condition
+Reward Type:
+- curated punish or pursuit-style move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+19. SEVIPER
+Status:
+- KEEP
+Breeding Role:
+- predator feud specialization
+Trigger Type:
+- rivalry/predator move chain
+Reward Type:
+- menace/disruption hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+20. ZANGOOSE
+Status:
+- KEEP
+Breeding Role:
+- duelist pressure refinement
+Trigger Type:
+- rivalry/duelist move chain
+Reward Type:
+- curated tempo or finisher move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+21. SPINDA
+Status:
+- KEEP
+Breeding Role:
+- flavor-first quirk specialization
+Trigger Type:
+- parent-condition or curated random package
+Reward Type:
+- one of several controlled quirk packages
+Risk:
+- Medium
+Implementation Difficulty:
+- Hard
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+22. CHIMECHO
+Status:
+- KEEP
+Breeding Role:
+- calm support refinement
+Trigger Type:
+- sound/support move chain
+Reward Type:
+- resonance-style support move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+23. GOLDEEN / SEAKING
+Status:
+- KEEP
+Breeding Role:
+- horn-duelist refinement
+Trigger Type:
+- pressure + timing move chain
+Reward Type:
+- curated cleaner or disruptor move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+24. DELIBIRD
+Status:
+- KEEP
+Breeding Role:
+- specialty gift-support project
+Trigger Type:
+- gift/support move chain
+Reward Type:
+- curated niche utility hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Medium
+Phase Order:
+- Phase 3
+
+--------------------------------------------------
+
+25. WIGGLYTUFF
+Status:
+- LIGHTEN
+Breeding Role:
+- limited support polish
+Trigger Type:
+- support + control/sustain condition
+Reward Type:
+- one selective support hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Easy to Medium
+Phase Order:
+- Phase 4
+
+--------------------------------------------------
+
+26. NOCTOWL
+Status:
+- LIGHTEN
+Breeding Role:
+- elegant control polish
+Trigger Type:
+- status/control + Psychic/Fire-support condition
+Reward Type:
+- one curated utility hatch move
+Risk:
+- Medium
+Implementation Difficulty:
+- Easy to Medium
+Phase Order:
+- Phase 4
+
+==================================================
+CUT SPECIES REFERENCE
+==================================================
+
+The following species are intentionally excluded from current implementation:
+
+- Beautifly
+- Dustox
+- Ledian
+- Dunsparce
+
+Reason Summary:
+- lower immediate payoff,
+- higher tuning risk,
+- or weaker fit with the current breeding vision
+
+==================================================
+PHASE SUMMARY
+==================================================
+
+Phase 1 - Core Showcase Batch
+- Delcatty
+- Mawile
+- Banette
+- Castform
+- Luvdisc
+- Girafarig
+- Plusle
+- Minun
+- Kecleon
+- Swalot
+
+Phase 2 - Rewrite Batch
+- Sunflora
+- Farfetch'd
+- Ariados
+- Pinsir
+
+Phase 3 - Stable Expansion Batch
+- Mightyena
+- Tropius
+- Corsola
+- Absol
+- Seviper
+- Zangoose
+- Spinda
+- Chimecho
+- Goldeen / Seaking
+- Delibird
+
+Phase 4 - Light Finishing Batch
+- Wigglytuff
+- Noctowl
+
+==================================================
+QUICK BUILD RECOMMENDATIONS
+==================================================
+
+Best Easy Wins
+- Delcatty
+- Mawile
+- Plusle
+- Minun
+- Swalot
+
+Best Showcase Species
+- Castform
+- Luvdisc
+- Girafarig
+- Sunflora
+- Ariados
+
+Best Species for Restraint
+- Wigglytuff
+- Noctowl
+- Pinsir
+- Absol
+
+Hardest to Implement Cleanly
+- Castform
+- Luvdisc
+- Girafarig
+- Kecleon
+- Spinda
+
+==================================================
+NEXT BUILD STEP
+==================================================
+
+Next practical file:
+EMERALD_BREEDING_DEV_TASKS_v1.txt
+
+That file should turn this matrix into actual development work buckets:
+- data-only edits
+- learnset edits
+- hatch reward logic edits
+- custom trigger scripting
+- test checklist
+- rollback plan

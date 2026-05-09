@@ -551,12 +551,12 @@ const u16 gEggMoves[] = {
               MOVE_SILVER_WIND),
 
     egg_moves(SPINARAK,
-              MOVE_PSYBEAM,
-              MOVE_DISABLE,
-              MOVE_SONIC_BOOM,
               MOVE_BATON_PASS,
+              MOVE_DISABLE,
               MOVE_PURSUIT,
-              MOVE_SIGNAL_BEAM),
+              MOVE_SIGNAL_BEAM,
+              MOVE_SONIC_BOOM,
+              MOVE_HYDRO_PUMP),
 
     egg_moves(CHINCHOU,
               MOVE_FLAIL,
@@ -583,11 +583,11 @@ const u16 gEggMoves[] = {
               MOVE_SUBSTITUTE),
 
     egg_moves(IGGLYBUFF,
+              MOVE_FAKE_TEARS,
               MOVE_PERISH_SONG,
               MOVE_PRESENT,
-              MOVE_FAINT_ATTACK,
               MOVE_WISH,
-              MOVE_FAKE_TEARS),
+              MOVE_DREAM_EATER),
 
     egg_moves(TOGEPI,
               MOVE_PRESENT,

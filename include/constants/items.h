@@ -23,6 +23,12 @@
 #define FIRST_BALL ITEM_MASTER_BALL
 #define LAST_BALL  ITEM_PREMIER_BALL
 
+// Mod ball role aliases. These reuse vanilla ball slots to avoid expanding save/item data.
+#define ITEM_LEVEL_BALL ITEM_NET_BALL
+#define ITEM_LURE_BALL  ITEM_DIVE_BALL
+#define ITEM_HEAL_BALL  ITEM_NEST_BALL
+#define ITEM_QUICK_BALL ITEM_PREMIER_BALL
+
 // Pokémon Items
 #define ITEM_POTION 13
 #define ITEM_ANTIDOTE 14

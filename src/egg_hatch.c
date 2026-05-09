@@ -932,10 +932,10 @@ u8 GetEggCyclesToSubtract(void)
         {
             u8 ability = GetMonAbility(&gPlayerParty[i]);
             if (ability == ABILITY_MAGMA_ARMOR || ability == ABILITY_FLAME_BODY)
-                return 2;
+                return 6;
         }
     }
-    return 1;
+    return 3;
 }
 
 u16 CountPartyAliveNonEggMons(void)

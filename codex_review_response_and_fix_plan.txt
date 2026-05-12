@@ -1,0 +1,233 @@
+POKEMON EMERALD MOD — CODEX REVIEW RESPONSE AND FIX PLAN
+Purpose: Respond to the flagged PR issues and define the correct implementation path.
+
+================================================================
+SUMMARY
+================================================================
+
+The Codex review comments are valid and should be treated as real blockers, not cosmetic suggestions.
+
+There are three immediate functional issues:
+
+1. Egg move inheritance is capped by a hardcoded array/loop limit
+2. U-turn is currently implemented as a plain damaging move instead of a pivot move
+3. Toxic Spikes is currently mapped to regular Spikes behavior instead of poison-on-switch behavior
+
+These issues can silently invalidate a large amount of the move/learnset work if left unresolved.
+
+================================================================
+ISSUE 1 — EGG MOVE BUFFER / LOOP LIMIT
+================================================================
+
+Problem
+-------
+Species now have egg move lists that exceed ten entries.
+However, GetEggMoves in src/daycare.c still only iterates EGG_MOVES_ARRAY_COUNT entries, and that constant is still 10.
+
+Impact
+------
+Any egg move listed after slot 10 is unreachable through breeding.
+This means the data may look correct in egg_moves.h, but the extra inherited moves never actually work in-game.
+
+Required fix
+------------
+Increase the egg move capacity in code and ensure every place that reads or writes egg move arrays uses the new value consistently.
+
+Implementation goals
+--------------------
+- Find the constant or macro controlling egg move count
+- Raise it from 10 to the new target value
+- Update every buffer, loop bound, and helper function tied to egg move inheritance
+- Confirm no stack/array assumptions still depend on the old value
+- Rebuild and test a species with more than 10 egg moves
+
+Suggested target
+----------------
+Use a higher limit that leaves room for future changes.
+Recommended target: 16 or 20
+
+Validation test
+---------------
+Use a species like Bulbasaur with more than 10 egg moves.
+Verify that:
+- move 1 through move 10 can inherit
+- move 11 and later can also inherit
+- no truncation occurs
+- the daycare inheritance logic still behaves correctly
+
+================================================================
+ISSUE 2 — U-TURN IS NOT ACTUALLY U-TURN
+================================================================
+
+Problem
+-------
+MOVE_U_TURN is currently mapped to EFFECT_HIT.
+That means it only deals damage and never performs the switch-out behavior promised by the move description.
+
+Impact
+------
+The move functions as a fake U-turn:
+- correct name
+- correct typing
+- correct base power
+- wrong battle behavior
+
+Required fix
+------------
+Implement proper post-hit switch-out behavior for U-turn.
+
+Implementation goals
+--------------------
+- Add or reuse an effect/script that performs:
+  1. normal hit resolution
+  2. damage application
+  3. successful post-hit user switch
+- Make sure this only happens when the user is still active and eligible to switch
+- Respect normal battle restrictions:
+  - no switch if trapped
+  - no switch if no valid party member
+  - no switch if fainted
+- Ensure trainer and player behavior both work
+
+Fallback if engine fix is delayed
+---------------------------------
+Remove U-turn from learnsets temporarily.
+Do not expose it as a learnable move until it actually pivots.
+
+Validation test
+---------------
+Verify:
+- damage happens first
+- switch prompt/AI switch happens after hit
+- move fails to switch if trapped
+- move still deals damage even if switch cannot occur, depending on intended mechanics
+- no softlocks or bad battle flow
+
+================================================================
+ISSUE 3 — TOXIC SPIKES IS NOT ACTUALLY TOXIC SPIKES
+================================================================
+
+Problem
+-------
+MOVE_TOXIC_SPIKES is currently mapped to EFFECT_SPIKES.
+That causes it to behave like normal Gen 3 Spikes damage instead of poisoning grounded switch-ins.
+
+Impact
+------
+Players will use a move called Toxic Spikes and get ordinary Spikes under a different name.
+
+Required fix
+------------
+Create separate Toxic Spikes behavior with its own effect and side condition.
+
+Implementation goals
+--------------------
+- Add a distinct effect for Toxic Spikes
+- Track Toxic Spikes layers independently from regular Spikes
+- Apply poison on grounded switch-in
+- Respect immunity rules:
+  - Flying types immune while airborne
+  - Steel types immune to poison
+  - Poison types should likely absorb/remove Toxic Spikes on switch-in if you want later-gen behavior
+  - Levitate / airborne behavior should be handled according to your chosen ruleset
+- Decide whether one layer = poison and two layers = toxic poison
+- Ensure coexistence with regular Spikes works properly
+
+Fallback if engine fix is delayed
+---------------------------------
+Remove Toxic Spikes from learnsets temporarily.
+Do not expose it until the side condition actually poisons.
+
+Validation test
+---------------
+Verify:
+- one layer poisons grounded targets on switch-in
+- second layer escalates appropriately if intended
+- regular Spikes still works independently
+- Toxic Spikes does not just deal Spikes damage
+- immunities behave correctly
+
+================================================================
+RECOMMENDED ACTION ORDER
+================================================================
+
+Priority 1
+----------
+Fix egg move limit first.
+Reason:
+This silently breaks a large amount of breeding content right now.
+
+Priority 2
+----------
+Fix U-turn.
+Reason:
+The move is mechanically false in battle.
+
+Priority 3
+----------
+Fix Toxic Spikes.
+Reason:
+Also mechanically false, but less foundational than the egg inheritance issue.
+
+================================================================
+TEMPORARY SAFE POLICY UNTIL FIXES LAND
+================================================================
+
+If you want to keep moving before full engine fixes are merged:
+
+- Keep all species egg move lists at or under 10 entries
+- Remove U-turn from learnsets
+- Remove Toxic Spikes from learnsets
+
+This avoids shipping fake content while the engine work is unfinished.
+
+================================================================
+DIRECT REPLY DRAFT FOR CODEX / PR
+================================================================
+
+The review comments are valid and should be fixed before this patch is considered complete.
+
+1. Egg move inheritance is still capped by the old loop/buffer limit, so species with more than 10 egg moves have unreachable inheritance data. Increase the egg move array count and update every related loop/buffer in daycare inheritance logic.
+
+2. U-turn is currently mapped as a plain hit move, so it does damage but never pivots. Implement proper post-hit switch behavior or temporarily remove it from learnsets until the effect exists.
+
+3. Toxic Spikes is currently reusing regular Spikes behavior, so it does not poison on switch-in. Add a separate Toxic Spikes side condition/effect or temporarily remove it from learnsets until implemented.
+
+Do not treat these as optional cleanup items. They are functional correctness issues.
+
+================================================================
+IMPLEMENTATION CHECKLIST
+================================================================
+
+Egg move limit
+--------------
+[ ] Find egg move count constant
+[ ] Raise limit to 16 or 20
+[ ] Update all related buffers/loops
+[ ] Test inheritance beyond old slot 10
+
+U-turn
+------
+[ ] Add dedicated pivot effect/script
+[ ] Handle switch restrictions correctly
+[ ] Test player and AI usage
+[ ] Remove from learnsets temporarily if not completed
+
+Toxic Spikes
+------------
+[ ] Add separate Toxic Spikes effect
+[ ] Track layers independently
+[ ] Apply poison on grounded switch-in
+[ ] Confirm interaction with regular Spikes
+[ ] Remove from learnsets temporarily if not completed
+
+================================================================
+FINAL VERDICT
+================================================================
+
+These three issues are real blockers.
+
+The egg move cap is the most urgent because it silently invalidates expanded breeding support.
+U-turn and Toxic Spikes are both currently mislabeled mechanics and should not remain exposed in their present state.
+
+Fix the engine behavior first, then keep expanding move and learnset content.

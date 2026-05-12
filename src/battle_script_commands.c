@@ -56,6 +56,11 @@ extern const u8 *const gBattleScriptsForMoveEffects[];
 
 #define DEFENDER_IS_PROTECTED ((gProtectStructs[gBattlerTarget].protected) && (gBattleMoves[gCurrentMove].flags & FLAG_PROTECT_AFFECTED))
 
+#define WILD_EXP_PERCENT 160
+#define TRAINER_EXP_PERCENT 130
+#define WILD_MONEY_BASE_EXP_DIVISOR 96
+#define WILD_MONEY_MIN_LEVEL_MULTIPLIER 2
+
 #define LEVEL_UP_BANNER_START 416
 #define LEVEL_UP_BANNER_END   512
 
@@ -170,6 +175,7 @@ static void Cmd_yesnoboxlearnmove(void);
 static void Cmd_yesnoboxstoplearningmove(void);
 static void Cmd_hitanimation(void);
 static void Cmd_getmoneyreward(void);
+static u32 GetWildBattleMoneyReward(void);
 static void Cmd_updatebattlermoves(void);
 static void Cmd_swapattackerwithtarget(void);
 static void Cmd_incrementgamestat(void);
@@ -3376,7 +3382,9 @@ static void Cmd_getexp(void)
                     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-                        gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
+                        gBattleMoveDamage = (gBattleMoveDamage * TRAINER_EXP_PERCENT) / 100;
+                    else
+                        gBattleMoveDamage = (gBattleMoveDamage * WILD_EXP_PERCENT) / 100;
 
                     if (IsTradedMon(&gPlayerParty[gBattleStruct->expGetterMonId]))
                     {
@@ -5644,6 +5652,34 @@ static void Cmd_getmoneyreward(void)
     gBattlescriptCurrInstr++;
 }
 
+static u32 GetWildBattleMoneyReward(void)
+{
+    u32 reward;
+    u32 minReward;
+    u16 species;
+    u8 level;
+
+    if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER
+                          | BATTLE_TYPE_LINK
+                          | BATTLE_TYPE_RECORDED_LINK
+                          | BATTLE_TYPE_TRAINER_HILL
+                          | BATTLE_TYPE_FRONTIER
+                          | BATTLE_TYPE_SAFARI
+                          | BATTLE_TYPE_BATTLE_TOWER
+                          | BATTLE_TYPE_EREADER_TRAINER))
+        return 0;
+
+    species = gBattleMons[B_POSITION_OPPONENT_LEFT].species;
+    level = gBattleMons[B_POSITION_OPPONENT_LEFT].level;
+
+    reward = (level * gSpeciesInfo[species].expYield) / WILD_MONEY_BASE_EXP_DIVISOR;
+    minReward = level * WILD_MONEY_MIN_LEVEL_MULTIPLIER;
+    if (reward < minReward)
+        reward = minReward;
+
+    return reward * gBattleStruct->moneyMultiplier;
+}
+
 // Command is never used
 static void Cmd_updatebattlermoves(void)
 {
@@ -7460,9 +7496,16 @@ static void Cmd_tryconversiontypechange(void)
 
 static void Cmd_givepaydaymoney(void)
 {
-    if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK)) && gPaydayMoney != 0)
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK)))
     {
-        u32 bonusMoney = gPaydayMoney * gBattleStruct->moneyMultiplier;
+        u32 bonusMoney = (gPaydayMoney * gBattleStruct->moneyMultiplier) + GetWildBattleMoneyReward();
+
+        if (bonusMoney == 0)
+        {
+            gBattlescriptCurrInstr++;
+            return;
+        }
+
         AddMoney(&gSaveBlock1Ptr->money, bonusMoney);
 
         PREPARE_HWORD_NUMBER_BUFFER(gBattleTextBuff1, 5, bonusMoney)

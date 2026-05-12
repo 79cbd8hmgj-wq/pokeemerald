@@ -23,6 +23,8 @@ EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
 #include "data/text/item_descriptions.h"
 #include "data/items.h"
 
+#define ITEM_PRICE_PERCENT 60
+
 static u16 GetBagItemQuantity(u16 *quantity)
 {
     return gSaveBlock2Ptr->encryptionKey ^ *quantity;
@@ -884,7 +886,7 @@ u16 GetItemId(u16 itemId)
 
 u16 GetItemPrice(u16 itemId)
 {
-    return gItems[SanitizeItemId(itemId)].price;
+    return (gItems[SanitizeItemId(itemId)].price * ITEM_PRICE_PERCENT) / 100;
 }
 
 u8 GetItemHoldEffect(u16 itemId)

@@ -1,0 +1,417 @@
+POKÉMON EMERALD BREEDING REBALANCE PLAN
+Merged Water Egg Group + Expanded Dual Egg Group System
+Based on current Emerald egg group reference and the uploaded Gen 1-3 catalog
+
+======================================================================
+1) DESIGN GOALS
+======================================================================
+
+Primary goals:
+- Remove unnecessary breeding friction
+- Make aquatic breeding intuitive
+- Increase the number of useful bridge species
+- Give weaker or lower-value Pokémon more breeding utility
+- Preserve some family identity so breeding does not become meaningless
+
+Core rule changes:
+- Merge Water 1, Water 2, and Water 3 into one Egg Group: WATER
+- Keep DITTO unchanged
+- Keep UNDISCOVERED unchanged
+- Increase the number of dual Egg Group Pokémon substantially
+- Prefer changes that feel natural by body plan, ecology, or lore
+
+Target feel:
+- Chain breeding should still exist, but not feel annoying
+- More lines should be able to pass useful Egg Moves without obscure routes
+- Water species should no longer feel arbitrarily split apart
+- A noticeable share of weak or awkward Pokémon should gain value as bridge breeders
+
+Suggested target:
+- Roughly 40% to 55% of breedable Pokémon should end up dual Egg Group
+
+======================================================================
+2) NEW EGG GROUP STRUCTURE
+======================================================================
+
+Keep these groups:
+- Monster
+- Water
+- Bug
+- Flying
+- Field
+- Fairy
+- Grass
+- Human-Like
+- Mineral
+- Amorphous
+- Ditto
+- Dragon
+- Undiscovered
+
+Removed by merge:
+- Water 1
+- Water 2
+- Water 3
+
+Replacement:
+- All three become WATER
+
+======================================================================
+3) HIGH-LEVEL BALANCE RULES
+======================================================================
+
+Use these rules when assigning second Egg Groups:
+
+A. Add a second Egg Group if:
+- the species clearly fits two biological/archetypal categories
+- the change creates better breeding routes
+- the line is weak or awkward and could use utility
+- the change supports Egg Move accessibility
+- the change helps connect isolated move pools
+
+B. Avoid adding second Egg Groups if:
+- the result feels absurd or breaks theme badly
+- the species would become too universal a bridge
+- the change collapses too many families together
+- the line is already a top-tier bridge species and needs no help
+
+C. Be cautious with these groups:
+- Dragon
+- Human-Like
+- Monster
+- Field
+
+These groups are extremely powerful if spread too broadly.
+
+======================================================================
+4) WATER MERGE IMPACT
+======================================================================
+
+Merging all Water groups into WATER immediately improves:
+- fish-to-fish breeding
+- fish-to-amphibian routes
+- marine invertebrate routes
+- crustacean access
+- aquatic dragon access
+- breeding convenience for Egg Moves
+
+Examples of lines that benefit right away:
+- Squirtle line
+- Psyduck line
+- Poliwag line
+- Tentacool line
+- Slowpoke line
+- Seel line
+- Shellder line
+- Krabby line
+- Horsea line
+- Goldeen line
+- Staryu/Starmie remain special because of breeding limitations
+- Magikarp line
+- Lapras
+- Omanyte line
+- Kabuto line
+- Totodile line
+- Marill line
+- Wooper line
+- Corsola
+- Remoraid line
+- Mantine
+- Mudkip line
+- Lotad line
+- Wingull line
+- Surskit line
+- Wailmer line
+- Barboach line
+- Corphish line
+- Feebas line
+- Spheal line
+- Relicanth
+- Luvdisc
+
+Net effect:
+- Far fewer dead-end aquatic chains
+- Easier movement of support, status, and coverage Egg Moves
+- More logical ecosystem-wide compatibility
+
+======================================================================
+5) PRIORITY DUAL-GROUP EXPANSION BUCKETS
+======================================================================
+
+These are the best buckets for expansion.
+
+A. FIELD + FAIRY
+Use for small mammals, cute support lines, trickster lines, or charm-based species.
+
+Strong candidates:
+- Vulpix line
+- Pikachu line
+- Skitty line
+- Snubbull line
+- Plusle
+- Minun
+
+B. MONSTER + DRAGON
+Use for reptilian, saurian, kaiju-like, or draconic-feeling species.
+
+Strong candidates:
+- Totodile line
+- Treecko line
+- Trapinch line
+- Ekans line
+- Seviper
+- Aerodactyl
+- certain fossil lines where appropriate
+
+C. FLYING + FIELD
+Use for birds, bats, and animalistic fliers.
+
+Strong candidates:
+- Pidgey line
+- Spearow line
+- Doduo line
+- Hoothoot line
+- Taillow line
+- Zubat line
+
+D. GRASS + FAIRY
+Use for mystical plants, healing flora, and soft support lines.
+
+Strong candidates:
+- Oddish line
+- Bellsprout line
+- Hoppip line
+- Roselia
+- Chikorita line
+- Shroomish line
+
+E. BUG + GRASS
+Use for naturalist insect lines, fungal lines, and woodland bugs.
+
+Strong candidates:
+- Paras line
+- Surskit line
+- Nincada line (only if desired)
+- potentially Beautifly/Dustox-adjacent families if your tone supports it
+
+F. WATER + FIELD
+Use for semi-aquatic beasts, amphibians, otter/seal/whale-like lines, and practical bridge breeders.
+
+Strong candidates:
+- Poliwag line
+- Tentacool line is better as Water/Amorphous, not Field
+- Carvanha line
+- Wailmer line
+- Spheal line
+- Lapras
+- Seel line
+- Slowpoke line
+- Barboach line
+
+G. WATER + DRAGON
+Use sparingly for serpentine, ancient, elegant, or draconic aquatic lines.
+
+Strong candidates:
+- Horsea line
+- Feebas line
+- Dratini line
+- Gyarados if not already treated as a special route
+- possibly Relicanth only if you want a stronger fossil-water bridge
+
+H. BUG + AMORPHOUS
+Use for strange venomous, psychic, or unusual arthropod lines.
+
+Strong candidates:
+- Venonat line
+- Dustox line
+- possibly Ariados if included later
+
+I. GRASS + HUMAN-LIKE
+Use carefully for cactus, mushroom-fighter, or humanoid-plant concepts.
+
+Strong candidates:
+- Cacnea line
+- Breloom line
+- Roselia only if you want more flexible support routes
+
+J. AMORPHOUS + FAIRY / AMORPHOUS + HUMAN-LIKE
+Use for ghostly support, cursed doll, or spirit-like lines.
+
+Strong candidates:
+- Shuppet line
+- Duskull line
+- Banette line if you want stronger move-sharing routes
+
+======================================================================
+6) RECOMMENDED PHASE 1 CHANGE LIST
+======================================================================
+
+This is the best first pass: strong impact, relatively clean logic.
+
+KANTO
+- Vulpix line: Field -> Field / Fairy
+- Zubat line: Flying -> Flying / Field
+- Oddish line: Grass -> Grass / Fairy
+- Bellsprout line: Grass -> Grass / Fairy
+- Poliwag line: Water -> Water / Field
+- Tentacool line: Water -> Water / Amorphous
+- Doduo line: Flying -> Flying / Field
+- Venonat line: Bug -> Bug / Amorphous
+- Horsea line: Water / Dragon stays strong under merged Water
+- Seel line: Water / Field stays strong under merged Water
+- Lapras: Monster / Water stays strong under merged Water
+
+JOHTO
+- Chikorita line: Monster / Grass -> Monster / Grass stays acceptable, or add Fairy only if you want more support routes
+- Totodile line: Monster / Water -> Monster / Water stays good, optional Dragon on late-stage testing only
+- Mareep line: Monster / Field stays good
+- Hoppip line: Grass / Fairy stays good
+- Wooper line: Water / Field stays good under merge
+- Snubbull line: Field / Fairy stays good
+- Remoraid line: Water -> Water / Field
+- Delibird: Water / Field stays acceptable if you like its odd support identity
+
+HOENN
+- Treecko line: Monster / Dragon stays good
+- Lotad line: Water / Grass stays excellent after water merge
+- Wingull line: Water / Flying stays excellent after water merge
+- Surskit line: Water / Bug stays excellent after water merge; optional Bug / Grass test route if desired
+- Shroomish line: Fairy / Grass stays good
+- Skitty line: Field / Fairy stays good
+- Roselia: Grass / Fairy stays good
+- Wailmer line: Water / Field
+- Spinda: Field / Human-Like stays good
+- Cacnea line: Grass / Human-Like stays good
+- Seviper: Field / Dragon stays good
+- Barboach line: Water / Field
+- Corphish line: Water -> Water / Bug or Water / Field (recommended: Water / Bug)
+- Feebas line: Water / Dragon stays strong
+- Tropius: Monster / Grass stays good; optional Flying test if desired
+- Snorunt line: Fairy / Mineral stays good
+- Spheal line: Water / Field stays good
+- Relicanth: Water -> Water / Mineral or Water / Dragon (recommended: Water / Mineral)
+
+======================================================================
+7) RECOMMENDED PHASE 2 CHANGE LIST
+======================================================================
+
+Use these after testing Phase 1.
+
+Moderate-risk additions:
+- Poochyena line: Field -> Field / Monster
+- Zigzagoon line: Field -> Field / Fairy
+- Trapinch line: Bug -> Bug / Dragon or Monster / Dragon
+- Carvanha line: Water -> Water / Field
+- Absol: Field -> Field / Monster
+- Phanpy line: Field -> Field / Monster
+- Houndour line: Field -> Field / Monster
+- Psyduck line already serves well as Water / Field
+
+Optional experimental additions:
+- Taillow line: Flying -> Flying / Field
+- Swablu line: Flying / Dragon stays strong, no change needed unless testing says otherwise
+- Nincada line: Bug -> Bug / Grass
+- Shuppet line: Amorphous -> Amorphous / Fairy
+- Duskull line: Amorphous -> Amorphous / Human-Like
+- Vulpix line could also be tested as Field / Amorphous, but Field / Fairy is cleaner
+
+======================================================================
+8) BRIDGE SPECIES TO INTENTIONALLY SUPPORT
+======================================================================
+
+These lines are especially useful because they connect important move pools.
+
+Top bridge targets:
+- Horsea line
+- Feebas line
+- Lotad line
+- Wingull line
+- Wooper line
+- Barboach line
+- Zubat line
+- Oddish line
+- Roselia
+- Vulpix line
+- Venonat line
+- Skitty line
+- Cacnea line
+- Spinda
+- Seviper
+- Snorunt line
+
+Why these matter:
+- They spread utility without making everything universal
+- They create multiple reasonable chain routes
+- They make weaker or niche species useful even if not battle-dominant
+
+======================================================================
+9) CHANGES TO AVOID EARLY
+======================================================================
+
+Avoid these until after testing:
+
+- Making too many species Dragon
+- Giving Human-Like to broad mammal groups
+- Converting most Flying lines into universal Field bridges
+- Giving Monster to too many physically bulky lines
+- Turning rare identities into generic compatibility hubs
+
+Specific caution examples:
+- Salamence line does not need more flexibility
+- Bagon line is already powerful enough thematically
+- Beldum line should not become breedable unless you want a major rule rewrite
+- Fossils should stay somewhat special unless your whole mod pushes toward openness
+
+======================================================================
+10) TESTING CHECKLIST
+======================================================================
+
+After implementing the first pass, test these questions:
+
+1. Can players now get useful Egg Moves without absurd chains?
+2. Do Water species feel more intuitive?
+3. Are weak species gaining breeding value?
+4. Are Dragon routes still somewhat special?
+5. Are Human-Like routes still distinct?
+6. Did any one group become too universal?
+7. Are there still a few meaningful family identities left?
+
+Watch especially for:
+- too-easy Dragon move spread
+- too many Field-based routes trivializing everything
+- one or two lines becoming mandatory super-bridges
+
+======================================================================
+11) CLEAN IMPLEMENTATION ORDER
+======================================================================
+
+Step 1
+- Merge Water 1, Water 2, Water 3 into WATER in your planning docs
+
+Step 2
+- Apply Phase 1 dual-group additions
+
+Step 3
+- Map key Egg Moves and check whether access now feels reasonable
+
+Step 4
+- Test for over-centralizing bridge species
+
+Step 5
+- Apply only the best Phase 2 additions
+
+Step 6
+- Finalize a clean master Egg Group table for all #001-#386
+
+======================================================================
+12) FINAL RECOMMENDATION
+======================================================================
+
+Best first version:
+- Merge all Water groups
+- Expand dual Egg Groups mainly in Field/Fairy, Grass/Fairy, Water/Field, Water/Amorphous, Flying/Field, and Bug/Amorphous
+- Use Dragon sparingly
+- Use Human-Like sparingly
+- Give weaker lines extra breeding value before strong lines
+
+This version should make Emerald breeding feel much more open without turning the system into total chaos.

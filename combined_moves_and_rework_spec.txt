@@ -1,0 +1,1797 @@
+COMBINED FILE — 84 NEW MOVES + MOVE REWORK SPEC
+==============================================
+
+This file combines the two source files in full, without cuts or deletions.
+
+================================================================
+SOURCE FILE 1 — 84 NEW MOVES ONLY
+================================================================
+
+POKEMON NEW MOVES ONLY (84 TOTAL)
+=================================
+
+Source: pokemon_moves_catalog_gen3_plus_selected_gen4_gen5_deduped.txt
+Total new moves included: 84
+
+SECTION 2 — ADDED SELECTED GENERATION 4/5 MOVES (DEDUPED)
+---------------------------------------------------------
+
+GENERATION 4
+============
+
+BUG TYPE MOVES
+==============
+
+Attack Order
+------------
+Source Generation: Generation 4
+Type: Bug
+Category: Physical
+Power: 90
+Accuracy: 100
+PP: 15
+Effect: High critical hit ratio.
+
+Bug Bite
+--------
+Source Generation: Generation 4
+Type: Bug
+Category: Physical
+Power: 60
+Accuracy: 100
+PP: 20
+Effect: Receives the effect from the opponent's held berry.
+
+Bug Buzz
+--------
+Source Generation: Generation 4
+Type: Bug
+Category: Special
+Power: 90
+Accuracy: 100
+PP: 10
+Effect: May lower opponent's Special Defense.
+
+Defend Order
+------------
+Source Generation: Generation 4
+Type: Bug
+Category: Status
+Power: —
+Accuracy: —
+PP: 10
+Effect: Raises user's Defense and Special Defense.
+
+Heal Order
+----------
+Source Generation: Generation 4
+Type: Bug
+Category: Status
+Power: —
+Accuracy: —
+PP: 10
+Effect: User recovers half its max HP.
+
+U-turn
+------
+Source Generation: Generation 4
+Type: Bug
+Category: Physical
+Power: 70
+Accuracy: 100
+PP: 20
+Effect: User switches out immediately after attacking.
+
+X-Scissor
+---------
+Source Generation: Generation 4
+Type: Bug
+Category: Physical
+Power: 80
+Accuracy: 100
+PP: 15
+Effect: —
+
+DRAGON TYPE MOVES
+=================
+
+Draco Meteor
+------------
+Source Generation: Generation 4
+Type: Dragon
+Category: Special
+Power: 130
+Accuracy: 90
+PP: 5
+Effect: Sharply lowers user's Special Attack.
+
+Dragon Pulse
+------------
+Source Generation: Generation 4
+Type: Dragon
+Category: Special
+Power: 85
+Accuracy: 100
+PP: 10
+Effect: —
+
+Dragon Rush
+-----------
+Source Generation: Generation 4
+Type: Dragon
+Category: Physical
+Power: 100
+Accuracy: 75
+PP: 10
+Effect: May cause flinching.
+
+Roar of Time
+------------
+Source Generation: Generation 4
+Type: Dragon
+Category: Special
+Power: 150
+Accuracy: 90
+PP: 5
+Effect: User must recharge next turn.
+
+Spacial Rend
+------------
+Source Generation: Generation 4
+Type: Dragon
+Category: Special
+Power: 100
+Accuracy: 95
+PP: 5
+Effect: High critical hit ratio.
+
+ELECTRIC TYPE MOVES
+===================
+
+Charge Beam
+-----------
+Source Generation: Generation 4
+Type: Electric
+Category: Special
+Power: 50
+Accuracy: 90
+PP: 10
+Effect: May raise user's Special Attack.
+
+Discharge
+---------
+Source Generation: Generation 4
+Type: Electric
+Category: Special
+Power: 80
+Accuracy: 100
+PP: 15
+Effect: May paralyze opponent.
+
+Magnet Rise
+-----------
+Source Generation: Generation 4
+Type: Electric
+Category: Status
+Power: —
+Accuracy: —
+PP: 10
+Effect: User becomes immune to Ground-type moves for 5 turns.
+
+Thunder Fang
+------------
+Source Generation: Generation 4
+Type: Electric
+Category: Physical
+Power: 65
+Accuracy: 95
+PP: 15
+Effect: May cause flinching and/or paralyze opponent.
+
+FLYING TYPE MOVES
+=================
+
+Air Slash
+---------
+Source Generation: Generation 4
+Type: Flying
+Category: Special
+Power: 75
+Accuracy: 95
+PP: 15
+Effect: May cause flinching.
+
+Brave Bird
+----------
+Source Generation: Generation 4
+Type: Flying
+Category: Physical
+Power: 120
+Accuracy: 100
+PP: 15
+Effect: User receives recoil damage.
+
+Chatter
+-------
+Source Generation: Generation 4
+Type: Flying
+Category: Special
+Power: 65
+Accuracy: 100
+PP: 20
+Effect: Confuses opponent.
+
+Defog
+-----
+Source Generation: Generation 4
+Type: Flying
+Category: Status
+Power: —
+Accuracy: —
+PP: 15
+Effect: Lowers opponent's Evasiveness and clears fog.
+
+Pluck
+-----
+Source Generation: Generation 4
+Type: Flying
+Category: Physical
+Power: 60
+Accuracy: 100
+PP: 20
+Effect: If the opponent is holding a berry, its effect is stolen by user.
+
+Roost
+-----
+Source Generation: Generation 4
+Type: Flying
+Category: Status
+Power: —
+Accuracy: —
+PP: 5
+Effect: User recovers half of its max HP and loses the Flying type temporarily.
+
+Tailwind
+--------
+Source Generation: Generation 4
+Type: Flying
+Category: Status
+Power: —
+Accuracy: —
+PP: 15
+Effect: Doubles Speed for 4 turns.
+
+GHOST TYPE MOVES
+================
+
+Ominous Wind
+------------
+Source Generation: Generation 4
+Type: Ghost
+Category: Special
+Power: 60
+Accuracy: 100
+PP: 5
+Effect: May raise all user's stats at once.
+
+Shadow Claw
+-----------
+Source Generation: Generation 4
+Type: Ghost
+Category: Physical
+Power: 70
+Accuracy: 100
+PP: 15
+Effect: High critical hit ratio.
+
+Shadow Force
+------------
+Source Generation: Generation 4
+Type: Ghost
+Category: Physical
+Power: 120
+Accuracy: 100
+PP: 5
+Effect: Disappears on first turn, attacks on second. Can strike through Protect/Detect.
+
+Shadow Sneak
+------------
+Source Generation: Generation 4
+Type: Ghost
+Category: Physical
+Power: 40
+Accuracy: 100
+PP: 30
+Effect: User attacks first.
+
+GROUND TYPE MOVES
+=================
+
+Earth Power
+-----------
+Source Generation: Generation 4
+Type: Ground
+Category: Special
+Power: 90
+Accuracy: 100
+PP: 10
+Effect: May lower opponent's Special Defense.
+
+Mud Bomb
+--------
+Source Generation: Generation 4
+Type: Ground
+Category: Special
+Power: 65
+Accuracy: 85
+PP: 10
+Effect: May lower opponent's Accuracy.
+
+ICE TYPE MOVES
+==============
+
+Avalanche
+---------
+Source Generation: Generation 4
+Type: Ice
+Category: Physical
+Power: 60
+Accuracy: 100
+PP: 10
+Effect: Power doubles if user took damage first.
+
+Ice Fang
+--------
+Source Generation: Generation 4
+Type: Ice
+Category: Physical
+Power: 65
+Accuracy: 95
+PP: 15
+Effect: May cause flinching and/or freeze opponent.
+
+Ice Shard
+---------
+Source Generation: Generation 4
+Type: Ice
+Category: Physical
+Power: 40
+Accuracy: 100
+PP: 30
+Effect: User attacks first.
+
+POISON TYPE MOVES
+=================
+
+Cross Poison
+------------
+Source Generation: Generation 4
+Type: Poison
+Category: Physical
+Power: 70
+Accuracy: 100
+PP: 20
+Effect: High critical hit ratio. May poison opponent.
+
+Gastro Acid
+-----------
+Source Generation: Generation 4
+Type: Poison
+Category: Status
+Power: —
+Accuracy: 100
+PP: 10
+Effect: Cancels out the effect of the opponent's Ability.
+
+Gunk Shot
+---------
+Source Generation: Generation 4
+Type: Poison
+Category: Physical
+Power: 120
+Accuracy: 80
+PP: 5
+Effect: May poison opponent.
+
+Poison Jab
+----------
+Source Generation: Generation 4
+Type: Poison
+Category: Physical
+Power: 80
+Accuracy: 100
+PP: 20
+Effect: May poison the opponent.
+
+Toxic Spikes
+------------
+Source Generation: Generation 4
+Type: Poison
+Category: Status
+Power: —
+Accuracy: —
+PP: 20
+Effect: Poisons opponents switching into battle.
+
+ROCK TYPE MOVES
+===============
+
+Head Smash
+----------
+Source Generation: Generation 4
+Type: Rock
+Category: Physical
+Power: 150
+Accuracy: 80
+PP: 5
+Effect: User receives recoil damage.
+
+Power Gem
+---------
+Source Generation: Generation 4
+Type: Rock
+Category: Special
+Power: 80
+Accuracy: 100
+PP: 20
+Effect: —
+
+Rock Polish
+-----------
+Source Generation: Generation 4
+Type: Rock
+Category: Status
+Power: —
+Accuracy: —
+PP: 20
+Effect: Sharply raises user's Speed.
+
+Rock Wrecker
+------------
+Source Generation: Generation 4
+Type: Rock
+Category: Physical
+Power: 150
+Accuracy: 90
+PP: 5
+Effect: User must recharge next turn.
+
+Stealth Rock
+------------
+Source Generation: Generation 4
+Type: Rock
+Category: Status
+Power: —
+Accuracy: —
+PP: 20
+Effect: Damages opponents switching into battle.
+
+Stone Edge
+----------
+Source Generation: Generation 4
+Type: Rock
+Category: Physical
+Power: 100
+Accuracy: 80
+PP: 5
+Effect: High critical hit ratio.
+
+STEEL TYPE MOVES
+================
+
+Bullet Punch
+------------
+Source Generation: Generation 4
+Type: Steel
+Category: Physical
+Power: 40
+Accuracy: 100
+PP: 30
+Effect: User attacks first.
+
+Flash Cannon
+------------
+Source Generation: Generation 4
+Type: Steel
+Category: Special
+Power: 80
+Accuracy: 100
+PP: 10
+Effect: May lower opponent's Special Defense.
+
+Gyro Ball
+---------
+Source Generation: Generation 4
+Type: Steel
+Category: Physical
+Power: —
+Accuracy: 100
+PP: 5
+Effect: The slower the user, the stronger the attack.
+
+Iron Head
+---------
+Source Generation: Generation 4
+Type: Steel
+Category: Physical
+Power: 80
+Accuracy: 100
+PP: 15
+Effect: May cause flinching.
+
+Magnet Bomb
+-----------
+Source Generation: Generation 4
+Type: Steel
+Category: Physical
+Power: 60
+Accuracy: ∞
+PP: 20
+Effect: Ignores Accuracy and Evasiveness.
+
+Metal Burst
+-----------
+Source Generation: Generation 4
+Type: Steel
+Category: Physical
+Power: —
+Accuracy: 100
+PP: 10
+Effect: Deals damage equal to 1.5x opponent's attack.
+
+Mirror Shot
+-----------
+Source Generation: Generation 4
+Type: Steel
+Category: Special
+Power: 65
+Accuracy: 85
+PP: 10
+Effect: May lower opponent's Accuracy.
+
+
+GENERATION 5
+============
+
+BUG TYPE MOVES
+==============
+
+Quiver Dance
+------------
+Source Generation: Generation 5
+Type: Bug
+Category: Status
+Power: —
+Accuracy: —
+PP: 20
+Effect: Raises user's Special Attack, Special Defense and Speed.
+
+Rage Powder
+-----------
+Source Generation: Generation 5
+Type: Bug
+Category: Status
+Power: —
+Accuracy: —
+PP: 20
+Effect: Forces attacks to hit user, not team-mates.
+
+Steamroller
+-----------
+Source Generation: Generation 5
+Type: Bug
+Category: Physical
+Power: 65
+Accuracy: 100
+PP: 20
+Effect: May cause flinching.
+
+Struggle Bug
+------------
+Source Generation: Generation 5
+Type: Bug
+Category: Special
+Power: 50
+Accuracy: 100
+PP: 20
+Effect: Lowers opponent's Special Attack.
+
+DRAGON TYPE MOVES
+=================
+
+Dragon Tail
+-----------
+Source Generation: Generation 5
+Type: Dragon
+Category: Physical
+Power: 60
+Accuracy: 90
+PP: 10
+Effect: In battles, the opponent switches. In the wild, the Pokémon runs.
+
+Dual Chop
+---------
+Source Generation: Generation 5
+Type: Dragon
+Category: Physical
+Power: 40
+Accuracy: 90
+PP: 15
+Effect: Hits twice in one turn.
+
+ELECTRIC TYPE MOVES
+===================
+
+Bolt Strike
+-----------
+Source Generation: Generation 5
+Type: Electric
+Category: Physical
+Power: 130
+Accuracy: 85
+PP: 5
+Effect: May paralyze opponent.
+
+Electro Ball
+------------
+Source Generation: Generation 5
+Type: Electric
+Category: Special
+Power: —
+Accuracy: 100
+PP: 10
+Effect: The faster the user, the stronger the attack.
+
+Electroweb
+----------
+Source Generation: Generation 5
+Type: Electric
+Category: Special
+Power: 55
+Accuracy: 95
+PP: 15
+Effect: Lowers opponent's Speed.
+
+Fusion Bolt
+-----------
+Source Generation: Generation 5
+Type: Electric
+Category: Physical
+Power: 100
+Accuracy: 100
+PP: 5
+Effect: Power increases if Fusion Flare is used in the same turn.
+
+Volt Switch
+-----------
+Source Generation: Generation 5
+Type: Electric
+Category: Special
+Power: 70
+Accuracy: 100
+PP: 20
+Effect: User must switch out after attacking.
+
+Wild Charge
+-----------
+Source Generation: Generation 5
+Type: Electric
+Category: Physical
+Power: 90
+Accuracy: 100
+PP: 15
+Effect: User receives recoil damage.
+
+FLYING TYPE MOVES
+=================
+
+Acrobatics
+----------
+Source Generation: Generation 5
+Type: Flying
+Category: Physical
+Power: 55
+Accuracy: 100
+PP: 15
+Effect: Stronger when the user does not have a held item.
+
+Hurricane
+---------
+Source Generation: Generation 5
+Type: Flying
+Category: Special
+Power: 110
+Accuracy: 70
+PP: 10
+Effect: May confuse opponent.
+
+Sky Drop
+--------
+Source Generation: Generation 5
+Type: Flying
+Category: Physical
+Power: 60
+Accuracy: 100
+PP: 10
+Effect: Takes opponent into the air on first turn, drops them on second turn.
+
+GHOST TYPE MOVES
+================
+
+Hex
+---
+Source Generation: Generation 5
+Type: Ghost
+Category: Special
+Power: 65
+Accuracy: 100
+PP: 10
+Effect: Inflicts more damage if the target has a status condition.
+
+GROUND TYPE MOVES
+=================
+
+Bulldoze
+--------
+Source Generation: Generation 5
+Type: Ground
+Category: Physical
+Power: 60
+Accuracy: 100
+PP: 20
+Effect: Lowers opponent's Speed.
+
+Drill Run
+---------
+Source Generation: Generation 5
+Type: Ground
+Category: Physical
+Power: 80
+Accuracy: 95
+PP: 10
+Effect: High critical hit ratio.
+
+ICE TYPE MOVES
+==============
+
+Freeze Shock
+------------
+Source Generation: Generation 5
+Type: Ice
+Category: Physical
+Power: 140
+Accuracy: 90
+PP: 5
+Effect: Charges on first turn, attacks on second. May paralyze opponent.
+
+Frost Breath
+------------
+Source Generation: Generation 5
+Type: Ice
+Category: Special
+Power: 60
+Accuracy: 90
+PP: 10
+Effect: Always results in a critical hit.
+
+Glaciate
+--------
+Source Generation: Generation 5
+Type: Ice
+Category: Special
+Power: 65
+Accuracy: 95
+PP: 10
+Effect: Lowers opponent's Speed.
+
+Ice Burn
+--------
+Source Generation: Generation 5
+Type: Ice
+Category: Special
+Power: 140
+Accuracy: 90
+PP: 5
+Effect: Charges on first turn, attacks on second. May burn opponent.
+
+Icicle Crash
+------------
+Source Generation: Generation 5
+Type: Ice
+Category: Physical
+Power: 85
+Accuracy: 90
+PP: 10
+Effect: May cause flinching.
+
+POISON TYPE MOVES
+=================
+
+Acid Spray
+----------
+Source Generation: Generation 5
+Type: Poison
+Category: Special
+Power: 40
+Accuracy: 100
+PP: 20
+Effect: Sharply lowers opponent's Special Defense.
+
+Clear Smog
+----------
+Source Generation: Generation 5
+Type: Poison
+Category: Special
+Power: 50
+Accuracy: —
+PP: 15
+Effect: Removes all of the target's stat changes.
+
+Coil
+----
+Source Generation: Generation 5
+Type: Poison
+Category: Status
+Power: —
+Accuracy: —
+PP: 20
+Effect: Raises user's Attack, Defense and Accuracy.
+
+Sludge Wave
+-----------
+Source Generation: Generation 5
+Type: Poison
+Category: Special
+Power: 95
+Accuracy: 100
+PP: 10
+Effect: May poison opponent.
+
+Venoshock
+---------
+Source Generation: Generation 5
+Type: Poison
+Category: Special
+Power: 65
+Accuracy: 100
+PP: 10
+Effect: Inflicts double damage if the target is poisoned.
+
+ROCK TYPE MOVES
+===============
+
+Smack Down
+----------
+Source Generation: Generation 5
+Type: Rock
+Category: Physical
+Power: 50
+Accuracy: 100
+PP: 15
+Effect: Makes Flying-type Pokémon vulnerable to Ground moves.
+
+Wide Guard
+----------
+Source Generation: Generation 5
+Type: Rock
+Category: Status
+Power: —
+Accuracy: —
+PP: 10
+Effect: Protects the user's team from multi-target attacks.
+
+STEEL TYPE MOVES
+================
+
+Autotomize
+----------
+Source Generation: Generation 5
+Type: Steel
+Category: Status
+Power: —
+Accuracy: —
+PP: 15
+Effect: Reduces weight and sharply raises Speed.
+
+Gear Grind
+----------
+Source Generation: Generation 5
+Type: Steel
+Category: Physical
+Power: 50
+Accuracy: 85
+PP: 15
+Effect: Hits twice in one turn.
+
+Heavy Slam
+----------
+Source Generation: Generation 5
+Type: Steel
+Category: Physical
+Power: —
+Accuracy: 100
+PP: 10
+Effect: The heavier the user, the stronger the attack.
+
+Shift Gear
+----------
+Source Generation: Generation 5
+Type: Steel
+Category: Status
+Power: —
+Accuracy: —
+PP: 10
+Effect: Raises user's Attack and sharply raises Speed.
+
+================================================================
+SOURCE FILE 2 — POKEMON MOVE REWORK BUFF-FIRST IMPLEMENTATION SPEC
+================================================================
+
+POKEMON MOVE REWORK — BUFF-FIRST IMPLEMENTATION SPEC
+Gen 3 + Selected Gen 4/5 Type Expansion
+Format Goal: Single-file implementation sheet focused on buffs, with only minor nerfs and distribution warnings.
+
+================================================================
+CORE PHILOSOPHY
+================================================================
+
+Primary goal:
+- Raise weak, inconsistent, or niche moves into real usability
+
+Secondary goal:
+- Keep already-strong moves mostly intact
+- Use distribution limits before meaningful nerfs
+- Only apply small nerfs when a move is clearly too oppressive in testing
+
+Balance rules:
+1. Weak moves get direct numerical buffs
+2. Dead utility moves get repurposed instead of ignored
+3. Strong moves stay strong unless they dominate
+4. Signature-scale moves should usually be controlled by rarity, not gutted
+5. Mid-tier attacks matter more than adding extra nukes
+
+================================================================
+IMPLEMENTATION PRIORITY
+================================================================
+
+WAVE 1 — MUST BUFF NOW
+- Astonish
+- Arm Thrust
+- Bullet Seed
+- Rock Blast
+- Icicle Spear
+- Sand Tomb
+- Poison Fang
+- Poison Tail
+- Air Cutter
+- Mud Shot
+- Grass Whistle
+- Ice Ball
+- Steamroller
+- Ominous Wind
+- Mud Bomb
+- Frost Breath
+- Magnet Bomb
+- Mirror Shot
+- Electroweb
+- Acid Spray
+- Glaciate
+- Smack Down
+
+WAVE 2 — REPURPOSE / MODERNIZE
+- Mud Sport
+- Water Sport
+- Camouflage
+- Imprison
+- Grudge
+- Flatter
+- Snatch
+- Torment
+- Assist
+- Chatter
+- Defog
+- Rage Powder
+- Wide Guard
+- Sky Drop
+
+WAVE 3 — MINOR NERF ONLY IF TESTING REQUIRES IT
+- Tail Glow
+- Dragon Dance
+- Quiver Dance
+- Shift Gear
+- Coil
+- Brave Bird
+- Head Smash
+- Bolt Strike
+- Shadow Force
+- Roar of Time
+- Freeze Shock
+- Ice Burn
+- Spacial Rend
+
+================================================================
+BUFF IMPLEMENTATION SPEC
+================================================================
+
+ASTONISH
+Current
+- Type: Ghost
+- Category: Physical
+- Power: 30
+- Accuracy: 100
+- PP: 15
+- Effect: May flinch
+
+New
+- Power: 50
+- Accuracy: 100
+- PP: 20
+- Effect: May flinch
+
+Reason
+- Gives Ghost an actual early and mid-tier bridge attack.
+
+---------------------------------------------------------------
+
+ARM THRUST
+Current
+- Power: 15
+- Accuracy: 100
+- PP: 20
+- Effect: Hits 2-5 times
+
+New
+- Power: 20
+- Accuracy: 100
+- PP: 20
+- Effect: Hits 2-5 times
+
+Optional stronger version
+- Keep 15 BP, but make it weighted toward 3-5 hits
+
+Reason
+- Fighting multi-hit needs to stop feeling like dead damage.
+
+---------------------------------------------------------------
+
+BULLET SEED
+Current
+- Power: 25
+- Accuracy: 100
+- PP: 30
+- Effect: Hits 2-5 times
+
+New
+- Power: 25
+- Accuracy: 100
+- PP: 25
+- Effect: Hits 2-5 times, weighted toward 3-5 hits
+
+Alternative conservative version
+- Power: 20
+- PP: 30
+- Effect: guaranteed 3 hits minimum
+
+Reason
+- Keeps identity but improves consistency.
+
+---------------------------------------------------------------
+
+ROCK BLAST
+Current
+- Power: 25
+- Accuracy: 90
+- PP: 10
+- Effect: Hits 2-5 times
+
+New
+- Power: 25
+- Accuracy: 95
+- PP: 15
+- Effect: Hits 2-5 times, weighted toward 3-5 hits
+
+Reason
+- Rock should not have bad power and bad consistency at the same time.
+
+---------------------------------------------------------------
+
+ICICLE SPEAR
+Current
+- Power: 25
+- Accuracy: 100
+- PP: 30
+- Effect: Hits 2-5 times
+
+New
+- Power: 25
+- Accuracy: 100
+- PP: 25
+- Effect: Hits 2-5 times, weighted toward 3-5 hits
+
+Reason
+- Gives Ice physical attackers a more usable tool.
+
+---------------------------------------------------------------
+
+SAND TOMB
+Current
+- Power: 35
+- Accuracy: 85
+- PP: 15
+- Effect: Traps and damages target
+
+New
+- Power: 50
+- Accuracy: 95
+- PP: 15
+- Effect: Traps and damages target
+
+Reason
+- Trapping move should have actual combat value.
+
+---------------------------------------------------------------
+
+POISON FANG
+Current
+- Power: 50
+- Accuracy: 100
+- PP: 15
+- Effect: May badly poison
+
+New
+- Power: 70
+- Accuracy: 100
+- PP: 15
+- Effect: May badly poison
+
+Reason
+- Creates a dependable Poison physical attack with real payoff.
+
+---------------------------------------------------------------
+
+POISON TAIL
+Current
+- Power: 50
+- Accuracy: 100
+- PP: 25
+- Effect: High crit ratio, may poison
+
+New
+- Power: 65
+- Accuracy: 100
+- PP: 20
+- Effect: High crit ratio, may poison
+
+Reason
+- Distinguishes it as the more offensive crit-oriented Poison option.
+
+---------------------------------------------------------------
+
+AIR CUTTER
+Current
+- Power: 60
+- Accuracy: 95
+- PP: 25
+- Effect: High crit ratio
+
+New
+- Power: 75
+- Accuracy: 95
+- PP: 20
+- Effect: High crit ratio
+
+Reason
+- Gives special Flying a real mid-tier STAB.
+
+---------------------------------------------------------------
+
+MUD SHOT
+Current
+- Power: 55
+- Accuracy: 95
+- PP: 15
+- Effect: Lowers Speed
+
+New
+- Power: 65
+- Accuracy: 95
+- PP: 15
+- Effect: Lowers Speed
+
+Reason
+- Keeps utility while making it usable as an attack.
+
+---------------------------------------------------------------
+
+GRASS WHISTLE
+Current
+- Accuracy: 55
+- PP: 15
+- Effect: Sleep
+
+New
+- Accuracy: 70
+- PP: 15
+- Effect: Sleep
+
+Reason
+- Still risky, but no longer unusably unreliable.
+
+---------------------------------------------------------------
+
+ICE BALL
+Current
+- Power: 30
+- Accuracy: 90
+- PP: 20
+- Effect: Doubles in power each turn
+
+New
+- Power: 40
+- Accuracy: 100
+- PP: 15
+- Effect: Doubles in power each turn
+
+Reason
+- Keeps rollout-style identity while making it less awful.
+
+---------------------------------------------------------------
+
+STEAMROLLER
+Current
+- Power: 65
+- Accuracy: 100
+- PP: 20
+- Effect: May flinch
+
+New
+- Power: 75
+- Accuracy: 100
+- PP: 15
+- Effect: May flinch
+
+Reason
+- Makes it a worthwhile imported physical Bug move.
+
+---------------------------------------------------------------
+
+OMINOUS WIND
+Current
+- Power: 60
+- Accuracy: 100
+- PP: 5
+- Effect: May raise all stats
+
+New
+- Power: 70
+- Accuracy: 100
+- PP: 10
+- Effect: May raise all stats
+
+Reason
+- Better special Ghost bridge move without becoming overbearing.
+
+---------------------------------------------------------------
+
+MUD BOMB
+Current
+- Power: 65
+- Accuracy: 85
+- PP: 10
+- Effect: May lower Accuracy
+
+New
+- Power: 70
+- Accuracy: 90
+- PP: 10
+- Effect: May lower Accuracy
+
+Reason
+- Ground special attackers need more stable secondary offense.
+
+---------------------------------------------------------------
+
+FROST BREATH
+Current
+- Power: 60
+- Accuracy: 90
+- PP: 10
+- Effect: Always crits
+
+New
+- Power: 70
+- Accuracy: 95
+- PP: 10
+- Effect: Always crits
+
+Reason
+- Makes guaranteed crit identity matter more.
+
+---------------------------------------------------------------
+
+MAGNET BOMB
+Current
+- Power: 60
+- Accuracy: never misses
+- PP: 20
+
+New
+- Power: 70
+- Accuracy: never misses
+- PP: 15
+
+Reason
+- A no-miss Steel move needs a bit more reward.
+
+---------------------------------------------------------------
+
+MIRROR SHOT
+Current
+- Power: 65
+- Accuracy: 85
+- PP: 10
+- Effect: May lower Accuracy
+
+New
+- Power: 75
+- Accuracy: 95
+- PP: 10
+- Effect: May lower Accuracy
+
+Reason
+- Stops being completely eclipsed by Flash Cannon.
+
+---------------------------------------------------------------
+
+ELECTROWEB
+Current
+- Power: 55
+- Accuracy: 95
+- PP: 15
+- Effect: Lowers Speed
+
+New
+- Power: 65
+- Accuracy: 95
+- PP: 15
+- Effect: Lowers Speed
+
+Reason
+- Utility attack should still do respectable damage.
+
+---------------------------------------------------------------
+
+ACID SPRAY
+Current
+- Power: 40
+- Accuracy: 100
+- PP: 20
+- Effect: Sharply lowers Special Defense
+
+New
+- Power: 50
+- Accuracy: 100
+- PP: 20
+- Effect: Sharply lowers Special Defense
+
+Reason
+- Makes it a more credible combo move.
+
+---------------------------------------------------------------
+
+GLACIATE
+Current
+- Power: 65
+- Accuracy: 95
+- PP: 10
+- Effect: Lowers Speed
+
+New
+- Power: 75
+- Accuracy: 95
+- PP: 10
+- Effect: Lowers Speed
+
+Reason
+- Ice deserves stronger utility offense.
+
+---------------------------------------------------------------
+
+SMACK DOWN
+Current
+- Power: 50
+- Accuracy: 100
+- PP: 15
+- Effect: Grounds Flying targets
+
+New
+- Power: 60
+- Accuracy: 100
+- PP: 15
+- Effect: Grounds Flying targets
+
+Reason
+- The effect is good; baseline damage should be better.
+
+================================================================
+REPURPOSE IMPLEMENTATION SPEC
+================================================================
+
+MUD SPORT
+Current role
+- Weakens Electric moves
+
+New role
+- Ground utility field move
+New version
+- Type: Ground
+- Category: Status
+- PP: 15
+- Effect: Lowers all grounded foes' Speed by 1 stage
+
+Reason
+- Much more useful in normal play and fits mud-control theme.
+
+---------------------------------------------------------------
+
+WATER SPORT
+Current role
+- Weakens Fire moves
+
+New role
+- Water support move
+New version
+- Type: Water
+- Category: Status
+- PP: 15
+- Effect: User and allies gain 25% reduction from Fire moves for 5 turns and cure burn on use
+
+Reason
+- Still thematic, much less dead.
+
+---------------------------------------------------------------
+
+CAMOUFLAGE
+Current role
+- Changes type by terrain
+
+New role
+- Defensive adaptation tool
+New version
+- Type: Normal
+- Category: Status
+- PP: 20
+- Effect: Changes user to a type favored by area and raises Defense by 1 stage
+
+Reason
+- Adds actual battle value.
+
+---------------------------------------------------------------
+
+IMPRISON
+Current role
+- Blocks moves the opponent also knows
+
+New role
+- Lockdown support
+New version
+- Type: Psychic
+- Category: Status
+- PP: 10
+- Effect: Opponent cannot use status moves for 3 turns
+
+Reason
+- Easier to understand and use in-game.
+
+---------------------------------------------------------------
+
+GRUDGE
+Current role
+- Deletes PP if user faints
+
+New role
+- Punishment debuff
+New version
+- Type: Ghost
+- Category: Status
+- PP: 10
+- Effect: If user is hit before next turn ends, attacker loses 25% max HP
+
+Reason
+- Same spiteful concept, actually useful.
+
+---------------------------------------------------------------
+
+FLATTER
+Current role
+- Confuses target, raises target's Special Attack
+
+New role
+- Risky disruption
+New version
+- Type: Dark
+- Category: Status
+- Accuracy: 100
+- PP: 15
+- Effect: Confuses target and lowers its Special Defense by 1 stage
+
+Reason
+- Still tricky, no longer self-defeating.
+
+---------------------------------------------------------------
+
+SNATCH
+Current role
+- Steals next status move
+
+New role
+- Anti-support punish
+New version
+- Type: Dark
+- Category: Status
+- PP: 10
+- Effect: User moves first; if target uses a status move, it fails and user gains +1 Speed
+
+Reason
+- Easier to use in-game.
+
+---------------------------------------------------------------
+
+TORMENT
+Current role
+- Opponent cannot use same move twice in a row
+
+New role
+- Pressure disruption
+New version
+- Type: Dark
+- Category: Status
+- Accuracy: 100
+- PP: 15
+- Effect: Target's damaging moves lose 2 PP for 3 turns
+
+Reason
+- Simpler and more consistently annoying.
+
+---------------------------------------------------------------
+
+ASSIST
+Current role
+- Random ally move
+
+New role
+- Controlled support randomizer
+New version
+- Type: Normal
+- Category: Status
+- PP: 20
+- Effect: Calls a random non-signature support or attack move from party list, excludes useless cases
+
+Reason
+- Keep idea, reduce frustration.
+
+---------------------------------------------------------------
+
+CHATTER
+Current role
+- Special Flying move with confusion
+
+New role
+- Keep as attack, slight modernization
+New version
+- Type: Flying
+- Category: Special
+- Power: 75
+- Accuracy: 100
+- PP: 15
+- Effect: May confuse target
+
+Reason
+- Good concept, just too weak/niche.
+
+---------------------------------------------------------------
+
+DEFOG
+Current role
+- Lowers Evasion and clears fog
+
+New role
+- Field control
+New version
+- Type: Flying
+- Category: Status
+- PP: 15
+- Effect: Removes Reflect, Light Screen, Safeguard, Spikes, Toxic Spikes, and weather barriers on target side
+
+Reason
+- Becomes a real support move for hack play.
+
+---------------------------------------------------------------
+
+RAGE POWDER
+Current role
+- Redirects attacks in doubles
+
+New role
+- Defensive taunt-lure hybrid
+New version
+- Type: Bug
+- Category: Status
+- PP: 20
+- Effect: Opponent must target user this turn; user gains +1 Defense
+
+Reason
+- Keeps redirection flavor while being usable.
+
+---------------------------------------------------------------
+
+WIDE GUARD
+Current role
+- Protects from multi-target attacks
+
+New role
+- Team guard effect
+New version
+- Type: Rock
+- Category: Status
+- PP: 10
+- Effect: User and allies take half damage from super-effective attacks this turn
+
+Reason
+- More relevant outside strict doubles logic.
+
+---------------------------------------------------------------
+
+SKY DROP
+Current role
+- Two-turn lift/drop attack
+
+New role
+- Safer tempo Flying move
+New version
+- Type: Flying
+- Category: Physical
+- Power: 80
+- Accuracy: 95
+- PP: 10
+- Effect: Hits in one turn; lowers target's Speed by 1 stage
+
+Reason
+- Preserves aerial-control theme without awkwardness.
+
+================================================================
+MINOR NERF POLICY
+================================================================
+
+Important:
+- Do not heavy-nerf these immediately
+- First restrict distribution
+- Only apply the listed nerf if testing proves necessary
+
+TAIL GLOW
+Default
+- Keep if highly restricted
+Testing nerf
+- Special Attack boost reduced from +3 to +2
+
+DRAGON DANCE
+Default
+- Keep unchanged
+Testing nerf
+- PP reduced to 15 or restrict to fewer lines
+
+QUIVER DANCE
+Default
+- Keep unchanged
+Testing nerf
+- PP reduced to 10 or restrict distribution heavily
+
+SHIFT GEAR
+Default
+- Keep unchanged
+Testing nerf
+- Raise Attack by 1, Speed by 1 if too oppressive
+
+COIL
+Default
+- Keep unchanged
+Testing nerf
+- PP reduced to 15
+
+BRAVE BIRD
+Default
+- Keep unchanged
+Testing nerf
+- Power 120 -> 110
+
+HEAD SMASH
+Default
+- Keep unchanged
+Testing nerf
+- Power 150 -> 140
+
+BOLT STRIKE
+Default
+- Keep rare
+Testing nerf
+- Power 130 -> 120
+
+SHADOW FORCE
+Default
+- Keep rare
+Testing nerf
+- Power 120 -> 100 if broadly distributed
+
+ROAR OF TIME / FREEZE SHOCK / ICE BURN
+Default
+- Keep extremely rare
+Testing nerf
+- Power trimmed to 130-140 if used beyond legendary space
+
+SPACIAL REND
+Default
+- Keep rare
+Testing nerf
+- Power 100 -> 90 if too common
+
+================================================================
+DISTRIBUTION WARNING LIST
+================================================================
+
+These do not need immediate nerfs.
+They need careful distribution.
+
+- U-turn
+- Volt Switch
+- Stealth Rock
+- Toxic Spikes
+- Roost
+- Bug Buzz
+- Earth Power
+- Flash Cannon
+- Sludge Wave
+- Stone Edge
+- Hurricane
+- Brave Bird
+- Dragon Dance
+- Quiver Dance
+- Shift Gear
+
+Rule
+- Premium offense can be spread selectively
+- Premium setup should stay narrow
+- Hazard moves should stay narrow
+- Pivot moves should stay narrow
+
+================================================================
+FINAL RECOMMENDED PATCH ORDER
+================================================================
+
+PHASE 1
+- Implement all Wave 1 buffs exactly as written
+
+PHASE 2
+- Implement the repurposed utility moves
+
+PHASE 3
+- Test strong setup, hazards, pivots, and signature-scale moves with restricted distribution first
+
+PHASE 4
+- Apply only minor nerfs if testing proves they are needed
+
+================================================================
+FINAL VERDICT
+================================================================
+
+This move pool should be improved mainly through buffs, not major nerfs.
+Most of the unhealthy feeling in the current set comes from:
+- weak move floors
+- inconsistent multi-hit attacks
+- dead utility slots
+- narrow type support in legacy moves
+
+The cleanest Emerald-style rebalance is:
+- buff bad moves hard enough to matter
+- preserve premium moves unless they clearly dominate
+- control top-end power through who learns the move
+- avoid overreacting with heavy nerfs too early

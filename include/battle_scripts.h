@@ -66,6 +66,8 @@ extern const u8 BattleScript_DestinyBondTakesLife[];
 extern const u8 BattleScript_SpikesOnAttacker[];
 extern const u8 BattleScript_SpikesOnTarget[];
 extern const u8 BattleScript_SpikesOnFaintedBattler[];
+extern const u8 BattleScript_ToxicSpikesPoisoned[];
+extern const u8 BattleScript_ToxicSpikesAbsorbed[];
 extern const u8 BattleScript_PerishSongTakesLife[];
 extern const u8 BattleScript_PerishSongCountGoesDown[];
 extern const u8 BattleScript_AllStatsUp[];

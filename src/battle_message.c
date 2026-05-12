@@ -211,6 +211,8 @@ static const u8 sText_PkmnCopiedStatChanges[] = _("{B_ATK_NAME_WITH_PREFIX} copi
 static const u8 sText_PkmnGotFree[] = _("{B_ATK_NAME_WITH_PREFIX} got free of\n{B_DEF_NAME_WITH_PREFIX}'s {B_BUFF1}!");
 static const u8 sText_PkmnShedLeechSeed[] = _("{B_ATK_NAME_WITH_PREFIX} shed\nLEECH SEED!");
 static const u8 sText_PkmnBlewAwaySpikes[] = _("{B_ATK_NAME_WITH_PREFIX} blew away\nSPIKES!");
+static const u8 sText_ToxicSpikesScattered[] = _("Poison spikes were scattered all\naround the opponent's side!");
+static const u8 sText_ToxicSpikesAbsorbed[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} absorbed\nthe poison spikes!");
 static const u8 sText_PkmnFledFromBattle[] = _("{B_ATK_NAME_WITH_PREFIX} fled from\nbattle!");
 static const u8 sText_PkmnForesawAttack[] = _("{B_ATK_NAME_WITH_PREFIX} foresaw\nan attack!");
 static const u8 sText_PkmnTookAttack[] = _("{B_DEF_NAME_WITH_PREFIX} took the\n{B_BUFF1} attack!");
@@ -885,6 +887,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_PKMNBOXLANETTESPCFULL - BATTLESTRINGS_TABLE_START] = gText_PkmnTransferredLanettesPCBoxFull,
     [STRINGID_TRAINER1WINTEXT - BATTLESTRINGS_TABLE_START] = sText_Trainer1WinText,
     [STRINGID_TRAINER2WINTEXT - BATTLESTRINGS_TABLE_START] = sText_Trainer2WinText,
+    [STRINGID_TOXICSPIKESSCATTERED - BATTLESTRINGS_TABLE_START] = sText_ToxicSpikesScattered,
+    [STRINGID_TOXICSPIKESABSORBED - BATTLESTRINGS_TABLE_START] = sText_ToxicSpikesAbsorbed,
 };
 
 const u16 gMissStringIds[] =
@@ -1073,6 +1077,12 @@ const u16 gGotPoisonedStringIds[] =
 {
     [B_MSG_STATUSED]            = STRINGID_PKMNWASPOISONED,
     [B_MSG_STATUSED_BY_ABILITY] = STRINGID_PKMNPOISONEDBY
+};
+
+const u16 gToxicSpikesStringIds[] =
+{
+    [0] = STRINGID_PKMNWASPOISONED,
+    [1] = STRINGID_PKMNBADLYPOISONED
 };
 
 const u16 gGotParalyzedStringIds[] =

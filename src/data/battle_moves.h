@@ -4681,7 +4681,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_U_TURN] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_U_TURN,
         .power = 70,
         .type = TYPE_BUG,
         .accuracy = 100,
@@ -5084,7 +5084,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_TOXIC_SPIKES] =
     {
-        .effect = EFFECT_SPIKES,
+        .effect = EFFECT_TOXIC_SPIKES,
         .power = 0,
         .type = TYPE_POISON,
         .accuracy = 0,

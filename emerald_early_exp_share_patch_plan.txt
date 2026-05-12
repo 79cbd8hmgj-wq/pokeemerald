@@ -1,0 +1,91 @@
+POKEMON EMERALD EARLY EXP SHARE PATCH PLAN
+
+Goal
+Reduce early-game grinding by making Exp. Share available immediately and changing it into a modern-style party-wide progression tool.
+
+BEST VERSION RECOMMENDATION
+
+Implement Exp. Share as an early-game convenience feature with the following design:
+
+1. Add Exp. Share to the first Poké Mart
+- Exp. Share should be sold in the first Poké Mart inventory available to the player.
+- Price should be set to 0.
+- The item should be obtainable immediately without requiring grinding or progression gates.
+
+2. Rework Exp. Share into a modern party-wide Exp. Share
+- Exp. Share should no longer function only as a held Gen 3 split-EXP item.
+- Instead, it should behave like a modern Exp. Share effect:
+  - after battle, the full party receives experience
+  - the player does not need to equip the item to a single Pokémon
+  - the item functions as an account-wide or bag-based progression unlock once obtained
+
+3. Preserve clean progression
+- The patch should reduce grind without making the game feel completely automatic.
+- The system should help players train full teams, rotate party members, and experiment with more Pokémon.
+- The change should fit the broader rebalance philosophy of reducing the need for cheating while supporting catching, team building, and experimentation.
+
+PRICE DECISION
+
+Exp. Share price:
+- 0
+
+Reason:
+- Exp. Share is being used here as a quality-of-life progression tool, not a luxury purchase.
+- Pricing it at 0 guarantees immediate access and removes early-game friction.
+- This is especially appropriate in a rebalance that is already trying to reduce grind and improve pacing.
+
+DESIGN INTENT
+
+This patch is meant to solve one of the biggest early-game problems in older Pokémon games:
+- training a full party takes too long
+- boxed or lower-level Pokémon fall behind quickly
+- players feel pushed into overusing one or two party members
+- lack of early Exp. Share increases grind pressure
+
+By putting Exp. Share in the first Poké Mart for free and making it party-wide, the player gains:
+- smoother early-game leveling
+- better team variety
+- less grinding
+- easier experimentation with catches
+- more natural progression without cheats
+
+IMPLEMENTATION PHILOSOPHY
+
+This should be treated as a gameplay system update, not just an item placement edit.
+
+Required outcome:
+- the first Poké Mart sells Exp. Share for 0
+- once obtained, Exp. Share provides party-wide EXP behavior
+
+Preferred behavior model:
+- Exp. Share works from the bag or as a passive unlock once acquired
+- the player does not need to assign it as a held item
+- the entire team benefits after battle in a modern-style format
+
+BALANCE NOTE
+
+Because this patch is intended to work alongside the existing progression rebalance, it should be reviewed together with:
+- increased wild EXP
+- increased trainer EXP
+- cheaper shop prices
+- wild battle money rewards
+
+If leveling becomes too fast in actual testing, the preferred response is to tune global EXP numbers slightly rather than removing early Exp. Share access.
+
+FINAL IMPLEMENTATION TARGET
+
+Use this exact target:
+- Exp. Share added to the first Poké Mart
+- Exp. Share price set to 0
+- Exp. Share behavior changed to modern party-wide EXP sharing
+- System implemented as a clean early-game quality-of-life feature
+
+SUMMARY
+
+The best version of this patch is not just selling the vanilla Exp. Share early.
+The best version is:
+- sell Exp. Share in the first Poké Mart
+- set its price to 0
+- convert it into a modern party-wide EXP Share effect
+
+That gives the player immediate access to one of the most important anti-grind tools in the game and fits the overall rebalance direction much better than leaving it as a normal held item.

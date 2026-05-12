@@ -1418,6 +1418,345 @@ static const u8 sPsychoBoostDescription[] = _(
     "but sharply lowers SP. ATK.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
+static const u8 sAttackOrderDescription[] = _(
+    "High critical hit ratio.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sBugBiteDescription[] = _(
+    "Receives the effect from the foe's \n"
+    "(Gen 4/5 import).");
+
+static const u8 sBugBuzzDescription[] = _(
+    "May lower foe's Special Defense.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDefendOrderDescription[] = _(
+    "Raises user's Defense and Special D\n"
+    "(Gen 4/5 import).");
+
+static const u8 sHealOrderDescription[] = _(
+    "User recovers half its max HP.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sUTurnDescription[] = _(
+    "User switches out immediately after\n"
+    "(Gen 4/5 import).");
+
+static const u8 sXScissorDescription[] = _(
+    "An attack with no\n"
+    "additional effect.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDracoMeteorDescription[] = _(
+    "Sharply lowers user's Special Attac\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDragonPulseDescription[] = _(
+    "An attack with no\n"
+    "additional effect.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDragonRushDescription[] = _(
+    "May cause flinching.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sRoarOfTimeDescription[] = _(
+    "User must recharge next turn.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sSpacialRendDescription[] = _(
+    "High critical hit ratio.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sChargeBeamDescription[] = _(
+    "May raise user's Special Attack.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDischargeDescription[] = _(
+    "May paralyze foe.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sMagnetRiseDescription[] = _(
+    "User becomes immune to Ground-type \n"
+    "(Gen 4/5 import).");
+
+static const u8 sThunderFangDescription[] = _(
+    "May cause flinching and/or paralyze\n"
+    "(Gen 4/5 import).");
+
+static const u8 sAirSlashDescription[] = _(
+    "May cause flinching.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sBraveBirdDescription[] = _(
+    "User receives recoil damage.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sChatterDescription[] = _(
+    "Confuses foe.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDefogDescription[] = _(
+    "Lowers foe's Evasiveness and clears\n"
+    "(Gen 4/5 import).");
+
+static const u8 sPluckDescription[] = _(
+    "If the foe is holding a berry, its \n"
+    "(Gen 4/5 import).");
+
+static const u8 sRoostDescription[] = _(
+    "User recovers half of its max HP an\n"
+    "(Gen 4/5 import).");
+
+static const u8 sTailwindDescription[] = _(
+    "Doubles Speed for 4 turns.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sOminousWindDescription[] = _(
+    "May raise all user's stats at once.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sShadowClawDescription[] = _(
+    "High critical hit ratio.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sShadowForceDescription[] = _(
+    "Disappears on first turn, attacks o\n"
+    "(Gen 4/5 import).");
+
+static const u8 sShadowSneakDescription[] = _(
+    "User attacks first.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sEarthPowerDescription[] = _(
+    "May lower foe's Special Defense.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sMudBombDescription[] = _(
+    "May lower foe's Accuracy.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sAvalancheDescription[] = _(
+    "Power doubles if user took damage f\n"
+    "(Gen 4/5 import).");
+
+static const u8 sIceFangDescription[] = _(
+    "May cause flinching and/or freeze f\n"
+    "(Gen 4/5 import).");
+
+static const u8 sIceShardDescription[] = _(
+    "User attacks first.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sCrossPoisonDescription[] = _(
+    "High critical hit ratio. May poison\n"
+    "(Gen 4/5 import).");
+
+static const u8 sGastroAcidDescription[] = _(
+    "Cancels out the effect of the foe's\n"
+    "(Gen 4/5 import).");
+
+static const u8 sGunkShotDescription[] = _(
+    "May poison foe.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sPoisonJabDescription[] = _(
+    "May poison the foe.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sToxicSpikesDescription[] = _(
+    "Poisons foes switching into battle.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sHeadSmashDescription[] = _(
+    "User receives recoil damage.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sPowerGemDescription[] = _(
+    "An attack with no\n"
+    "additional effect.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sRockPolishDescription[] = _(
+    "Sharply raises user's Speed.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sRockWreckerDescription[] = _(
+    "User must recharge next turn.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sStealthRockDescription[] = _(
+    "Damages foes switching into battle.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sStoneEdgeDescription[] = _(
+    "High critical hit ratio.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sBulletPunchDescription[] = _(
+    "User attacks first.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sFlashCannonDescription[] = _(
+    "May lower foe's Special Defense.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sGyroBallDescription[] = _(
+    "The slower the user, the stronger t\n"
+    "(Gen 4/5 import).");
+
+static const u8 sIronHeadDescription[] = _(
+    "May cause flinching.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sMagnetBombDescription[] = _(
+    "Ignores Accuracy and Evasiveness.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sMetalBurstDescription[] = _(
+    "Deals damage equal to 1.5x foe's at\n"
+    "(Gen 4/5 import).");
+
+static const u8 sMirrorShotDescription[] = _(
+    "May lower foe's Accuracy.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sQuiverDanceDescription[] = _(
+    "Raises user's Special Attack, Speci\n"
+    "(Gen 4/5 import).");
+
+static const u8 sRagePowderDescription[] = _(
+    "Forces attacks to hit user, not tea\n"
+    "(Gen 4/5 import).");
+
+static const u8 sSteamrollerDescription[] = _(
+    "May cause flinching.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sStruggleBugDescription[] = _(
+    "Lowers foe's Special Attack.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDragonTailDescription[] = _(
+    "In battles, the foe switches. In th\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDualChopDescription[] = _(
+    "Hits twice in one turn.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sBoltStrikeDescription[] = _(
+    "May paralyze foe.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sElectroBallDescription[] = _(
+    "The faster the user, the stronger t\n"
+    "(Gen 4/5 import).");
+
+static const u8 sElectrowebDescription[] = _(
+    "Lowers foe's Speed.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sFusionBoltDescription[] = _(
+    "Power increases if Fusion Flare is \n"
+    "(Gen 4/5 import).");
+
+static const u8 sVoltSwitchDescription[] = _(
+    "User must switch out after attackin\n"
+    "(Gen 4/5 import).");
+
+static const u8 sWildChargeDescription[] = _(
+    "User receives recoil damage.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sAcrobaticsDescription[] = _(
+    "Stronger when the user does not hav\n"
+    "(Gen 4/5 import).");
+
+static const u8 sHurricaneDescription[] = _(
+    "May confuse foe.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sSkyDropDescription[] = _(
+    "Takes foe into the air on first tur\n"
+    "(Gen 4/5 import).");
+
+static const u8 sHexDescription[] = _(
+    "Inflicts more damage if the target \n"
+    "(Gen 4/5 import).");
+
+static const u8 sBulldozeDescription[] = _(
+    "Lowers foe's Speed.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sDrillRunDescription[] = _(
+    "High critical hit ratio.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sFreezeShockDescription[] = _(
+    "Charges on first turn, attacks on s\n"
+    "(Gen 4/5 import).");
+
+static const u8 sFrostBreathDescription[] = _(
+    "Always results in a critical hit.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sGlaciateDescription[] = _(
+    "Lowers foe's Speed.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sIceBurnDescription[] = _(
+    "Charges on first turn, attacks on s\n"
+    "(Gen 4/5 import).");
+
+static const u8 sIcicleCrashDescription[] = _(
+    "May cause flinching.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sAcidSprayDescription[] = _(
+    "Sharply lowers foe's Special Defens\n"
+    "(Gen 4/5 import).");
+
+static const u8 sClearSmogDescription[] = _(
+    "Removes all of the target's stat ch\n"
+    "(Gen 4/5 import).");
+
+static const u8 sCoilDescription[] = _(
+    "Raises user's Attack, Defense and A\n"
+    "(Gen 4/5 import).");
+
+static const u8 sSludgeWaveDescription[] = _(
+    "May poison foe.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sVenoshockDescription[] = _(
+    "Inflicts double damage if the targe\n"
+    "(Gen 4/5 import).");
+
+static const u8 sSmackDownDescription[] = _(
+    "Makes Flying-type Pokémon vulnerabl\n"
+    "(Gen 4/5 import).");
+
+static const u8 sWideGuardDescription[] = _(
+    "Protects the user's team from multi\n"
+    "(Gen 4/5 import).");
+
+static const u8 sAutotomizeDescription[] = _(
+    "Reduces weight and sharply raises S\n"
+    "(Gen 4/5 import).");
+
+static const u8 sGearGrindDescription[] = _(
+    "Hits twice in one turn.\n"
+    "(Gen 4/5 import).");
+
+static const u8 sHeavySlamDescription[] = _(
+    "The heavier the user, the stronger \n"
+    "(Gen 4/5 import).");
+
+static const u8 sShiftGearDescription[] = _(
+    "Raises user's Attack and sharply ra\n"
+    "(Gen 4/5 import).");
+
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
@@ -1774,4 +2113,88 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_ATTACK_ORDER - 1] = sAttackOrderDescription,
+    [MOVE_BUG_BITE - 1] = sBugBiteDescription,
+    [MOVE_BUG_BUZZ - 1] = sBugBuzzDescription,
+    [MOVE_DEFEND_ORDER - 1] = sDefendOrderDescription,
+    [MOVE_HEAL_ORDER - 1] = sHealOrderDescription,
+    [MOVE_U_TURN - 1] = sUTurnDescription,
+    [MOVE_X_SCISSOR - 1] = sXScissorDescription,
+    [MOVE_DRACO_METEOR - 1] = sDracoMeteorDescription,
+    [MOVE_DRAGON_PULSE - 1] = sDragonPulseDescription,
+    [MOVE_DRAGON_RUSH - 1] = sDragonRushDescription,
+    [MOVE_ROAR_OF_TIME - 1] = sRoarOfTimeDescription,
+    [MOVE_SPACIAL_REND - 1] = sSpacialRendDescription,
+    [MOVE_CHARGE_BEAM - 1] = sChargeBeamDescription,
+    [MOVE_DISCHARGE - 1] = sDischargeDescription,
+    [MOVE_MAGNET_RISE - 1] = sMagnetRiseDescription,
+    [MOVE_THUNDER_FANG - 1] = sThunderFangDescription,
+    [MOVE_AIR_SLASH - 1] = sAirSlashDescription,
+    [MOVE_BRAVE_BIRD - 1] = sBraveBirdDescription,
+    [MOVE_CHATTER - 1] = sChatterDescription,
+    [MOVE_DEFOG - 1] = sDefogDescription,
+    [MOVE_PLUCK - 1] = sPluckDescription,
+    [MOVE_ROOST - 1] = sRoostDescription,
+    [MOVE_TAILWIND - 1] = sTailwindDescription,
+    [MOVE_OMINOUS_WIND - 1] = sOminousWindDescription,
+    [MOVE_SHADOW_CLAW - 1] = sShadowClawDescription,
+    [MOVE_SHADOW_FORCE - 1] = sShadowForceDescription,
+    [MOVE_SHADOW_SNEAK - 1] = sShadowSneakDescription,
+    [MOVE_EARTH_POWER - 1] = sEarthPowerDescription,
+    [MOVE_MUD_BOMB - 1] = sMudBombDescription,
+    [MOVE_AVALANCHE - 1] = sAvalancheDescription,
+    [MOVE_ICE_FANG - 1] = sIceFangDescription,
+    [MOVE_ICE_SHARD - 1] = sIceShardDescription,
+    [MOVE_CROSS_POISON - 1] = sCrossPoisonDescription,
+    [MOVE_GASTRO_ACID - 1] = sGastroAcidDescription,
+    [MOVE_GUNK_SHOT - 1] = sGunkShotDescription,
+    [MOVE_POISON_JAB - 1] = sPoisonJabDescription,
+    [MOVE_TOXIC_SPIKES - 1] = sToxicSpikesDescription,
+    [MOVE_HEAD_SMASH - 1] = sHeadSmashDescription,
+    [MOVE_POWER_GEM - 1] = sPowerGemDescription,
+    [MOVE_ROCK_POLISH - 1] = sRockPolishDescription,
+    [MOVE_ROCK_WRECKER - 1] = sRockWreckerDescription,
+    [MOVE_STEALTH_ROCK - 1] = sStealthRockDescription,
+    [MOVE_STONE_EDGE - 1] = sStoneEdgeDescription,
+    [MOVE_BULLET_PUNCH - 1] = sBulletPunchDescription,
+    [MOVE_FLASH_CANNON - 1] = sFlashCannonDescription,
+    [MOVE_GYRO_BALL - 1] = sGyroBallDescription,
+    [MOVE_IRON_HEAD - 1] = sIronHeadDescription,
+    [MOVE_MAGNET_BOMB - 1] = sMagnetBombDescription,
+    [MOVE_METAL_BURST - 1] = sMetalBurstDescription,
+    [MOVE_MIRROR_SHOT - 1] = sMirrorShotDescription,
+    [MOVE_QUIVER_DANCE - 1] = sQuiverDanceDescription,
+    [MOVE_RAGE_POWDER - 1] = sRagePowderDescription,
+    [MOVE_STEAMROLLER - 1] = sSteamrollerDescription,
+    [MOVE_STRUGGLE_BUG - 1] = sStruggleBugDescription,
+    [MOVE_DRAGON_TAIL - 1] = sDragonTailDescription,
+    [MOVE_DUAL_CHOP - 1] = sDualChopDescription,
+    [MOVE_BOLT_STRIKE - 1] = sBoltStrikeDescription,
+    [MOVE_ELECTRO_BALL - 1] = sElectroBallDescription,
+    [MOVE_ELECTROWEB - 1] = sElectrowebDescription,
+    [MOVE_FUSION_BOLT - 1] = sFusionBoltDescription,
+    [MOVE_VOLT_SWITCH - 1] = sVoltSwitchDescription,
+    [MOVE_WILD_CHARGE - 1] = sWildChargeDescription,
+    [MOVE_ACROBATICS - 1] = sAcrobaticsDescription,
+    [MOVE_HURRICANE - 1] = sHurricaneDescription,
+    [MOVE_SKY_DROP - 1] = sSkyDropDescription,
+    [MOVE_HEX - 1] = sHexDescription,
+    [MOVE_BULLDOZE - 1] = sBulldozeDescription,
+    [MOVE_DRILL_RUN - 1] = sDrillRunDescription,
+    [MOVE_FREEZE_SHOCK - 1] = sFreezeShockDescription,
+    [MOVE_FROST_BREATH - 1] = sFrostBreathDescription,
+    [MOVE_GLACIATE - 1] = sGlaciateDescription,
+    [MOVE_ICE_BURN - 1] = sIceBurnDescription,
+    [MOVE_ICICLE_CRASH - 1] = sIcicleCrashDescription,
+    [MOVE_ACID_SPRAY - 1] = sAcidSprayDescription,
+    [MOVE_CLEAR_SMOG - 1] = sClearSmogDescription,
+    [MOVE_COIL - 1] = sCoilDescription,
+    [MOVE_SLUDGE_WAVE - 1] = sSludgeWaveDescription,
+    [MOVE_VENOSHOCK - 1] = sVenoshockDescription,
+    [MOVE_SMACK_DOWN - 1] = sSmackDownDescription,
+    [MOVE_WIDE_GUARD - 1] = sWideGuardDescription,
+    [MOVE_AUTOTOMIZE - 1] = sAutotomizeDescription,
+    [MOVE_GEAR_GRIND - 1] = sGearGrindDescription,
+    [MOVE_HEAVY_SLAM - 1] = sHeavySlamDescription,
+    [MOVE_SHIFT_GEAR - 1] = sShiftGearDescription,
 };

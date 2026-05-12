@@ -7144,11 +7144,22 @@ static void Cmd_setmultihitcounter(void)
     }
     else
     {
-        gMultiHitCounter = Random() & 3;
-        if (gMultiHitCounter > 1)
-            gMultiHitCounter = (Random() & 3) + 2;
+        if (gCurrentMove == MOVE_BULLET_SEED
+         || gCurrentMove == MOVE_ROCK_BLAST
+         || gCurrentMove == MOVE_ICICLE_SPEAR)
+        {
+            // Rebalance imported from the move spec: make these legacy
+            // multi-hit moves lean toward 3-5 hits instead of mostly 2-3.
+            gMultiHitCounter = (Random() % 3) + 3;
+        }
         else
-            gMultiHitCounter += 2;
+        {
+            gMultiHitCounter = Random() & 3;
+            if (gMultiHitCounter > 1)
+                gMultiHitCounter = (Random() & 3) + 2;
+            else
+                gMultiHitCounter += 2;
+        }
     }
 
     gBattlescriptCurrInstr += 2;

@@ -1,0 +1,501 @@
+POKÉMON EMERALD MOD – FULL GRAPHICS PATCH IMPLEMENTATION PLAN FOR CODEX
+
+Purpose
+This document is a full graphics patch plan for a Pokémon Emerald decomp project. It is written so Codex can use it as an implementation brief instead of guessing what “improve the graphics” means.
+
+Core Goal
+Raise the visual quality of the game as much as realistically possible while still keeping the project stable, readable, and clearly GBA-native.
+
+Important Constraint
+Do not attempt to increase the internal game resolution. The Game Boy Advance display is 240x160 and Emerald is built around tile, sprite, and palette workflows. “Better graphics” here means better art direction, better asset quality, better palette work, cleaner UI, stronger battle presentation, and more consistent visual polish.
+
+Primary Design Standard
+Target a “premium late-era GBA” presentation.
+The game should still feel like Pokémon Emerald, but noticeably cleaner, richer, and more polished in every major visual area.
+
+Do Not Do These
+- Do not convert the project into a fake HD or higher-resolution game.
+- Do not mix wildly different art styles.
+- Do not insert oversized sprites that clash with the engine.
+- Do not prioritize experimental rendering rewrites over visible asset improvements.
+- Do not make one-off edits with no style guide.
+- Do not break existing graphics pipelines unless replacement pipelines are fully documented.
+
+Preferred Visual Direction
+- Keep the game GBA-native in proportion and readability.
+- Use richer palettes, sharper contrast, and cleaner tile art.
+- Upgrade battle scenes heavily.
+- Upgrade key overworld sprites and tilesets.
+- Improve UI clarity and consistency.
+- Make the game feel more vivid, less flat, and less washed out.
+
+PROJECT SCOPE
+This graphics patch should be treated as a major visual overhaul with these five pillars:
+
+1. Battle Presentation Overhaul
+2. Pokémon and Trainer Sprite Upgrade
+3. Overworld Sprite Upgrade
+4. Tileset and Map Palette Overhaul
+5. UI and Visual Feedback Polish
+
+==================================================
+PHASE 1 – FOUNDATION AND GRAPHICS PIPELINE AUDIT
+==================================================
+
+Codex Task
+First audit the current graphics structure of the repo before changing assets.
+
+Objectives
+- Identify all current graphics directories and file rules.
+- Identify how battle backgrounds, Pokémon sprites, trainer sprites, UI assets, overworld sprites, and tilesets are currently stored and built.
+- Identify whether the repo is closer to pret pokeemerald or pokeemerald-expansion conventions.
+- Identify whether any custom graphics rules already exist.
+- Produce a short internal summary of where each major visual asset category lives.
+
+Expected Output
+A short audit summary in comments or a markdown file that lists:
+- battle backgrounds locations
+- Pokémon battle sprites locations
+- trainer sprite locations
+- overworld sprite locations
+- tileset locations
+- UI graphic locations
+- palette locations
+- graphics build rule files
+
+Implementation Rule
+Do not begin bulk replacements until the asset pipeline is understood.
+
+==================================================
+PHASE 2 – BATTLE BACKGROUND OVERHAUL
+==================================================
+
+Priority
+Very high. This is one of the biggest visible upgrades in the entire patch.
+
+Goal
+Replace flat or dated battle backgrounds with richer, cleaner, more visually distinct backgrounds while remaining readable on GBA hardware.
+
+Targets
+- grass battle background
+- cave battle background
+- water battle background
+- forest battle background
+- mountain/rock battle background
+- indoor battle background
+- urban/town battle background if applicable
+- special encounter backgrounds where practical
+- elite four/champion/gym leader/villain major battle backgrounds if the repo supports unique scenes
+
+Art Direction Rules
+- Use stronger depth and horizon separation.
+- Improve environmental detail without making the background noisy.
+- Preserve battle readability above all else.
+- Keep the battler area visually clear so sprites do not get lost.
+- Use palette ramps that are vibrant but not neon-saturated.
+- Avoid muddy low-contrast colors.
+
+Technical Rules
+- Keep asset sizes and formats consistent with the engine’s battle background system.
+- Respect palette limitations.
+- Preserve alignment and layer behavior.
+- Verify that no background breaks animations, battle transitions, or status display readability.
+
+Codex Actions
+- Audit existing battle background asset references.
+- Replace backgrounds category by category.
+- Normalize palettes where possible.
+- Test each major battle environment in-game.
+- Ensure text boxes, HP bars, move names, and battler sprites remain clear on every background.
+
+Success Criteria
+Battle scenes immediately look more modern, more location-specific, and less flat.
+
+==================================================
+PHASE 3 – POKÉMON BATTLE SPRITE UPGRADE
+==================================================
+
+Priority
+Very high.
+
+Goal
+Improve front sprites, back sprites, party icons if applicable, and any related species visual assets so battles feel sharper and more premium.
+
+Targets
+- player-side back sprites
+- enemy front sprites
+- shiny sprite consistency where applicable
+- species icons/menu icons if supported by the repo
+- sprite alignment and shadow compatibility
+
+Art Direction Rules
+- Keep sprite proportions compatible with Gen 3 battle framing.
+- Prefer polished Gen 3+ or Gen 4-inspired sprite quality, but keep consistency across the full Pokédex.
+- Avoid mixing clean modern sprites with low-detail legacy sprites.
+- Preserve silhouette readability.
+- Avoid over-detailing tiny sprites.
+- Keep outlines and contrast readable on hardware-appropriate palettes.
+
+Technical Rules
+- Do not let sprites overflow or clip incorrectly in battle.
+- Maintain proper anchor points.
+- Preserve animation compatibility where animations depend on sprite dimensions or positioning.
+- Ensure shiny variants and palette swaps still work correctly.
+
+Codex Actions
+- Audit species sprite files and insertion rules.
+- Upgrade sprites in structured batches.
+- Verify battle placement and centering.
+- Verify that no species has broken sprite references.
+- Verify female/alternate forms if the repo supports them.
+
+Success Criteria
+Pokémon battles look cleaner and more visually impressive without looking out of place in Emerald.
+
+==================================================
+PHASE 4 – TRAINER BATTLE SPRITE UPGRADE
+==================================================
+
+Priority
+High.
+
+Goal
+Upgrade trainer sprites so important battles look meaningfully better.
+
+Targets
+- player trainer battle backsprite if applicable
+- rival battle sprite
+- gym leader sprites
+- elite four sprites
+- champion sprite
+- villain team admin and leader sprites
+- common trainer classes where practical
+
+Art Direction Rules
+- Important trainers should receive the highest polish.
+- Maintain class readability at a glance.
+- Use cleaner outlines, stronger shading, and more personality.
+- Keep the style consistent with the Pokémon sprites and battle backgrounds.
+
+Codex Actions
+- Identify trainer graphics tables and references.
+- Upgrade major trainers first.
+- Upgrade generic trainer classes second.
+- Check all palettes and battle intros.
+- Confirm that trainer mugshots or VS graphics remain consistent if those systems exist.
+
+Success Criteria
+Trainer battles feel more distinct and more premium, especially boss fights.
+
+==================================================
+PHASE 5 – OVERWORLD PLAYER AND NPC SPRITE UPGRADE
+==================================================
+
+Priority
+High.
+
+Goal
+Make exploration feel better by improving the quality of the sprites seen most often in towns, routes, and story scenes.
+
+Targets
+- player overworld sprites
+- bike sprites
+- surf sprites if applicable
+- fishing sprites if applicable
+- rival overworld sprites
+- gym leaders and major NPCs
+- villain team overworld sprites
+- nurse, clerk, key recurring NPC classes
+
+Art Direction Rules
+- Improve readability and animation clarity.
+- Keep frame-to-frame consistency.
+- Preserve tile fit and movement clarity.
+- Avoid designs that look too tall, too wide, or too detailed for overworld scale.
+
+Codex Actions
+- Identify overworld graphics structure.
+- Upgrade player and major story NPCs first.
+- Upgrade commonly seen NPC classes second.
+- Verify walking, turning, running, biking, surfing, and fishing frame sets.
+- Confirm event scripts still point to correct graphics IDs.
+
+Success Criteria
+The overworld feels noticeably more polished before the player even enters battle.
+
+==================================================
+PHASE 6 – TILESSET OVERHAUL AND MAP PALETTE PASS
+==================================================
+
+Priority
+Very high.
+
+Goal
+Improve the look of the world itself through stronger tiles, cleaner edges, better texture work, and much better palette discipline.
+
+Highest Priority Tileset Categories
+1. Outdoor nature routes
+2. Town exterior tiles
+3. Water and shoreline tiles
+4. Forest tiles
+5. Cave tiles
+6. Interior house/shop/gym tiles
+
+Art Direction Rules
+- Increase visual richness without destroying readability.
+- Improve grass, dirt, cliffs, tree lines, and water transitions.
+- Reduce flatness and repeated-looking surfaces where practical.
+- Use better contrast to make maps feel less washed out.
+- Keep collision readability intact.
+- Keep doors, ledges, stairs, and interactable tiles obvious.
+
+Palette Rules
+- Outdoor greens should be cleaner and more deliberate.
+- Water should look more vibrant and less dull.
+- Interior palettes should be readable and less muddy.
+- Town palettes should support clearer visual identity between locations.
+- Avoid oversaturation that causes eye strain.
+
+Codex Actions
+- Audit current primary and secondary tilesets.
+- Build a prioritized replacement list.
+- Improve palettes first where full redraws are too large.
+- Improve core outdoor tiles next.
+- Improve town and interior tiles after that.
+- Verify all edited tiles in Porymap-compatible workflows if relevant.
+- Check tile behavior and metatile references after edits.
+
+Success Criteria
+Routes, towns, caves, and interiors all look cleaner, richer, and more intentionally art-directed.
+
+==================================================
+PHASE 7 – UI OVERHAUL
+==================================================
+
+Priority
+High.
+
+Goal
+Upgrade menus and battle UI so the game feels more cohesive and modern without losing Emerald identity.
+
+Targets
+- battle boxes
+- menu windows
+- text box frames
+- title screen elements if in scope
+- party menu accents
+- bag icons and item menu graphics if practical
+- status icons
+- type icons if custom UI work exists
+- HP/EXP visual polish where practical
+
+Art Direction Rules
+- Prioritize readability over decoration.
+- Make UI frames cleaner and less noisy.
+- Improve contrast between text and background.
+- Keep fonts readable and avoid clashing color combinations.
+- Match the overall visual direction of the new overworld and battle art.
+
+Codex Actions
+- Audit all UI asset locations.
+- Standardize window frame style and palette logic.
+- Improve battle box appearance and legibility.
+- Improve title/menu presentation if feasible.
+- Check every heavily used UI screen in emulator testing.
+
+Success Criteria
+Menus and battle interfaces feel cleaner and more premium instead of looking like untouched vanilla leftovers.
+
+==================================================
+PHASE 8 – EFFECTS, BLENDING, AND VISUAL FEEDBACK
+==================================================
+
+Priority
+Medium to high.
+
+Goal
+Use Emerald’s existing visual capabilities better so the game feels more alive even when asset replacements are modest.
+
+Targets
+- battle transitions
+- weather presentation
+- palette blending opportunities
+- flash/shine effects where appropriate
+- map mood differences through palette and lighting choices
+- improved perceived depth in battle scenes
+
+Rules
+- Do not add effects that obscure gameplay.
+- Do not slow battles unnecessarily.
+- Use effects to support impact, not to show off.
+
+Codex Actions
+- Audit current blend and palette behavior.
+- Improve major battle scene transitions where safe.
+- Improve weather readability.
+- Look for low-risk opportunities to use blending or palette tuning to create better atmosphere.
+
+Success Criteria
+The game feels more dynamic, not just redrawn.
+
+==================================================
+PHASE 9 – LOCATION IDENTITY PASS
+==================================================
+
+Priority
+Medium.
+
+Goal
+Give key locations more visual identity so the world feels less uniform.
+
+Targets
+- starter town
+- major cities
+- villain hideouts
+- gym interiors
+- elite four rooms
+- champion room
+- high-importance routes
+- unique caves or legendary areas
+
+Rules
+- Each important place should have a clearer mood.
+- Differences should come mostly through palette, tileset accenting, and battle background selection.
+- Do not create total visual chaos between adjacent areas.
+
+Codex Actions
+- Create a priority list of signature locations.
+- Apply targeted palette and environmental improvements.
+- Assign more fitting battle backgrounds where applicable.
+
+Success Criteria
+Key places are more memorable at a glance.
+
+==================================================
+PHASE 10 – STYLE CONSISTENCY ENFORCEMENT
+==================================================
+
+Priority
+Critical.
+
+Goal
+Prevent the patch from becoming a grab-bag of mismatched assets.
+
+Codex Rules
+- Create or update a graphics style guide inside the repo.
+- Document preferred sprite density, outline style, contrast level, and palette philosophy.
+- Keep all new assets aligned with that guide.
+- Replace outliers that do not match the new baseline.
+
+Style Guide Must Define
+- target overall visual tone
+- sprite detail ceiling
+- outline strength
+- palette saturation level
+- UI frame style
+- battle background style
+- overworld tile density
+
+Success Criteria
+The patch looks intentional rather than stitched together.
+
+==================================================
+PHASE 11 – TESTING AND VALIDATION
+==================================================
+
+Priority
+Critical.
+
+Codex must test all graphics changes in an emulator build.
+
+Required Test Cases
+- wild battle in grass
+- cave battle
+- water battle
+- trainer battle
+- gym leader battle
+- indoor map exploration
+- outdoor route exploration
+- town exploration
+- menu navigation
+- party screen
+- bag screen
+- Pokémon summary screen if affected
+- weather scenes
+- surfing and biking sprites if edited
+
+Things to Check
+- palette corruption
+- incorrect references
+- sprite clipping
+- broken animation frames
+- wrong metatiles
+- broken transparency
+- unreadable UI text
+- visual overlap with HP boxes or menus
+- map tile behavior mismatches
+- frame mismatch in overworld animations
+
+Success Criteria
+No major visual bugs and no obvious readability regressions.
+
+==================================================
+IMPLEMENTATION ORDER
+==================================================
+
+Codex should follow this order unless the repo structure strongly suggests another safe sequence:
+
+1. Graphics pipeline audit
+2. Battle backgrounds
+3. Pokémon battle sprites
+4. Trainer battle sprites
+5. Player and major NPC overworld sprites
+6. Outdoor tileset palette pass
+7. Core outdoor tileset upgrades
+8. Town and interior tilesets
+9. UI overhaul
+10. Effects and polish
+11. Signature location identity pass
+12. Full emulator validation
+
+==================================================
+MINIMUM ACCEPTABLE DELIVERABLE FOR THIS PATCH
+==================================================
+
+If Codex cannot complete everything in one pass, the patch must still include at least:
+- a full graphics pipeline audit
+- upgraded battle backgrounds
+- upgraded Pokémon battle sprites
+- upgraded trainer battle sprites
+- upgraded player overworld sprites
+- an outdoor palette overhaul
+- basic UI cleanup
+- testing notes for all completed areas
+
+==================================================
+CODEX EXECUTION RULES
+==================================================
+
+Codex should follow these rules while implementing:
+
+- Make changes in clean, logical commits if commit control exists.
+- Avoid massive blind replacements without verifying references.
+- Preserve build stability after each major asset category.
+- Prefer high-impact categories first.
+- Document any graphics pipeline rule changes.
+- If using new asset processing tools or conversion steps, document them.
+- If a category is too large for full completion, finish the most visible assets first rather than leaving all categories half-done.
+
+==================================================
+FINAL REQUEST TO CODEX
+==================================================
+
+Implement a full graphics upgrade patch for this Pokémon Emerald project using the priorities and rules in this document.
+
+The target is not “higher resolution.”
+The target is a significantly more polished, visually richer, more consistent, and more premium-looking Emerald that still fits within GBA-native presentation.
+
+Prioritize visible improvements, stable integration, consistent art direction, and readability.
+Do not chase experimental rendering tricks before completing the major asset upgrades.
+
+Deliver the patch in a way that is organized, testable, and easy to continue expanding later.

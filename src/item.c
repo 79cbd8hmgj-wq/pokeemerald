@@ -17,8 +17,15 @@
 
 static bool8 CheckPyramidBagHasItem(u16 itemId, u16 count);
 static bool8 CheckPyramidBagHasSpace(u16 itemId, u16 count);
+static void TryUnlockExpShare(u16 itemId);
 
 EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
+
+static void TryUnlockExpShare(u16 itemId)
+{
+    if (itemId == ITEM_EXP_SHARE)
+        FlagSet(FLAG_RECEIVED_EXP_SHARE);
+}
 
 #include "data/text/item_descriptions.h"
 #include "data/items.h"
@@ -247,7 +254,11 @@ bool8 AddBagItem(u16 itemId, u16 count)
     // check Battle Pyramid Bag
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
     {
-        return AddPyramidBagItem(itemId, count);
+        bool8 added = AddPyramidBagItem(itemId, count);
+
+        if (added)
+            TryUnlockExpShare(itemId);
+        return added;
     }
     else
     {
@@ -278,6 +289,7 @@ bool8 AddBagItem(u16 itemId, u16 count)
                     SetBagItemQuantity(&newItems[i].quantity, ownedCount + count);
                     memcpy(itemPocket->itemSlots, newItems, itemPocket->capacity * sizeof(struct ItemSlot));
                     Free(newItems);
+                    TryUnlockExpShare(itemId);
                     return TRUE;
                 }
                 else
@@ -340,6 +352,7 @@ bool8 AddBagItem(u16 itemId, u16 count)
         }
         memcpy(itemPocket->itemSlots, newItems, itemPocket->capacity * sizeof(struct ItemSlot));
         Free(newItems);
+        TryUnlockExpShare(itemId);
         return TRUE;
     }
 }
@@ -507,6 +520,7 @@ bool8 AddPCItem(u16 itemId, u16 count)
                 SetPCItemQuantity(&newItems[i].quantity, ownedCount + count);
                 memcpy(gSaveBlock1Ptr->pcItems, newItems, sizeof(gSaveBlock1Ptr->pcItems));
                 Free(newItems);
+                TryUnlockExpShare(itemId);
                 return TRUE;
             }
             count += ownedCount - MAX_PC_ITEM_CAPACITY;
@@ -515,6 +529,7 @@ bool8 AddPCItem(u16 itemId, u16 count)
             {
                 memcpy(gSaveBlock1Ptr->pcItems, newItems, sizeof(gSaveBlock1Ptr->pcItems));
                 Free(newItems);
+                TryUnlockExpShare(itemId);
                 return TRUE;
             }
         }
@@ -539,6 +554,7 @@ bool8 AddPCItem(u16 itemId, u16 count)
     // Copy items back to the PC
     memcpy(gSaveBlock1Ptr->pcItems, newItems, sizeof(gSaveBlock1Ptr->pcItems));
     Free(newItems);
+    TryUnlockExpShare(itemId);
     return TRUE;
 }
 

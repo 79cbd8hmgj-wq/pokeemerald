@@ -1,0 +1,192 @@
+POKEMON EMERALD WILD ENCOUNTER REBALANCE PLAN
+No 1% to 3% Rare Band Except Pseudo-Legendaries
+
+Goal
+Clean up wild encounter tables so added encounters are actually visible and useful in normal gameplay.
+This version avoids the 1% to 3% rare band for almost everything.
+Outside of pseudo-legendaries and true prestige encounters, the lowest normal encounter rate should be 5%.
+
+CORE PHILOSOPHY
+
+If a Pokémon is included in a wild encounter table, it should usually be present at a rate that matters in an actual playthrough.
+A table full of 1%, 2%, and 3% encounters hides the overhaul instead of showing it.
+This project should use cleaner, more readable rarity tiers.
+
+NEW RARITY FLOOR
+
+Use this standard across the hack:
+- 1% = pseudo-legendaries or true prestige jackpot encounters only
+- 5% = lowest normal rare rate
+- 10% = uncommon but findable
+- 15% to 20% = standard route presence
+- 25% to 30% = defining commons
+
+This means:
+- no 2% slots as a standard rule
+- no 3% slots as a standard rule
+- most non-pseudo rare encounters start at 5%
+
+WHY THIS STRUCTURE IS BETTER
+
+1. The encounter overhaul becomes visible
+Players actually see the Pokémon that were added or redistributed.
+
+2. Rare encounters still feel rare
+A 5% encounter is still uncommon, but it is not effectively invisible.
+
+3. Route identity stays clear
+Using cleaner rate bands makes it easier to understand what each area is supposed to feature.
+
+4. Team-building improves
+Players can realistically catch and use more of the Pokémon the hack intends to support.
+
+DIRECT IMPLEMENTATION RULES
+
+1. Reserve 1% only for pseudo-legendaries and true jackpot encounters
+Examples:
+- Dratini line
+- Larvitar line
+- Bagon line
+- other equivalent prestige encounters if intentionally treated the same way
+
+2. Make 5% the default lowest rate for non-pseudo rare encounters
+Use 5% when:
+- a Pokémon should be rare but realistically obtainable
+- it is strong, unusual, or valuable, but not supposed to be nearly impossible to find
+- it is a bonus encounter that players can still reasonably hunt
+
+3. Use 10% for intended side options and useful uncommon encounters
+Use 10% when:
+- a Pokémon is intended to be a realistic team option
+- the route benefits from visible variety
+- the encounter should be uncommon, but not frustrating to hunt
+
+4. Use 15% to 20% for standard members of an area
+Use 15% to 20% when:
+- the Pokémon should regularly appear in the area
+- it helps define the route without completely dominating it
+- it is part of the local ecosystem the player is expected to notice often
+
+5. Use 25% to 30% for route-defining commons
+Use 25% to 30% when:
+- the Pokémon is meant to be one of the main things players encounter there
+- it is part of the route’s identity
+- it helps stabilize progression and encounter expectations
+
+SIMPLE DECISION RULE
+
+For each encounter slot, ask:
+
+Is this a pseudo-legendary or true prestige jackpot encounter?
+- If yes, use 1%
+
+If not, is it supposed to be rare but realistically obtainable?
+- If yes, use 5%
+
+Is it meant to be an uncommon but practical team option?
+- If yes, use 10%
+
+Is it a normal member of the route ecosystem?
+- If yes, use 15% to 20%
+
+Is it one of the main commons of the area?
+- If yes, use 25% to 30%
+
+WHAT TO AVOID
+
+Avoid using:
+- 2% as a routine rate
+- 3% as a routine rate
+- multiple 1% slots in the same table unless the area is intentionally a prestige-heavy late-game zone
+- bloated tables where interesting Pokémon are technically present but functionally hidden
+
+This project should not rely on fake rarity.
+If something is meant to matter, it should show up.
+
+EXAMPLE CLEANUP
+
+Bad table structure:
+- Species A = 1%
+- Species B = 1%
+- Species C = 3%
+- Species D = 4%
+- Species E = 10%
+- commons fill the rest
+
+Why it fails:
+- too many underseen slots
+- most players will never meaningfully interact with the added encounters
+- the route feels diluted rather than intentionally designed
+
+Better table structure:
+- Species A = 5%
+- Species B = 5%
+- Species C = 10%
+- Species D = 15%
+- Species E = 20%
+- commons adjusted around these values
+
+Why it works:
+- rare encounters are still rare
+- intended team options actually exist in practice
+- route identity is clearer
+- the overhaul becomes noticeable in real gameplay
+
+EARLY GAME GUIDELINES
+
+Early routes should be especially careful:
+- avoid stuffing interesting additions into invisible rates
+- early useful Pokémon should usually be at least 5% or 10%
+- only reserve 1% for something intentionally exceptional
+
+MIDGAME GUIDELINES
+
+Midgame routes can support:
+- more 5% rare encounters
+- more 10% side options
+- cleaner 15% to 20% ecosystem variety
+
+This is usually the best part of the game to open up encounter diversity.
+
+LATEGAME GUIDELINES
+
+Lategame routes can justify:
+- some 1% pseudo-legendary or prestige slots
+- more powerful 5% rares
+- stronger 10% uncommon team options
+
+Even here, avoid flooding the table with too many nearly invisible slots.
+
+FISHING AND SURFING ADJUSTMENT
+
+Because fishing and surfing already require a separate action, you can be slightly more generous there.
+Recommended structure:
+- common = 40% to 60%
+- uncommon = 15% to 25%
+- rare = 5% to 15%
+- prestige jackpot = 1% only when truly justified
+
+PLAYTEST QUESTIONS
+
+When testing, ask:
+- Are players actually seeing the Pokémon the overhaul intends them to use?
+- Are routes still recognizable and themed properly?
+- Do rare encounters still feel rewarding?
+- Are any 5% encounters showing up too often?
+- Are any intended team options still too hidden?
+- Does the table feel intentional rather than cluttered?
+
+FINAL IMPLEMENTATION TARGET
+
+Use this as the first-pass standard:
+- 1% only for pseudo-legendaries and true jackpot encounters
+- 5% as the lowest normal rare rate
+- 10% for uncommon and useful finds
+- 15% to 20% for normal route members
+- 25% to 30% for defining commons
+
+SUMMARY
+
+This rebalance removes the weak 1% to 3% rare band from normal encounter design.
+Outside of pseudo-legendaries and similar prestige catches, rare encounters should begin at 5%.
+That keeps rarity intact while making the encounter overhaul visible, useful, and worth the player’s time.

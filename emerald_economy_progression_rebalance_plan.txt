@@ -1,0 +1,108 @@
+POKEMON EMERALD ECONOMY + PROGRESSION REBALANCE PLAN
+
+Goal
+Reduce the need to cheat for XP and money by making normal gameplay more rewarding, less grind-heavy, and more supportive of team building, catching, and experimentation.
+
+DIRECT RECOMMENDATION
+
+1. EXP CHANGES
+- Wild battle EXP multiplier: x1.6
+- Trainer battle EXP multiplier: x1.3
+
+Design intent:
+- Wild battles should feel worth doing instead of feeling like a waste of time.
+- Trainer battles should still be important, but wild grinding should no longer be miserable.
+- This keeps progression smoother without making the game completely trivial.
+
+2. MART / ITEM PRICE CHANGES
+- All marts prices: x0.6 of vanilla cost
+
+Design intent:
+- Essential items should be affordable enough to actually use.
+- Players should not feel punished for buying healing items, Poké Balls, status heals, or utility items.
+- Lower prices support roster experimentation, catching, and breeding.
+
+Examples of what this means:
+- A 300 cost item becomes 180
+- A 500 cost item becomes 300
+- A 1000 cost item becomes 600
+- A 2000 cost item becomes 1200
+
+3. MONEY REWARD CHANGES
+- Wild battles now award money
+- Wild money payout should scale low, at roughly 1/4 of trainer equivalent payout
+
+Design intent:
+- Every battle should contribute something
+- Trainers should remain the best source of money
+- Wild battles should provide enough money to feel useful, but not so much that the economy breaks
+
+Recommended payout philosophy:
+- Common low-level unevolved wild Pokémon should give small payouts
+- Stronger, rarer, higher-level, or evolved wild Pokémon should give somewhat better payouts
+- Trainer payouts should still remain clearly superior overall
+
+WHY THIS PACKAGE WORKS
+
+1. Fixes the need to cheat
+If XP comes faster, prices are lower, and all battles give money, the player no longer feels forced to use cheats just to keep up.
+
+2. Supports team variety
+A healthier economy makes it easier to:
+- raise more than one team
+- catch more Pokémon
+- test different movesets
+- use breeding systems more often
+- recover from bad purchases or bad training decisions
+
+3. Preserves progression
+This package is strong, but not extreme.
+- EXP is boosted, but not enough to completely destroy pacing
+- Prices are lowered, but not to the point where everything is free
+- Wild money exists, but trainers still matter more
+
+BALANCE PHILOSOPHY
+
+The economy should support:
+- team building
+- experimentation
+- catching
+- training
+- breeding
+
+The economy should not:
+- force hoarding
+- punish item use
+- make grinding feel worthless
+- push the player toward cheating for basic progression
+
+IMPLEMENTATION PRIORITY
+
+Recommended order of testing:
+1. Apply EXP multipliers
+2. Apply mart price reduction
+3. Add wild battle money rewards
+4. Playtest progression from early game through midgame
+
+PLAYTEST CHECKPOINTS
+
+Focus on these questions during testing:
+- Does early game still feel paced correctly?
+- Does the player level too quickly before the first few gyms?
+- Can the player afford enough balls and healing items without feeling rich too early?
+- Do wild battles feel worthwhile for both EXP and money?
+- Do trainer battles still feel more valuable than wild encounters?
+- Does the player feel free to experiment with more Pokémon without breaking the economy?
+
+FINAL IMPLEMENTATION TARGET
+
+Use this as the first-pass balance package:
+- Wild EXP: x1.6
+- Trainer EXP: x1.3
+- Mart prices: x0.6
+- Wild battles award money
+- Wild money payout: about 25% of trainer-equivalent scaling
+
+SUMMARY
+
+This rebalance is meant to make Pokémon Emerald feel less restrictive and less grind-dependent without removing progression tension completely. The player should be rewarded for battling, catching, and building a team through normal gameplay rather than needing cheats to make the experience feel fair.
